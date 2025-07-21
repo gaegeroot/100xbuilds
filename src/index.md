@@ -1,10 +1,10 @@
 ---
 layout: "layouts/homepage.njk"
 hero:
-  subTitle: "WE WORK HARD, WE PLAY HARD"
+  subTitle: "TRUSTED BY TOP LUXURY BUILDERS"
   title:
-    firstPara: "We’re a Design Studio"
-    secondPara: "That Believes In Great Ideas"
+    firstPara: "The Growth Partner"
+    secondPara: "For Luxury Home Builders"
   seeWorkBtn:
     text: "See Our Works"
     link: "#project"

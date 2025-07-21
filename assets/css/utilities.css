@@ -14,13 +14,13 @@
 .bg-white { background-color: var(--color-bg-secondary); }
 
 /* Text Color Classes */
-.text-primary { color: var(--color-primary); }
-.text-secondary { color: var(--color-secondary); }
-.text-accent { color: var(--color-accent); }
-.text-dark { color: var(--color-text-primary); }
-.text-medium { color: var(--color-text-secondary); }
-.text-light { color: var(--color-text-light); }
-.text-white { color: var(--color-text-inverse); }
+.txt-primary { color: var(--color-primary); }
+.txt-secondary { color: var(--color-secondary); }
+.txt-accent { color: var(--color-accent); }
+.txt-dark { color: var(--color-txt-primary); }
+.txt-medium { color: var(--color-txt-secondary); }
+.txt-light { color: var(--color-txt-light); }
+.txt-white { color: var(--color-text-inverse); }
 
 /* Border Classes */
 .border-light { border-color: var(--color-border-light); }

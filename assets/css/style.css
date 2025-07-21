@@ -670,7 +670,7 @@ a {
 
 @media (max-width: 575px) {
   .site-contact {
-    padding: 100px 0;
+    padding: 150px 0;
   }
 }
 
@@ -773,8 +773,7 @@ a {
   .site-counter,
   .site-project,
   .site-testimonial,
-  .site-cta,
-  .site-contact {
+  .site-cta {
     padding: 80px 0;
   }
 
@@ -788,8 +787,7 @@ a {
   .site-counter,
   .site-project,
   .site-testimonial,
-  .site-cta,
-  .site-contact {
+  .site-cta {
     padding: 60px 0;
   }
 
