@@ -1,0 +1,64 @@
+/* =========================================
+   FILE: css/utilities.css
+   PURPOSE: Utility classes for rapid development
+   ========================================= */
+
+/* Background Classes */
+.bg-primary { background-color: var(--color-primary); }
+.bg-primary-light { background-color: var(--color-primary-light); }
+.bg-primary-dark { background-color: var(--color-primary-dark); }
+.bg-secondary { background-color: var(--color-secondary); }
+.bg-secondary-light { background-color: var(--color-secondary-light); }
+.bg-accent { background-color: var(--color-accent); }
+.bg-light { background-color: var(--color-bg-primary); }
+.bg-white { background-color: var(--color-bg-secondary); }
+
+/* Text Color Classes */
+.text-primary { color: var(--color-primary); }
+.text-secondary { color: var(--color-secondary); }
+.text-accent { color: var(--color-accent); }
+.text-dark { color: var(--color-text-primary); }
+.text-medium { color: var(--color-text-secondary); }
+.text-light { color: var(--color-text-light); }
+.text-white { color: var(--color-text-inverse); }
+
+/* Border Classes */
+.border-light { border-color: var(--color-border-light); }
+.border-medium { border-color: var(--color-border-medium); }
+.border-primary { border-color: var(--color-primary); }
+.border-secondary { border-color: var(--color-secondary); }
+
+/* Spacing Utilities */
+.p-xs { padding: var(--spacing-xs); }
+.p-sm { padding: var(--spacing-sm); }
+.p-md { padding: var(--spacing-md); }
+.p-lg { padding: var(--spacing-lg); }
+.p-xl { padding: var(--spacing-xl); }
+
+.m-xs { margin: var(--spacing-xs); }
+.m-sm { margin: var(--spacing-sm); }
+.m-md { margin: var(--spacing-md); }
+.m-lg { margin: var(--spacing-lg); }
+.m-xl { margin: var(--spacing-xl); }
+
+/* Border Radius */
+.rounded-sm { border-radius: var(--radius-sm); }
+.rounded-md { border-radius: var(--radius-md); }
+.rounded-lg { border-radius: var(--radius-lg); }
+.rounded-xl { border-radius: var(--radius-xl); }
+
+/* Shadows */
+.shadow-sm { box-shadow: 0 2px 4px var(--shadow-light); }
+.shadow-md { box-shadow: 0 4px 8px var(--shadow-medium); }
+.shadow-lg { box-shadow: 0 8px 16px var(--shadow-dark); }
+
+/* Interactive States */
+.hover-lift:hover {
+  transform: translateY(-2px);
+  transition: var(--transition-normal);
+}
+
+.hover-glow:hover {
+  box-shadow: 0 0 20px var(--shadow-light);
+  transition: var(--transition-normal);
+}

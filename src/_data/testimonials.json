@@ -1,0 +1,42 @@
+{
+  "title": "RESULTS FROM REAL BUILDERS",
+  "des": "What luxury home builder executives say about our systems and training.",
+  "opinion": [
+    {
+      "name": "Michael Chen",
+      "dig": "CEO, Pinnacle Custom Homes",
+      "img": "/assets/images/testimonial/user-thumb-one.jpg",
+      "comment": "100xBuilds transformed our lead generation completely. We went from 12 qualified leads per month to 47, and our average project value increased by 32%. The sales training alone paid for itself in the first quarter."
+    },
+    {
+      "name": "Sarah Davidson",
+      "dig": "President, Heritage Luxury Builders",
+      "img": "/assets/images/testimonial/user-thumb-two.jpg",
+      "comment": "Their marketing automation system freed up 15 hours per week of manual follow-up work. We're now closing 68% more prospects, and our project pipeline is booked solid for 18 months ahead."
+    },
+    {
+      "name": "James Richardson",
+      "dig": "Owner, Richardson Custom Estates",
+      "img": "/assets/images/testimonial/user-thumb-three.jpg",
+      "comment": "The media buying strategies 100xBuilds implemented generated $2.3M in new contracts within 6 months. We've never seen ROI like this from our marketing spend - it's completely changed our business trajectory."
+    },
+    {
+      "name": "Amanda Foster",
+      "dig": "VP Operations, Elite Home Craftsmen",
+      "img": "/assets/images/testimonial/user-thumb-four.jpg",
+      "comment": "We were skeptical about investing in sales training, but 100xBuilds' process increased our close rate from 23% to 58%. Our average sale went from $850K to $1.2M. The frameworks actually work."
+    },
+    {
+      "name": "David Thornton",
+      "dig": "Founder, Thornton Luxury Properties",
+      "img": "/assets/images/testimonial/user-thumb-five.jpg",
+      "comment": "The lead nurturing sequences they built converted 34% of our cold prospects into appointments. We went from chasing every lead to having qualified buyers calling us. Game changer for a $12M operation like ours."
+    },
+    {
+      "name": "Lisa Martineau",
+      "dig": "Managing Director, Prestige Custom Builders",
+      "img": "/assets/images/testimonial/user-thumb-six.jpg",
+      "comment": "100xBuilds helped us systematize everything - from initial inquiry to project completion. Our profit margins improved by 28%, and we're scaling faster than ever while maintaining our luxury standards."
+    }
+  ]
+}

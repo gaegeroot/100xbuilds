@@ -1,0 +1,231 @@
+/* =========================================
+   ENHANCED VARIABLES - EXECUTIVE AUTHORITY
+   Colors + Typography + Spacing
+   ========================================= */
+
+/* Font Imports */
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&display=swap");
+
+:root {
+  /* =========================================
+     TYPOGRAPHY TOKENS
+     ========================================= */
+  
+  /* Font Families */
+  --font-primary: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-secondary: 'Fraunces', Georgia, serif;
+  --font-mono: 'SF Mono', Monaco, 'Cascadia Code', 'Courier New', monospace;
+  
+  /* Font Weights */
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  
+  /* Font Sizes - Executive Scale */
+  --font-size-xs: 0.75rem;     /* 12px - Fine print */
+  --font-size-sm: 0.875rem;    /* 14px - Captions, labels */
+  --font-size-base: 1rem;      /* 16px - Body text */
+  --font-size-lg: 1.125rem;    /* 18px - Lead text */
+  --font-size-xl: 1.25rem;     /* 20px - Small headings */
+  --font-size-2xl: 1.5rem;     /* 24px - Card titles */
+  --font-size-3xl: 1.875rem;   /* 30px - Section headers */
+  --font-size-4xl: 2.25rem;    /* 36px - Page titles */
+  --font-size-5xl: 3rem;       /* 48px - Hero headlines */
+  --font-size-6xl: 3.75rem;    /* 60px - Impact headlines */
+  --font-size-7xl: 4.5rem;     /* 72px - Landing hero */
+  
+  /* Line Heights */
+  --line-height-tight: 1.2;
+  --line-height-snug: 1.35;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.65;
+  --line-height-loose: 2;
+  
+  /* Letter Spacing */
+  --letter-spacing-tighter: -0.03em;
+  --letter-spacing-tight: -0.015em;
+  --letter-spacing-normal: 0em;
+  --letter-spacing-wide: 0.03em;
+  --letter-spacing-wider: 0.06em;
+  --letter-spacing-widest: 0.12em;
+
+  /* =========================================
+     COLOR PALETTE - EXECUTIVE AUTHORITY
+     ========================================= */
+  
+  /* Primary Colors - Deep Navy Authority */
+  --color-primary: #1a365d;
+  --color-primary-light: #2c5282;
+  --color-primary-dark: #1a2332;
+  --color-primary-alpha: rgba(26, 54, 93, 0.1);
+  
+  /* Secondary Colors - Warm Gold Success */
+  --color-secondary: #d69e2e;
+  --color-secondary-light: #ecc94b;
+  --color-secondary-dark: #b7791f;
+  --color-secondary-alpha: rgba(214, 158, 46, 0.1);
+  
+  /* Accent Colors - Cool Gray Sophistication */
+  --color-accent: #718096;
+  --color-accent-light: #a0aec0;
+  --color-accent-dark: #4a5568;
+  --color-accent-alpha: rgba(113, 128, 150, 0.1);
+  
+  /* Background Colors */
+  --color-bg-primary: #fafafa;
+  --color-bg-secondary: #ffffff;
+  --color-bg-dark: #f7fafc;
+  --color-bg-overlay: rgba(26, 54, 93, 0.95);
+  
+  /* Text Colors */
+  --color-text-primary: #2d3748;
+  --color-text-secondary: #4a5568;
+  --color-text-light: #718096;
+  --color-text-inverse: #ffffff;
+  --color-text-muted: #a0aec0;
+  
+  /* Semantic Colors */
+  --color-success: #38a169;
+  --color-warning: #d69e2e;
+  --color-error: #e53e3e;
+  --color-info: #3182ce;
+  
+  /* Border Colors */
+  --color-border-light: #e2e8f0;
+  --color-border-medium: #cbd5e0;
+  --color-border-dark: #a0aec0;
+  
+  /* Shadow Colors */
+  --shadow-light: rgba(26, 54, 93, 0.08);
+  --shadow-medium: rgba(26, 54, 93, 0.15);
+  --shadow-dark: rgba(26, 54, 93, 0.25);
+  --shadow-gold: rgba(214, 158, 46, 0.25);
+
+  /* =========================================
+     SPACING SCALE
+     ========================================= */
+  
+  --spacing-0: 0;
+  --spacing-xs: 0.25rem;    /* 4px */
+  --spacing-sm: 0.5rem;     /* 8px */
+  --spacing-md: 1rem;       /* 16px */
+  --spacing-lg: 1.5rem;     /* 24px */
+  --spacing-xl: 2rem;       /* 32px */
+  --spacing-2xl: 2.5rem;    /* 40px */
+  --spacing-3xl: 3rem;      /* 48px */
+  --spacing-4xl: 4rem;      /* 64px */
+  --spacing-5xl: 5rem;      /* 80px */
+  --spacing-6xl: 6rem;      /* 96px */
+
+  /* =========================================
+     BORDER RADIUS
+     ========================================= */
+  
+  --radius-none: 0;
+  --radius-sm: 0.25rem;     /* 4px */
+  --radius-md: 0.5rem;      /* 8px */
+  --radius-lg: 0.75rem;     /* 12px */
+  --radius-xl: 1rem;        /* 16px */
+  --radius-2xl: 1.5rem;     /* 24px */
+  --radius-full: 9999px;    /* Circle */
+
+  /* =========================================
+     TRANSITIONS & ANIMATIONS
+     ========================================= */
+  
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+  --transition-bounce: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  
+  /* Easing Functions */
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* =========================================
+     BREAKPOINTS (for reference)
+     ========================================= */
+  
+  /* 
+  --breakpoint-sm: 576px;    Small devices
+  --breakpoint-md: 768px;    Medium devices  
+  --breakpoint-lg: 992px;    Large devices
+  --breakpoint-xl: 1200px;   Extra large devices
+  --breakpoint-2xl: 1400px;  XXL devices
+  */
+
+  /* =========================================
+     Z-INDEX SCALE
+     ========================================= */
+  
+  --z-dropdown: 1000;
+  --z-sticky: 1020;
+  --z-fixed: 1030;
+  --z-modal-backdrop: 1040;
+  --z-modal: 1050;
+  --z-popover: 1060;
+  --z-tooltip: 1070;
+  --z-toast: 1080;
+
+  /* =========================================
+     CUSTOM PROPERTIES FOR GRADIENTS
+     ========================================= */
+  
+  --gradient-primary: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+  --gradient-secondary: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-secondary-light) 100%);
+  --gradient-authority: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  --gradient-success: linear-gradient(45deg, var(--color-secondary), var(--color-secondary-light));
+  --gradient-text: linear-gradient(45deg, var(--color-secondary), var(--color-primary));
+  
+  /* Background Gradients */
+  --gradient-hero: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 50%, var(--color-primary-dark) 100%);
+  --gradient-cta: linear-gradient(135deg, var(--color-secondary-dark) 0%, var(--color-secondary) 100%);
+}
+
+/* =========================================
+   DARK MODE VARIABLES (Optional)
+   ========================================= */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Uncomment and customize if you want dark mode support */
+    /*
+    --color-bg-primary: #1a202c;
+    --color-bg-secondary: #2d3748;
+    --color-bg-dark: #171923;
+    --color-text-primary: #f7fafc;
+    --color-text-secondary: #e2e8f0;
+    --color-text-light: #a0aec0;
+    --color-border-light: #4a5568;
+    --color-border-medium: #2d3748;
+    */
+  }
+}
+
+/* =========================================
+   HIGH CONTRAST MODE SUPPORT
+   ========================================= */
+
+@media (prefers-contrast: high) {
+  :root {
+    --color-primary: #000000;
+    --color-text-primary: #000000;
+    --color-text-secondary: #000000;
+    --color-border-medium: #000000;
+  }
+}
+
+/* =========================================
+   REDUCED MOTION SUPPORT
+   ========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --transition-fast: 0s;
+    --transition-normal: 0s;
+    --transition-slow: 0s;
+  }
+}
