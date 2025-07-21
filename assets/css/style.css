@@ -236,7 +236,8 @@ a {
 
 @media (max-width: 575px) {
   .site-hero {
-    padding: 120px 0;
+    padding: 150px 0;
+    flex-direction: column;
   }
 
   .site-hero-content-buttons {
