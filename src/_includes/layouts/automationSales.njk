@@ -1,0 +1,480 @@
+{% extends "base.njk" %}
+{% block content %}
+    <!-- Hero Section -->
+    <section class="site-hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <div class="site-hero-content">
+                        <h1>{{ automationSales.hero.headline }}</h1>
+                        <h2 class="txt-secondary">{{ automationSales.hero.subheadline }}</h2>
+                        <p class="lead">{{ automationSales.hero.description }}</p>
+                        <div class="site-hero-content-buttons">
+                            <ul>
+                                <li><ahref="{{ automationSales.hero.ctaButton.link }}" class="btn btn-secondary btn-lg">{{ automationSales.hero.ctaButton.text }}</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div
+                        class="text-center">
+                        <!-- ROI Calculator Widget -->
+                        <div class="bg-white p-4 rounded shadow">
+                            <h3 class="mb-4">Quick ROI Calculator</h3>
+                            <div class="mb-3 text-start">
+                                <label class="form-label fw-medium">Annual Revenue</label>
+                                <select class="form-control form-select">
+                                    <option>$5M - $10M</option>
+                                    <option>$10M - $25M</option>
+                                    <option>$25M - $50M</option>
+                                    <option>$50M+</option>
+                                </select>
+                            </div>
+                            <div class="mb-4 text-start">
+                                <label class="form-label fw-medium">Current Profit Margin</label>
+                                <select class="form-control form-select">
+                                    <option>5-10%</option>
+                                    <option>10-15%</option>
+                                    <option>15-20%</option>
+                                    <option>20%+</option>
+                                </select>
+                            </div>
+                            <button class="btn btn-primary w-100">Calculate My ROI</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Value Props Section -->
+    <section class="bg-light">
+        <div class="container">
+            <div class="row text-center">
+                {% for prop in automationSales.hero.valueProps %}
+                    <div class="col-md-4 my-2">
+                        <div class="p-4">
+                            <h4 class="txt-primary mb-3">{{ prop.title }}</h4>
+                            <p class="text-muted mb-0">{{ prop.description }}</p>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <!-- Problem Section -->
+    <section class="bg-white pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="text-center mb-5">
+                        <div class="section-title">
+                            <h2>{{ automationSales.problems.title }}</h2>
+                            <p>{{ automationSales.problems.subtitle }}</p>
+                            <p class="lead">{{ automationSales.problems.description }}</p>
+                        </div>
+                    </div>
+                    <!-- Pain Points -->
+                    <div class="row mb-5">
+                        {% for point in automationSales.problems.painPoints %}
+                            <div class="col-lg-6 mb-4">
+                                <div class="p-4 h-100 brdr-secondary shadow-md rounded-lg">
+                                    <div class="d-flex align-items-start">
+                                        <div class="me-3 flex-shrink-0">
+                                            <div
+                                                class="bg-danger bg-opacity-10 rounded-circle p-2 d-flex align-items-center justify-content-center"
+                                                style="width: 40px; height: 40px;">
+                                                <span class="text-danger fw-bold">✕</span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p class="mb-0 fw-medium">{{ point }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="section bg-authority">
+        <div class="container">
+            <div class="text-center py-5">
+                <div class="site-cta-title h3 mb-4">{{ automationSales.problems.calculation | safe }}</div>
+                <div class="site-cta-buttons">
+                    <li>
+                        <a href="{{ automationSales.hero.ctaButton.link }}" class="btn btn-secondary btn-lg">
+                            Stop Losing Money - Get Your Free ROI Analysis
+                        </a>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="bg-white pt-5">
+        <div
+            class="container">
+            <!-- Why Solutions Fail -->
+            <div class="site-project-single">
+                <div class="row">
+                    <div class="text-center">
+                        <div class="section-title">
+                            <h2>{{ automationSales.problems.whyFails.title }}</h2>
+                        </div>
+                    </div>
+                    {% for failure in automationSales.problems.whyFails.failures %}
+                        <div class="col-md-6 mb-3">
+                            <div class="d-flex align-items-start">
+                                <div class="me-3 text-danger fs-5">❌</div>
+                                <p class="mb-0">{{ failure }}</p>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+                <div class="mt-4 p-4 bg-danger bg-opacity-10 rounded border-start border-danger border-4">
+                    <h4 class="text-danger mb-2">Result:</h4>
+                    <p class="mb-0">{{ automationSales.problems.whyFails.result }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div></section><!-- Solution Section --><section>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-10 mx-auto">
+            <div class="text-center mb-5">
+                <div class="section-title">
+                    <h2>{{ automationSales.solution.title }}</h2>
+                    <p>{{ automationSales.solution.subtitle }}</p>
+                </div>
+            </div>
+            <!-- System Components -->
+            <div class="mb-5">
+                <h3 class="mb-4">Our system integrates:</h3>
+                <div class="row">
+                    {% for component in automationSales.solution.components %}
+                        <div class="col-md-6 mb-4">
+                            <div class="site-project-single bg-white p-4 h-100">
+                                <div class="d-flex align-items-start">
+                                    <div class="me-3 text-success fs-4">✓</div>
+                                    <p class="mb-0">{{ component }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <!-- Performance Guarantee -->
+            <div class="site-cta">
+                <div class="site-cta-title h2">{{ automationSales.solution.guarantee.title }}</div>
+                <p class="lead mb-4">{{ automationSales.solution.guarantee.description }}</p>
+                <div class="row mb-4">
+                    {% for metric in automationSales.solution.guarantee.metrics %}
+                        <div class="col-md-6 mb-2">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <div class="me-2">•</div>
+                                <span>{{ metric }}</span>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+                <div class="site-cta-title h3">{{ automationSales.solution.guarantee.promise }}</div>
+            </div>
+        </div>
+    </div>
+</div></section><!-- Process Section --><section>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="section-title text-center mb-5">
+                <h2>{{ automationSales.process.title }}</h2>
+            </div>
+            {% for phase in automationSales.process.phases %}
+                <div class="mb-5 pb-5 border-bottom">
+                    <div class="row align-items-center mb-4">
+                        <div class="col-md-8">
+                            <h3 class="txt-primary">{{ phase.name }} ({{ phase.timeframe }})</h3>
+                            <h4 class="txt-secondary">{{ phase.subtitle }}</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {% for week in phase.weeks %}
+                            <div class="col-md-6 mb-4">
+                                <div class="site-project-single p-4 h-100">
+                                    <h5 class="txt-primary mb-3">{{ week.period }}</h5>
+                                    <ul class="list-unstyled">
+                                        {% for task in week.tasks %}
+                                            <li class="mb-2">
+                                                <div class="d-flex align-items-start">
+                                                    <div class="me-2 text-success">•</div>
+                                                    <span>{{ task }}</span>
+                                                </div>
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                    <div class="site-cta p-4">
+                        <h5 class="mb-2">Deliverable:</h5>
+                        <p class="mb-0">{{ phase.deliverable }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div></section><!-- What's Included Section --><section>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-10 mx-auto">
+            <div class="section-title text-center mb-5">
+                <h2>{{ automationSales.included.title }}</h2>
+                <div class="mb-4">
+                    <span class="h3 text-muted">Total Value:
+                    </span>
+                    <span class="h2 txt-primary">{{ automationSales.included.totalValue }}</span>
+                    <span class="mx-3">|</span>
+                    <span class="h3 text-muted">Investment:
+                    </span>
+                    <span class="h2 txt-secondary">{{ automationSales.included.investment }}</span>
+                </div>
+                <p class="text-muted fst-italic">{{ automationSales.included.note }}</p>
+            </div>
+            {% for category in automationSales.included.components %}
+                <div class="mb-5">
+                    <h3 class="txt-primary mb-4">{{ category.category }}</h3>
+                    <div class="row">
+                        {% for item in category.items %}
+                            <div class="col-md-6 mb-4">
+                                <div class="site-project-single p-4 h-100">
+                                    <div class="d-flex justify-content-between align-items-start mb-3">
+                                        <h5 class="mb-0">{{ item.name }}</h5>
+                                        <span class="badge bg-secondary">{{ item.value }} value</span>
+                                    </div>
+                                    <p class="mb-0 text-muted">{{ item.description }}</p>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div></section><!-- Timeline & Results Section --><section>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-10 mx-auto">
+            <div class="section-title text-center mb-5">
+                <h2>{{ automationSales.timeline.title }}</h2>
+            </div>
+            <div class="row">
+                {% for milestone in automationSales.timeline.milestones %}
+                    <div class="col-md-6 mb-5">
+                        <div class="site-project-single p-5 h-100">
+                            <h4 class="txt-primary mb-4">{{ milestone.timeframe }}</h4>
+                            <ul class="list-unstyled">
+                                {% for improvement in milestone.improvements %}
+                                    <li class="mb-3">
+                                        <div class="d-flex align-items-start">
+                                            <div class="me-3 text-success fs-5">✅</div>
+                                            <span>{{ improvement }}</span>
+                                        </div>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div></section><!-- Case Studies Section --><section>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="section-title text-center mb-5">
+                <h2>Client Success Stories</h2>
+            </div>
+            {% for study in automationSales.caseStudies %}
+                <div class="mb-5">
+                    <div class="site-project-single p-5">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <h3 class="txt-primary mb-3">{{ study.title }}</h3>
+                                <h4 class="txt-secondary mb-4">{{ study.quote }}</h4>
+                                <p class="mb-4">
+                                    <strong>Challenge:</strong>
+                                    {{ study.challenge }}</p>
+                                <h5 class="mb-3">Results after 90 days:</h5>
+                                <div class="row">
+                                    {% for result in study.results %}
+                                        <div class="col-md-6 mb-2">
+                                            <div class="d-flex align-items-start">
+                                                <div class="me-2 text-success">•</div>
+                                                <span>{{ result }}</span>
+                                            </div>
+                                        </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="site-testimonial-item">
+                                    <p class="site-testimonial-item-body">"{{ study.testimonial }}"</p>
+                                    <div class="site-testimonial-item-header">
+                                        <div class="person">
+                                            <cite class="text-muted">{{ study.client }}</cite>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div></section><!-- Objection Handling Section --><section>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-10 mx-auto">
+            <div class="section-title text-center mb-5">
+                <h2>Common Concerns Addressed</h2>
+            </div>
+            <div class="row">
+                {% for objection in automationSales.objections %}
+                    <div class="col-md-6 mb-4">
+                        <div class="site-project-single p-4 h-100">
+                            <h5 class="txt-primary mb-3">"{{ objection.concern }}"</h5>
+                            <div class="site-project-single-description">
+                                <p>{{ objection.response }}</p>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div></section><!-- FAQ Section --><section class="site-project-single-section">
+<div class="container">
+    <div class="row">
+        <div class="col-lg-10 mx-auto">
+            <div class="section-title text-center mb-5">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            {% for category in automationSales.faq %}
+                <div class="mb-5">
+                    <h3 class="txt-primary mb-4">{{ category.category }}</h3>
+                    <div class="accordion" id="faq{{ loop.index }}">
+                        {% for question in category.questions %}
+                            <div class="accordion-item mb-3 rounded overflow-hidden border">
+                                <h2 class="accordion-header" id="heading{{ loop.parent.loop.index }}{{ loop.index }}">
+                                    <button
+                                        class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapse{{ loop.parent.loop.index }}{{ loop.index }}"
+                                        aria-expanded="false"
+                                        aria-controls="collapse{{ loop.parent.loop.index }}{{ loop.index }}">
+                                        {{ question.question }}
+                                    </button>
+                                </h2>
+                                <div
+                                    id="collapse{{ loop.parent.loop.index }}{{ loop.index }}"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="heading{{ loop.parent.loop.index }}{{ loop.index }}"
+                                    data-bs-parent="#faq{{ loop.parent.loop.index }}">
+                                    <div class="accordion-body">
+                                        {{ question.answer }}
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div></section><!-- Final CTA Section --><section class="site-cta">
+<div class="container">
+    <div class="row">
+        <div class="col-lg-10 mx-auto text-center">
+            <div class="site-cta-title">{{ automationSales.finalCta.title }}</div>
+            <h3 class="h2 txt-secondary mb-5">{{ automationSales.finalCta.subtitle }}</h3>
+            <!-- Timeline -->
+            <div class="mb-5">
+                {% for timeline in automationSales.finalCta.timeline %}
+                    <div class="mb-3 p-3 bg-white bg-opacity-10 rounded">
+                        <span class="text-white h5">{{ timeline }}</span>
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="mb-5 p-4 bg-white bg-opacity-15 rounded">
+                <h3 class="text-white mb-3">{{ automationSales.finalCta.question }}</h3>
+            </div>
+            <!-- ROI Analysis Offer -->
+            <div class="mb-5">
+                <h3 class="txt-secondary mb-4">{{ automationSales.finalCta.offer.title }}</h3>
+                <div class="row mb-4">
+                    {% for benefit in automationSales.finalCta.offer.benefits %}
+                        <div class="col-md-6 mb-3">
+                            <div class="d-flex align-items-center justify-content-center text-white">
+                                <div class="me-2 txt-secondary">✓</div>
+                                <span>{{ benefit }}</span>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+                <p class="text-white fst-italic">{{ automationSales.finalCta.offer.disclaimer }}</p>
+            </div>
+            <!-- CTA Buttons -->
+            <div class="mb-5">
+                <div class="site-cta-buttons">
+                    {% for button in automationSales.finalCta.buttons %}
+                        <li>
+                            {% if button.type == 'primary' %}
+                                <a href="{{ button.link }}" class="btn btn-secondary btn-lg">
+                                    {{ button.text }}
+                                </a>
+                            {% else %}
+                                <a href="{{ button.link }}" class="btn btn-outline btn-lg">
+                                    {{ button.text }}
+                                </a>
+                            {% endif %}
+                        </li>
+                    {% endfor %}
+                </div>
+            </div>
+            <!-- Contact Info -->
+            <div class="mb-4">
+                <div class="row text-white">
+                    <div class="col-md-4 mb-2">
+                        <strong class="txt-secondary">Phone:</strong>
+                        {{ automationSales.finalCta.contact.phone }}
+                    </div>
+                    <div class="col-md-4 mb-2">
+                        <strong class="txt-secondary">Email:</strong>
+                        {{ automationSales.finalCta.contact.email }}
+                    </div>
+                    <div class="col-md-4 mb-2">
+                        <strong class="txt-secondary">Address:</strong>
+                        {{ automationSales.finalCta.contact.address }}
+                    </div>
+                </div>
+            </div>
+            <!-- Trust Indicators -->
+            <div class="row">
+                {% for indicator in automationSales.finalCta.trustIndicators %}
+                    <div class="col-md-3 col-6 mb-2">
+                        <div class="d-flex align-items-center justify-content-center text-white">
+                            <div class="me-2 txt-secondary">🏆</div>
+                            <small>{{ indicator }}</small>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div></section>{% endblock %}

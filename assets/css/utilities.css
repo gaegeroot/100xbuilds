@@ -12,6 +12,7 @@
 .bg-accent { background-color: var(--color-accent); }
 .bg-light { background-color: var(--color-bg-primary); }
 .bg-white { background-color: var(--color-bg-secondary); }
+.bg-authority {background: var(--gradient-authority); }
 
 /* Text Color Classes */
 .txt-primary { color: var(--color-primary); }
@@ -23,10 +24,10 @@
 .txt-white { color: var(--color-text-inverse); }
 
 /* Border Classes */
-.border-light { border-color: var(--color-border-light); }
-.border-medium { border-color: var(--color-border-medium); }
-.border-primary { border-color: var(--color-primary); }
-.border-secondary { border-color: var(--color-secondary); }
+.brdr-light {border: 2px solid var(--color-border-light);}
+.brdr-medium {border: 2px solid var(--color-border-medium);}
+.brdr-primary {border: 2px solid var(--color-primary);}
+.brdr-secondary {border: 2px solid var(--color-secondary);}
 
 /* Spacing Utilities */
 .p-xs { padding: var(--spacing-xs); }
@@ -40,6 +41,8 @@
 .m-md { margin: var(--spacing-md); }
 .m-lg { margin: var(--spacing-lg); }
 .m-xl { margin: var(--spacing-xl); }
+
+
 
 /* Border Radius */
 .rounded-sm { border-radius: var(--radius-sm); }

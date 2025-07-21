@@ -4,18 +4,6 @@
   "contactsHeading": "Contact Info",
   "contactsInfo":[
     {
-      "link":"https://goo.gl/maps/fBANt7Ns2wi6mM7cA",
-      "text":"713 Elmwood St. Prior Lake, MN 55372"
-    },
-    {
-      "link":"tel:409-896-1444",
-      "text":"409-896-1444"
-    },
-    {
-      "link":"tel:409-781-1308",
-      "text":"409-781-1308"
-    },
-    {
       "link":"mailto:",
       "text":"info@100xbuilds.com"
     }
@@ -25,7 +13,7 @@
   "siteMap":[
     {
       "link":"about",
-      "text":"About Company"
+      "text":"About 100XBuilds"
     },
     {
       "link":"portfolio",
@@ -65,5 +53,5 @@
   "brandMotto":["develop design solutions","produce valuable cultural content","create fresh brand experience"],
 
   "back2topIcon":"/assets/images/to-top.svg",
-  "customerComment":"I want to</br>visit again"
+  "customerComment":"Take me</br>to the top"
 }
