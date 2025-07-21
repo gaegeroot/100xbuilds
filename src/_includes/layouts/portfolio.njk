@@ -14,7 +14,7 @@
           <div class="col-lg-4">
             <a href="#project" class="site-project-header-action scroll-to">
               <span>Scroll Down</span>
-              <img src="/assets/images/arrow-down.svg" alt="arrow-down">
+              <img src="{{ '/assets/images/arrow-down.svg' | url }}" alt="arrow-down">
             </a>
           </div>
         </div>
@@ -28,12 +28,12 @@
             <div class="col-lg-6 col-md-10 mx-auto">
               <div class="site-project-item">
                 <div class="site-project-item-thumb">
-                  <img src="{{portfolio.data.img}}" alt="project-thumb">
+                  <img src="{{portfolio.data.img | url}}" alt="project-thumb">
                 </div>
                 <div class="site-project-item-content">
                   <span>{{portfolio.data.subTitle}}</span>
                   <h3>{{portfolio.data.title}}</h3>
-                  <a href="{{portfolio.url}}" class="read-more">{{portfolio.data.linkText}}</a>
+                  <a href="{{portfolio.url | url}}" class="read-more">{{portfolio.data.linkText}}</a>
                 </div>
               </div>
             </div>
@@ -43,17 +43,17 @@
                 <nav>
                   <ul class="pagination">
                     {% if pagination.href.previous %}
-                    <li class="page-item"><a class="page-link" href="{{pagination.href.previous}}">Previous</a></li>
+                    <li class="page-item"><a class="page-link" href="{{pagination.href.previous | url}}">Previous</a></li>
                     {% endif %}
                     {% for pageEntry in pagination.hrefs %}
                     <li {% if page.url == pageEntry %}
-                          class="page-item active"><a class="page-link" href="{{pageEntry}}">{{loop.index}}</a></li>
+                          class="page-item active"><a class="page-link" href="{{pageEntry | url}}">{{loop.index}}</a></li>
                         {% else %}
-                          class="page-item"><a class="page-link" href="{{pageEntry}}">{{loop.index}}</a></li>
+                          class="page-item"><a class="page-link" href="{{pageEntry | url }}">{{loop.index}}</a></li>
                         {% endif %}
                     {% endfor %}
                     {% if pagination.href.next %}
-                    <li class="page-item"><a class="page-link" href="{{pagination.href.next}}">Next</a></li>
+                    <li class="page-item"><a class="page-link" href="{{pagination.href.next | url}}">Next</a></li>
                     {% endif %}
                   </ul>
                 </nav>

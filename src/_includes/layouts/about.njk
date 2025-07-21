@@ -49,7 +49,7 @@
             <div class="site-client-wrapper">
               {% for trustedClient in clients.trustedClients %}
               <div class="site-client-item">
-                <img src="{{trustedClient}}" alt="client-logo">
+                <img src="{{trustedClient | url}}" alt="client-logo">
               </div> 
               {% endfor %}
             </div>
@@ -72,7 +72,7 @@
           <div class="col-lg-4 col-md-6">
             <div class="site-team-member">
               <div class="site-team-member-image">
-                <img src="{{teamMember.img}}" alt="team-member">
+                <img src="{{teamMember.img | url}}" alt="team-member">
               </div>
               <div class="site-team-member-content">
                 <h3>{{teamMember.name}}</h3>

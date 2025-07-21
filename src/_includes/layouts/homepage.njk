@@ -15,7 +15,7 @@
               </h1>
               <ul class="site-hero-content-buttons">
                 <li>
-                  <a href="{{hero.seeWorkBtn.link}}" class="btn btn-secondary scroll-to">
+                  <a href="{{hero.seeWorkBtn.link | url }}" class="btn btn-secondary scroll-to">
                     <span class="btn-area">
                       <span data-text="{{hero.seeWorkBtn.text}}">
                         {{hero.seeWorkBtn.text}}
@@ -24,7 +24,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="/{{hero.connectBtn.link}}" class="btn btn-primary">
+                  <a href="/{{hero.connectBtn.link | url}}" class="btn btn-primary">
                     <span class="btn-area">
                       <span data-text="{{hero.connectBtn.text}}">
                         {{hero.connectBtn.text}}
@@ -75,18 +75,18 @@
           <div class="col-lg-6 col-md-10 mx-auto">
             <div class="site-project-item">
               <div class="site-project-item-thumb">
-                <img src="{{portfolio.data.img}}" alt="project-thumb">
+                <img src="{{portfolio.data.img | url}}" alt="project-thumb">
               </div>
               <div class="site-project-item-content">
                 <span>{{portfolio.data.subTitle}}</span>
                 <h3>{{portfolio.data.title}}</h3>
-                <a href="{{portfolio.data.page.url}}" class="read-more">{{portfolio.data.linkText}}</a>
+                <a href="{{portfolio.data.page.url }}" class="read-more">{{portfolio.data.linkText}}</a>
               </div>
             </div>
           </div>
           {% endfor %}
           <div class="col-12 text-center text-lg-start">
-            <a href="/{{portfolio.seeAllbtn.link}}" class="text-disrupt">{{portfolio.seeAllbtn.text}}</a>
+            <a href="/{{portfolio.seeAllbtn.link | url}}" class="text-disrupt">{{portfolio.seeAllbtn.text}}</a>
           </div>
         </div>
       </div>
@@ -110,7 +110,7 @@
             <div class="site-testimonial-item">
               <div class="site-testimonial-item-header">
                 <div class="thumb">
-                  <img src="{{opinion.img}}" alt="user-thumb">
+                  <img src="{{opinion.img| url}}" alt="user-thumb">
                 </div>
                 <div class="person">
                   <h5>{{opinion.name}}</h5>
