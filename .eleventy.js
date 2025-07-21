@@ -10,5 +10,6 @@ module.exports = function (eleventyConfig) {
       output: "_site",
       include: "includes",
     },
+    pathPrefix: "/100xbuilds/"
   };
 };
