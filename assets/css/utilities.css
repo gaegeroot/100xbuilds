@@ -4,15 +4,15 @@
    ========================================= */
 
 /* Background Classes */
-.bg-primary { background-color: var(--color-primary); }
-.bg-primary-light { background-color: var(--color-primary-light); }
-.bg-primary-dark { background-color: var(--color-primary-dark); }
-.bg-secondary { background-color: var(--color-secondary); }
-.bg-secondary-light { background-color: var(--color-secondary-light); }
-.bg-accent { background-color: var(--color-accent); }
-.bg-light { background-color: var(--color-bg-primary); }
-.bg-white { background-color: var(--color-bg-secondary); }
-.bg-authority {background: var(--gradient-authority); }
+.mybg-primary { background-color: var(--color-primary); }
+.mybg-primary-light { background-color: var(--color-primary-light); }
+.mybg-primary-dark { background-color: var(--color-primary-dark); }
+.mybg-secondary { background-color: var(--color-secondary); }
+.mybg-secondary-light { background-color: var(--color-secondary-light); }
+.mybg-accent { background-color: var(--color-accent); }
+.mybg-light { background-color: var(--color-bg-primary); }
+.mybg-white { background-color: var(--color-bg-secondary); }
+.mybg-authority {background: var(--gradient-authority); }
 
 /* Text Color Classes */
 .txt-primary { color: var(--color-primary); }

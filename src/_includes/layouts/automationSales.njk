@@ -48,7 +48,7 @@
         </div>
     </section>
     <!-- Value Props Section -->
-    <section class="bg-light">
+    <section class="mybg-light">
         <div class="container">
             <div class="row text-center">
                 {% for prop in automationSales.hero.valueProps %}
@@ -99,7 +99,7 @@
             </div>
         </div>
     </section>
-    <div class="section bg-authority">
+    <section class="site-cta">
         <div class="container">
             <div class="text-center py-5">
                 <div class="site-cta-title h3 mb-4">{{ automationSales.problems.calculation | safe }}</div>
@@ -112,7 +112,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <section class="bg-white pt-5">
         <div
             class="container">
@@ -140,6 +140,7 @@
             </div>
         </div>
     </section>
+    <!-- Solution Section -->
     <section>
         <div class="container">
             <div class="row">
@@ -156,36 +157,48 @@
                         <div class="row">
                             {% for component in automationSales.solution.components %}
                                 <div class="col-md-6 mb-4">
-                                    <div class="site-project-single bg-white p-4 h-100">
-                                        <div class="d-flex align-items-start">
-                                            <div class="me-3 text-success fs-4">✓</div>
-                                            <p class="mb-0">{{ component }}</p>
+                                    <div class="site-project-single bg-white p-4 h-100 border-0 shadow-sm">
+                                        <div class="d-flex align-items-start mb-3">
+                                            <div class="me-3 text-success fs-3">✓</div>
+                                            <div class="flex-grow-1">
+                                                <h4 class="h5 mb-1 txt-primary">{{ component.title }}</h4>
+                                                <p class="small text-muted mb-0 fw-medium">{{ component.subtitle }}</p>
+                                            </div>
                                         </div>
+                                        <p class="mb-0 text-body-secondary">{{ component.description }}</p>
                                     </div>
                                 </div>
                             {% endfor %}
                         </div>
-                    </div>
-                    <!-- Performance Guarantee -->
-                    <div class="site-cta">
-                        <div class="site-cta-title h2">{{ automationSales.solution.guarantee.title }}</div>
-                        <p class="lead mb-4">{{ automationSales.solution.guarantee.description }}</p>
-                        <div class="row mb-4">
-                            {% for metric in automationSales.solution.guarantee.metrics %}
-                                <div class="col-md-6 mb-2">
-                                    <div class="d-flex align-items-center justify-content-center">
-                                        <div class="me-2">•</div>
-                                        <span>{{ metric }}</span>
-                                    </div>
-                                </div>
-                            {% endfor %}
-                        </div>
-                        <div class="site-cta-title h3">{{ automationSales.solution.guarantee.promise }}</div>
                     </div>
                 </div>
             </div>
         </div>
-    </section><!-- Process Section --><section>
+    </section>
+    <!-- Performance Guarantee Section -->
+    <section class="site-cta">
+        <div class="text-center">
+            <div class="site-cta-title h2 mb-3">{{ automationSales.solution.guarantee.title }}</div>
+            <p class="lead txt-secondary mb-5 col-lg-8 mx-auto">{{ automationSales.solution.guarantee.description }}</p>
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 col-xl-6">
+                    <div class="row">
+                        {% for metric in automationSales.solution.guarantee.metrics %}
+                            <div class="col-md-6 mb-3">
+                                <div class="d-flex align-items-center">
+                                    <span class="txt-secondary me-2 fs-5" style="min-width: 24px;">✓</span>
+                                    <p class="mb-0 text-white">{{ metric }}</p>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            <div class="site-cta-title h3 mt-4">{{ automationSales.solution.guarantee.promise }}</div>
+        </div>
+    </section>
+    <!-- Process Section -->
+    <section class="pt-5">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -219,31 +232,35 @@
                                     </div>
                                 {% endfor %}
                             </div>
-                            <div class="site-cta p-4">
-                                <h5 class="mb-2">Deliverable:</h5>
-                                <p class="mb-0">{{ phase.deliverable }}</p>
+                            <div
+                                class="mybg-light border border-secondary rounded p-4 text-center position-relative"
+                                style="border-width: 2px !important;">
+                                <div class="position-absolute top-0 start-50 translate-middle">
+                                    <span
+                                        class="mybg-secondary txt-white px-3 py-1 rounded text-uppercase small font-semibold"
+                                        style="font-size: 0.75rem; letter-spacing: 0.06em;">Deliverable</span>
+                                </div>
+                                <div class="mt-3">
+                                    <p class="mb-0 txt-primary font-medium" style="font-size: 1.125rem;">{{ phase.deliverable }}</p>
+                                </div>
                             </div>
                         </div>
                     {% endfor %}
                 </div>
             </div>
         </div>
-    </section><!-- What's Included Section --><section>
+    </section>
+    <!-- What's Included Section -->
+    <section>
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 mx-auto">
                     <div class="section-title text-center mb-5">
                         <h2>{{ automationSales.included.title }}</h2>
                         <div class="mb-4">
-                            <span class="h3 text-muted">Total Value:
-                            </span>
-                            <span class="h2 txt-primary">{{ automationSales.included.totalValue }}</span>
-                            <span class="mx-3">|</span>
-                            <span class="h3 text-muted">Investment:
-                            </span>
-                            <span class="h2 txt-secondary">{{ automationSales.included.investment }}</span>
+                            <span class="h2 txt-primary">{{ automationSales.included.investment }}</span>
                         </div>
-                        <p class="text-muted fst-italic">{{ automationSales.included.note }}</p>
+                        <p class="text-muted fst-italic">{{ automationSales.included.subtitle }}</p>
                     </div>
                     {% for category in automationSales.included.components %}
                         <div class="mb-5">
@@ -266,12 +283,14 @@
                 </div>
             </div>
         </div>
-    </section><!-- Timeline & Results Section --><section>
+    </section>
+    <!-- Timeline & Results Section -->
+    <section class="mybg-primary-light py-5 mb-5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 mx-auto">
                     <div class="section-title text-center mb-5">
-                        <h2>{{ automationSales.timeline.title }}</h2>
+                        <h2 class="text-white">{{ automationSales.timeline.title }}</h2>
                     </div>
                     <div class="row">
                         {% for milestone in automationSales.timeline.milestones %}
@@ -295,7 +314,9 @@
                 </div>
             </div>
         </div>
-    </section><!-- Case Studies Section --><section>
+    </section>
+    <!-- Case Studies Section -->
+    <section>
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -341,7 +362,9 @@
                 </div>
             </div>
         </div>
-    </section><!-- Objection Handling Section --><section>
+    </section>
+    <!-- Objection Handling Section -->
+    <section>
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 mx-auto">
@@ -363,35 +386,40 @@
                 </div>
             </div>
         </div>
-    </section><!-- FAQ Section --><section class="site-project-single-section">
+    </section>
+    <!-- FAQ Section -->
+    <section class="site-project-single-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 mx-auto">
                     <div class="section-title text-center mb-5">
                         <h2>Frequently Asked Questions</h2>
                     </div>
+                    {% set outerLoop = loop %}
                     {% for category in automationSales.faq %}
+                        {% set categoryNum = loop.index %}
                         <div class="mb-5">
                             <h3 class="txt-primary mb-4">{{ category.category }}</h3>
-                            <div class="accordion" id="faq{{ loop.index }}">
+                            <div class="accordion" id="faqAccordion{{ categoryNum }}">
                                 {% for question in category.questions %}
+                                    {% set questionNum = loop.index %}
                                     <div class="accordion-item mb-3 rounded overflow-hidden border">
-                                        <h2 class="accordion-header" id="heading{{ loop.parent.loop.index }}{{ loop.index }}">
+                                        <h2 class="accordion-header" id="faqHeading{{ categoryNum }}{{ questionNum }}">
                                             <button
                                                 class="accordion-button collapsed"
                                                 type="button"
                                                 data-bs-toggle="collapse"
-                                                data-bs-target="#collapse{{ loop.parent.loop.index }}{{ loop.index }}"
+                                                data-bs-target="#faqCollapse{{ categoryNum }}{{ questionNum }}"
                                                 aria-expanded="false"
-                                                aria-controls="collapse{{ loop.parent.loop.index }}{{ loop.index }}">
+                                                aria-controls="faqCollapse{{ categoryNum }}{{ questionNum }}">
                                                 {{ question.question }}
                                             </button>
                                         </h2>
                                         <div
-                                            id="collapse{{ loop.parent.loop.index }}{{ loop.index }}"
+                                            id="faqCollapse{{ categoryNum }}{{ questionNum }}"
                                             class="accordion-collapse collapse"
-                                            aria-labelledby="heading{{ loop.parent.loop.index }}{{ loop.index }}"
-                                            data-bs-parent="#faq{{ loop.parent.loop.index }}">
+                                            aria-labelledby="faqHeading{{ categoryNum }}{{ questionNum }}"
+                                            data-bs-parent="#faqAccordion{{ categoryNum }}">
                                             <div class="accordion-body">
                                                 {{ question.answer }}
                                             </div>
@@ -404,86 +432,76 @@
                 </div>
             </div>
         </div>
-    </section><!-- Final CTA Section --><section class="site-cta">
+    </section>
+    <!-- Final CTA Section -->
+    <section class="site-cta">
         <div class="container">
             <div class="row">
-                <div class="col-lg-10 mx-auto text-center">
+                <div class="col-lg-8 mx-auto text-center">
                     <div class="site-cta-title">{{ automationSales.finalCta.title }}</div>
                     <h3 class="h2 txt-secondary mb-5">{{ automationSales.finalCta.subtitle }}</h3>
-                    <!-- Timeline -->
-                    <div class="mb-5">
-                        {% for timeline in automationSales.finalCta.timeline %}
-                            <div class="mb-3 p-3 bg-white bg-opacity-10 rounded">
-                                <span class="text-white h5">{{ timeline }}</span>
+                    <!-- Core Promise - Simplified -->
+                    <div class="mb-5 p-5 bg-white bg-opacity-10 rounded-3 border border-white border-opacity-20">
+                        <h3 class="text-white mb-4 fw-normal fs-3">
+                            The question isn't whether automation works for luxury builders.<br>
+                                <strong class="txt-secondary">The question is: How much profit are you losing each month without it?</strong>
+                            </h3>
+                            <div class="mt-4 pt-4 border-top border-white border-opacity-20">
+                                <span class="txt-secondary h5">90-Day Guarantee:</span>
+                                <span class="text-white h5">15-25% efficiency improvement or full refund</span>
                             </div>
-                        {% endfor %}
-                    </div>
-                    <div class="mb-5 p-4 bg-white bg-opacity-15 rounded">
-                        <h3 class="text-white mb-3">{{ automationSales.finalCta.question }}</h3>
-                    </div>
-                    <!-- ROI Analysis Offer -->
-                    <div class="mb-5">
-                        <h3 class="txt-secondary mb-4">{{ automationSales.finalCta.offer.title }}</h3>
-                        <div class="row mb-4">
-                            {% for benefit in automationSales.finalCta.offer.benefits %}
-                                <div class="col-md-6 mb-3">
-                                    <div class="d-flex align-items-center justify-content-center text-white">
-                                        <div class="me-2 txt-secondary">✓</div>
-                                        <span>{{ benefit }}</span>
+                        </div>
+                        <!-- Exclusive Offer -->
+                        <div class="mb-5">
+                            <h3 class="txt-secondary mb-4 fs-2">Exclusive: Free $4,997 Strategic Assessment</h3>
+                            <div class="row justify-content-center mb-4">
+                                <div class="col-md-5 mb-3">
+                                    <div class="text-white">
+                                        <div class="txt-secondary h6 mb-2">WHAT YOU GET:</div>
+                                        <div class="small">Complete profit analysis & custom ROI projection</div>
                                     </div>
                                 </div>
-                            {% endfor %}
-                        </div>
-                        <p class="text-white fst-italic">{{ automationSales.finalCta.offer.disclaimer }}</p>
-                    </div>
-                    <!-- CTA Buttons -->
-                    <div class="mb-5">
-                        <div class="site-cta-buttons">
-                            {% for button in automationSales.finalCta.buttons %}
-                                <li>
-                                    {% if button.type == 'primary' %}
-                                        <a href="{{ button.link }}" class="btn btn-secondary btn-lg">
-                                            {{ button.text }}
-                                        </a>
-                                    {% else %}
-                                        <a href="{{ button.link }}" class="btn btn-outline btn-lg">
-                                            {{ button.text }}
-                                        </a>
-                                    {% endif %}
-                                </li>
-                            {% endfor %}
-                        </div>
-                    </div>
-                    <!-- Contact Info -->
-                    <div class="mb-4">
-                        <div class="row text-white">
-                            <div class="col-md-4 mb-2">
-                                <strong class="txt-secondary">Phone:</strong>
-                                {{ automationSales.finalCta.contact.phone }}
-                            </div>
-                            <div class="col-md-4 mb-2">
-                                <strong class="txt-secondary">Email:</strong>
-                                {{ automationSales.finalCta.contact.email }}
-                            </div>
-                            <div class="col-md-4 mb-2">
-                                <strong class="txt-secondary">Address:</strong>
-                                {{ automationSales.finalCta.contact.address }}
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Trust Indicators -->
-                    <div class="row">
-                        {% for indicator in automationSales.finalCta.trustIndicators %}
-                            <div class="col-md-3 col-6 mb-2">
-                                <div class="d-flex align-items-center justify-content-center text-white">
-                                    <div class="me-2 txt-secondary">🏆</div>
-                                    <small>{{ indicator }}</small>
+                                <div class="col-md-5 mb-3">
+                                    <div class="text-white">
+                                        <div class="txt-secondary h6 mb-2">INVESTMENT:</div>
+                                        <div class="small">90 minutes of your time. Zero obligations.</div>
+                                    </div>
                                 </div>
                             </div>
-                        {% endfor %}
+                        </div>
+                        <!-- Primary CTA -->
+                        <div class="mb-5">
+                            <a href="{{ automationSales.finalCta.buttons[0].link }}" class="btn btn-secondary btn-lg px-5 py-3 mb-4 fs-5 fw-semibold">
+                                Schedule My Strategic Assessment
+                            </a>
+                            <div class="d-block">
+                                <a href="{{ automationSales.finalCta.buttons[1].link }}" class="btn btn-outline-light px-4 py-2">
+                                    View Case Studies First
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Contact - Streamlined -->
+                        <div class="mb-4 text-white small">
+                            <span class="txt-secondary">Direct Line:</span>
+                            {{ automationSales.finalCta.contact.phone }}
+                            <span class="mx-3">|</span>
+                            <span class="txt-secondary">Email:</span>
+                            {{ automationSales.finalCta.contact.email }}
+                        </div>
+                        <!-- Trust Indicators - Minimal -->
+                        <div class="row justify-content-center">
+                            <div class="col-auto mb-2">
+                                <small class="text-white opacity-75">🏆 100% Success Rate</small>
+                            </div>
+                            <div class="col-auto mb-2">
+                                <small class="text-white opacity-75">🛡️ Performance Guaranteed</small>
+                            </div>
+                            <div class="col-auto mb-2">
+                                <small class="text-white opacity-75">⭐ A+ BBB Rating</small>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-{% endblock %}
+        </section>
+    {% endblock %}

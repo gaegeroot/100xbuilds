@@ -50,11 +50,31 @@
     "title": "The Luxury Builder Automation System",
     "subtitle": "We're not another agency promising \"better marketing.\" We're operational efficiency partners who guarantee measurable profit improvements.",
     "components": [
-      "Project Management Automation (real-time progress tracking)",
-      "Client Communication Systems (luxury-grade experience delivery)",
-      "Financial Performance Tracking (profit optimization per project)",
-      "Quality Control Workflows (defect prevention, not detection)",
-      "Subcontractor Orchestration (seamless trade coordination)"
+      {
+        "title": "Project Management Automation",
+        "subtitle": "Real-Time Progress Intelligence",
+        "description": "Transform your project oversight with automated scheduling, milestone tracking, and predictive analytics that identify delays before they impact your timeline."
+      },
+      {
+        "title": "Client Communication Systems",
+        "subtitle": "Luxury-Grade Experience Delivery",
+        "description": "Exceed high-net-worth expectations with automated updates, personalized portals, and white-glove communication workflows that maintain your premium positioning."
+      },
+      {
+        "title": "Financial Performance Tracking",
+        "subtitle": "Profit Optimization Per Project",
+        "description": "Monitor real-time job costing, change order impacts, and margin analysis with dashboards that turn financial data into actionable profit improvements."
+      },
+      {
+        "title": "Quality Control Workflows",
+        "subtitle": "Defect Prevention, Not Detection",
+        "description": "Implement proactive quality assurance systems that catch issues during framing, not at final walkthrough, reducing punch lists by 60-80%."
+      },
+      {
+        "title": "Subcontractor Orchestration",
+        "subtitle": "Seamless Trade Coordination",
+        "description": "Automate scheduling, communication, and performance tracking across all trades, eliminating the chaos of manual coordination and reducing delays."
+      }
     ],
     "guarantee": {
       "title": "The Performance Guarantee",
@@ -153,9 +173,8 @@
   },
   "included": {
     "title": "Complete Automation Solution",
-    "totalValue": "$160K",
-    "investment": "$250K-$300K",
-    "note": "Higher investment reflects guaranteed performance improvements and ongoing optimization",
+    "investment": "Investment: $250K-$300K | Guaranteed Return: $500K-$1.2M annually",
+    "subtitle": "Based on 15-25% efficiency improvements for $15M+ builders",
     "components": [
       {
         "category": "Technology Implementation",
@@ -225,7 +244,7 @@
     ]
   },
   "timeline": {
-    "title": "What to Expect When",
+    "title": "What to Expect",
     "milestones": [
       {
         "timeframe": "30 Days: Foundation Complete",
@@ -418,44 +437,35 @@
   "finalCta": {
     "title": "Ready to Guarantee Your Profit Improvement?",
     "subtitle": "Your Next 90 Days Can Transform Your Business",
-    "timeline": [
-      "Day 30: Core systems operational, immediate efficiency gains visible",
-      "Day 60: Measurable improvements in every key metric",
-      "Day 90: 15-25% efficiency improvement validated or full refund"
-    ],
-    "question": "The question isn't whether automation works for luxury builders. The question is: How much profit are you losing each month without it?",
+    "coreMessage": {
+      "question": "The question isn't whether automation works for luxury builders. The question is: How much profit are you losing each month without it?",
+      "guarantee": "90-Day Guarantee: 15-25% efficiency improvement or full refund"
+    },
     "offer": {
-      "title": "Get Started: Free $4,997 ROI Analysis",
-      "benefits": [
-        "Complete operational efficiency assessment",
-        "Custom ROI projection for your business",
-        "Detailed implementation timeline",
-        "Performance guarantee validation"
-      ],
-      "disclaimer": "No obligations. No sales pressure. Just data-driven analysis of your profit improvement potential."
+      "title": "Exclusive: Free $4,997 Strategic Assessment",
+      "whatYouGet": "Complete profit analysis & custom ROI projection",
+      "investment": "90 minutes of your time. Zero obligations."
     },
     "buttons": [
       {
-        "text": "Schedule My Free ROI Analysis",
+        "text": "Schedule My Strategic Assessment",
         "link": "#consultation",
         "type": "primary"
       },
       {
-        "text": "Download Case Study Examples",
+        "text": "View Case Studies First",
         "link": "#case-studies",
         "type": "secondary"
       }
     ],
     "contact": {
       "phone": "409-896-1444",
-      "email": "info@100xbuilds.com",
-      "address": "8817 E 3rd St. Tucson, AZ 85710"
+      "email": "info@100xbuilds.com"
     },
     "trustIndicators": [
-      "Licensed & Insured",
-      "100% Success Rate Guarantee",
-      "Certified Luxury Builders Network Partner",
-      "A+ Better Business Bureau Rating"
+      "100% Success Rate",
+      "Performance Guaranteed",
+      "A+ BBB Rating"
     ]
   }
 }
