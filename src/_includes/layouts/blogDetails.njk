@@ -8,7 +8,7 @@
             <article class="site-blog-details">
               <p><span>{{postDate}}</span> by <span>{{author}}</span></p>
               <h2 class="blog-title">{{title}}</h2>
-              <img class="feature-image" src="{{featureImg}}" alt="blog-details-image">
+              <img class="feature-image" src="{{featureImg | url}}" alt="blog-details-image">
               {{content | safe}}
             </article>
             {% if collections.blogpost %}
@@ -16,8 +16,8 @@
             {% set previousPost = collections.blogpost | getPreviousCollectionItem(page) %}
             <div class="site-project-single-action d-flex justify-content-between mt-5">
               {% if previousPost%}
-              <a href="{{previousPost.url}}">
-                <img class="rev" src="/assets/images/to-top.svg" alt="next project">
+              <a href="{{previousPost.url | url}}">
+                <img class="rev" src="{{ '/assets/images/to-top.svg' | url}}" alt="next project">
                 <span class="link-area">
                   <span data-text="{{previousPost.data.title}}">
                     Previous Project
@@ -26,13 +26,13 @@
               </a>
               {% endif %}
               {% if nextPost %}
-              <a href="{{nextPost.url}}">
+              <a href="{{nextPost.url | url}}">
                 <span class="link-area">
                   <span data-text="{{nextPost.data.title}}">
                     Next Project
                   </span>
                 </span>
-                <img src="/assets/images/to-top.svg" alt="next project">
+                <img src="{{ '/assets/images/to-top.svg' | url }}" alt="next project">
               </a> 
               {% endif %} 
             </div>

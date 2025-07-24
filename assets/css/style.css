@@ -344,17 +344,11 @@ a {
 .site-counter {
   padding: 120px 0;
   background: var(--gradient-secondary);
-  color: var(--color-text-inverse);
   text-align: center;
 }
 
 .site-counter .section-title {
   margin-bottom: var(--spacing-4xl);
-}
-
-.site-counter .section-title h2,
-.site-counter .section-title p {
-  color: var(--color-text-inverse);
 }
 
 .site-counter-item {
@@ -364,7 +358,6 @@ a {
 .site-counter-item-number {
   font-size: var(--font-size-7xl);
   font-weight: var(--font-weight-bold);
-  color: var(--color-text-inverse);
   margin-bottom: var(--spacing-sm);
   display: block;
   font-family: var(--font-secondary);
@@ -374,7 +367,6 @@ a {
 .site-counter-item-title {
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-normal);
-  color: var(--color-text-inverse);
   text-transform: uppercase;
   letter-spacing: var(--letter-spacing-wide);
 }

@@ -18,9 +18,9 @@
 .txt-primary { color: var(--color-primary); }
 .txt-secondary { color: var(--color-secondary); }
 .txt-accent { color: var(--color-accent); }
-.txt-dark { color: var(--color-txt-primary); }
-.txt-medium { color: var(--color-txt-secondary); }
-.txt-light { color: var(--color-txt-light); }
+.txt-dark { color: var(--color-text-primary); }
+.txt-medium { color: var(--color-text-secondary); }
+.txt-light { color: var(--color-text-light); }
 .txt-white { color: var(--color-text-inverse); }
 
 /* Border Classes */

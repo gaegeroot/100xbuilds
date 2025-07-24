@@ -16,6 +16,6 @@ portfolio:
   subTitle: "OUR RECENT WORKS"
   title: "Crafting experiences and seeking to make the complex clear & beautiful."
   seeAllbtn:
-    link: "portfolio"
+    link: "/portfolio"
     text: "MORE WORKS"
 ---
