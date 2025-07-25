@@ -7,4 +7,3 @@ pagination:
   size: 3
   alias: posts
 ---
-

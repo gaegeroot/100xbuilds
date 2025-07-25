@@ -6,7 +6,6 @@ img: "/assets/images/blog/blog-the-smart-home-integration-business-50k-additiona
 btnText: "read more"
 author: "100XBuilds Team"
 featureImg: "/assets/images/blog/blog-the-smart-home-integration-business-50k-additional-revenue-per-project-feature.jpg"
-category: "Technology"
 ---
 
 # The Smart Home Integration Business: $50K+ Additional Revenue Per Project
