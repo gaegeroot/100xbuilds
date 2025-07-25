@@ -21,10 +21,12 @@
                 <div class="col-12">
                     <div class="blog-categories">
                         <span class="category-label">Topics:</span>
-                        <a href="{{ '/blog/' | url}}" class="category-link {% if page.url == '/blog/' %}active{% endif %}">All Insights</a>
-                        <a href="{{ '/blog/automation/' | url}}" class="category-link {% if page.url == '/blog/automation/' %}active{% endif %}">Automation</a>
-                        <a href="#" class="category-link">ROI Analysis</a>
-                        <a href="#" class="category-link">Case Studies</a>
+                        <a href="{{ '/blog/' | url }}" class="category-link {% if page.url == '/blog/' or page.url.startsWith('/blog/page-') %}active{% endif %}">All Insights</a>
+                        <a href="{{ '/blog/automation/' | url }}" class="category-link {% if page.url.startsWith('/blog/automation/') %}active{% endif %}">Automation</a>
+                        <a href="{{ '/blog/roi-analysis/' | url }}" class="category-link {% if page.url.startsWith('/blog/roi-analysis/') %}active{% endif %}">ROI Analysis</a>
+                        <a href="{{ '/blog/case-studies/' | url }}" class="category-link {% if page.url.startsWith('/blog/case-studies/') %}active{% endif %}">Case Studies</a>
+                        <a href="{{ '/blog/sales-systems/' | url }}" class="category-link {% if page.url.startsWith('/blog/sales-systems/') %}active{% endif %}">Sales Systems</a>
+                        <a href="{{ '/blog/industry-insights/' | url }}" class="category-link {% if page.url.startsWith('/blog/industry-insights/') %}active{% endif %}">Industry Insights</a>
                     </div>
                 </div>
             </div>

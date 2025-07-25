@@ -6,6 +6,8 @@ img: "/assets/images/blog/blog-post-01.jpg"
 btnText: "read more"
 author: "Byomkesh Bakshi"
 featureImg: "/assets/images/blog/blog-details-image.jpg"
+categories: ["roi-analysis"]
+tags: ["blogpost", "automation", "roi-analysis"]
 ---
 
 ### Black Lines brand identity, by & Smith
