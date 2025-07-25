@@ -19,14 +19,17 @@
             <!-- Category Navigation -->
             <div class="row">
                 <div class="col-12">
-                    <div class="blog-categories">
-                        <span class="category-label">Topics:</span>
-                        <a href="{{ '/blog/' | url }}" class="category-link {% if page.url == '/blog/' or page.url.startsWith('/blog/page-') %}active{% endif %}">All Insights</a>
-                        <a href="{{ '/blog/automation/' | url }}" class="category-link {% if page.url.startsWith('/blog/automation/') %}active{% endif %}">Automation</a>
-                        <a href="{{ '/blog/roi-analysis/' | url }}" class="category-link {% if page.url.startsWith('/blog/roi-analysis/') %}active{% endif %}">ROI Analysis</a>
-                        <a href="{{ '/blog/case-studies/' | url }}" class="category-link {% if page.url.startsWith('/blog/case-studies/') %}active{% endif %}">Case Studies</a>
-                        <a href="{{ '/blog/sales-systems/' | url }}" class="category-link {% if page.url.startsWith('/blog/sales-systems/') %}active{% endif %}">Sales Systems</a>
-                        <a href="{{ '/blog/industry-insights/' | url }}" class="category-link {% if page.url.startsWith('/blog/industry-insights/') %}active{% endif %}">Industry Insights</a>
+                    <div id="categoryContainer">
+                        <div class="category-links blog-categories" id="categoryScroll">
+                            <a href="{{ '/blog/' | url }}" class="category-link {% if page.url == '/blog/' or page.url.startsWith('/blog/page-') %}active{% endif %}">View All</a>
+                            <a href="{{ '/blog/business-operations/' | url }}" class="category-link {% if page.url.startsWith('/blog/business-operations/') %}active{% endif %}">Operations</a>
+                            <a href="{{ '/blog/automation/' | url }}" class="category-link {% if page.url.startsWith('/blog/automation/') %}active{% endif %}">Automation</a>
+                            <a href="{{ '/blog/financial-management/' | url }}" class="category-link {% if page.url.startsWith('/blog/financial-management/') %}active{% endif %}">Finances</a>
+                            <a href="{{ '/blog/growth-strategy/' | url }}" class="category-link {% if page.url.startsWith('/blog/growth-strategy/') %}active{% endif %}">Growth</a>
+                            <a href="{{ '/blog/market-insights/' | url }}" class="category-link {% if page.url.startsWith('/blog/market-insights/') %}active{% endif %}">Insights</a>
+                            <a href="{{ '/blog/sales-systems/' | url }}" class="category-link {% if page.url.startsWith('/blog/sales-systems/') %}active{% endif %}">Sales</a>
+                            <a href="{{ '/blog/technology/' | url }}" class="category-link {% if page.url.startsWith('/blog/technology/') %}active{% endif %}">Tech</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -49,32 +52,34 @@
                         </div>
                     {% endfor %}
                 </div>
-                <!-- Pagination -->
-                <div class="row">
-                    <div class="col-12">
-                        <div class="site-blog-pagination">
-                            <nav>
-                                <ul class="pagination">
-                                    {% if pagination.href.previous %}
-                                        <li class="page-item">
-                                            <a class="page-link" href="{{ pagination.href.previous | url }}">Previous</a>
-                                        </li>
-                                    {% endif %}
-                                    {% for pageEntry in pagination.hrefs %}
-                                        <li {% if page.url == pageEntry %} class='page-item active' {% else %} class='page-item' {% endif %}>
-                                            <a class="page-link" href="{{ pageEntry | url }}">{{ loop.index }}</a>
-                                        </li>
-                                    {% endfor %}
-                                    {% if pagination.href.next %}
-                                        <li class="page-item">
-                                            <a class="page-link" href="{{ pagination.href.next | url }}">Next</a>
-                                        </li>
-                                    {% endif %}
-                                </ul>
-                            </nav>
+                <!-- Pagination (Only show if more than one page) -->
+                {% if pagination.hrefs.length > 1 %}
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="site-blog-pagination">
+                                <nav>
+                                    <ul class="pagination">
+                                        {% if pagination.href.previous %}
+                                            <li class="page-item">
+                                                <a class="page-link" href="{{ pagination.href.previous | url }}">Previous</a>
+                                            </li>
+                                        {% endif %}
+                                        {% for pageEntry in pagination.hrefs %}
+                                            <li {% if page.url == pageEntry %} class='page-item active' {% else %} class='page-item' {% endif %}>
+                                                <a class="page-link" href="{{ pageEntry | url }}">{{ loop.index }}</a>
+                                            </li>
+                                        {% endfor %}
+                                        {% if pagination.href.next %}
+                                            <li class="page-item">
+                                                <a class="page-link" href="{{ pagination.href.next | url }}">Next</a>
+                                            </li>
+                                        {% endif %}
+                                    </ul>
+                                </nav>
+                            </div>
                         </div>
                     </div>
-                </div>
+                {% endif %}
                 <!-- Newsletter CTA -->
                 <div class="row">
                     <div class="col-12">

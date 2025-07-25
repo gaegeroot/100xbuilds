@@ -7,27 +7,39 @@ module.exports = function (eleventyConfig) {
         });
     });
 
-    eleventyConfig.addCollection("roiAnalysisPosts", function (collectionApi) {
+    eleventyConfig.addCollection("technologyPosts", function (collectionApi) {
         return collectionApi.getFilteredByTag("blogpost").filter(post => {
-            return post.data.categories && post.data.categories.includes('roi-analysis');
+            return post.data.categories && post.data.categories.includes('technology');
         });
     });
 
-    eleventyConfig.addCollection("caseStudiesPosts", function (collectionApi) {
+    eleventyConfig.addCollection("salesPosts", function (collectionApi) {
         return collectionApi.getFilteredByTag("blogpost").filter(post => {
-            return post.data.categories && post.data.categories.includes('case-studies');
+            return post.data.categories && post.data.categories.includes('sales');
         });
     });
 
-    eleventyConfig.addCollection("salesSystemsPosts", function (collectionApi) {
+    eleventyConfig.addCollection("operationsPosts", function (collectionApi) {
         return collectionApi.getFilteredByTag("blogpost").filter(post => {
-            return post.data.categories && post.data.categories.includes('sales-systems');
+            return post.data.categories && post.data.categories.includes('operations');
         });
     });
 
-    eleventyConfig.addCollection("industryInsightsPosts", function (collectionApi) {
+    eleventyConfig.addCollection("marketInsightPosts", function (collectionApi) {
         return collectionApi.getFilteredByTag("blogpost").filter(post => {
-            return post.data.categories && post.data.categories.includes('industry-insights');
+            return post.data.categories && post.data.categories.includes('insights');
+        });
+    });
+    
+    eleventyConfig.addCollection("growthPosts", function (collectionApi) {
+        return collectionApi.getFilteredByTag("blogpost").filter(post => {
+            return post.data.categories && post.data.categories.includes('growth');
+        });
+    });
+
+    eleventyConfig.addCollection("financePosts", function (collectionApi) {
+        return collectionApi.getFilteredByTag("blogpost").filter(post => {
+            return post.data.categories && post.data.categories.includes('finance');
         });
     });
 
