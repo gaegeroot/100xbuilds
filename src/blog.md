@@ -6,5 +6,4 @@ pagination:
   data: collections.blogpost
   size: 3
   alias: posts
-  permalink: "/blog/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber + 1 }}/{% endif %}"
 ---
