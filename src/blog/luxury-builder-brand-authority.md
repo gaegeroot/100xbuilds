@@ -11,8 +11,6 @@ categories: ["growth","sales"]
 
 A luxury home builder in Austin transformed their $3.2M annual revenue into $12.8M within 18 months—not by changing their construction methods, but by completely reimagining how they positioned themselves in the luxury market. The difference? They stopped competing on price and started commanding premium positioning through strategic brand authority.
 
-![]({{ '/assets/images/blog/blog-luxury-builder-brand-authority-1.jpg' | url}})
-
 ## The Authority Gap: Why Mid-Market Builders Struggle to Break Through
 
 The luxury home market operates on fundamentally different principles than traditional residential construction. While mid-market builders often succeed through competitive pricing and efficient delivery, luxury buyers make decisions based on prestige, exclusivity, and perceived expertise. This creates what we call the "authority gap"—the chasm between being a competent builder and being recognized as a luxury market leader.
