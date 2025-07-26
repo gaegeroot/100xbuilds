@@ -1,6 +1,6 @@
 ---
 layout: "layouts/blog.njk"
-title: "ROI Analysis Stuff"
+title: "Technology"
 des: "Discover how luxury home builders are streamlining operations, reducing costs, and improving efficiency through strategic automation and process optimization."
 pagination:
   data: collections.technologyPosts
