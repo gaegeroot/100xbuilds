@@ -6,7 +6,7 @@
         <div class="row justify-content-center">
           <div class="col-lg-8">
             <article class="site-blog-details">
-              <p><span>{{postDate}}</span> by <span>{{author}}</span></p>
+              <p><span>{{ postDate | postDate }}</span> by <span>{{author}}</span></p>
               <h2 class="blog-title">{{title}}</h2>
               <img class="feature-image" src="{{featureImg | url}}" alt="blog-details-image">
               {{content | safe}}

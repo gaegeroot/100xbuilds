@@ -1,3 +1,5 @@
+const { DateTime } = require("luxon");
+
 module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("assets");
 
@@ -30,7 +32,7 @@ module.exports = function (eleventyConfig) {
             return post.data.categories && post.data.categories.includes('insights');
         });
     });
-    
+
     eleventyConfig.addCollection("growthPosts", function (collectionApi) {
         return collectionApi.getFilteredByTag("blogpost").filter(post => {
             return post.data.categories && post.data.categories.includes('growth');
@@ -42,6 +44,10 @@ module.exports = function (eleventyConfig) {
             return post.data.categories && post.data.categories.includes('finance');
         });
     });
+
+    eleventyConfig.addFilter("postDate", (dateObj) => {
+    return DateTime.fromJSDate(new Date(dateObj)).toLocaleString(DateTime.DATE_FULL);
+  });
 
     return {
         passthroughFileCopy: true,

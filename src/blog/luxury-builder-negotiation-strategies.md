@@ -27,8 +27,6 @@ Luxury home buyers operate from a fundamentally different mindset than typical r
 
 This psychological foundation changes everything about how you approach negotiations. Instead of defending your pricing, you're positioning your services as the premium solution to their sophisticated requirements.
 
-![]({{ '/assets/images/blog/blog-luxury-builder-negotiation-strategies-1.jpg' | url}})
-
 ## Pre-Negotiation Intelligence: Know Before You Go
 
 The most successful luxury builders invest 40-60 hours in client research and project analysis before entering formal negotiations. This preparation phase determines whether you'll command premium pricing or find yourself competing on cost.

@@ -1,11 +1,11 @@
 ---
 title: "Succession Planning for Luxury Builders: Exit Strategy Guide"
 des: "Discover how luxury home builders create 2-3x revenue valuations through strategic succession planning. Expert strategies for family transition, strategic sales, and management buyouts."
-postDate: 2025-07-26"
-img: "/assets/images/blog/blog-luxury-builder-succession-planning-02.jpg"
+postDate: 2025-07-26
+img: "/assets/images/blog/blog-luxury-builder-succession-planning-2.jpg"
 btnText: "read more"
 author: "100XBuilds Team"
-featureImg: "/assets/images/blog/blog-luxury-builder-succession-planning-01.jpg"
+featureImg: "/assets/images/blog/blog-luxury-builder-succession-planning-1.jpg"
 categories: ["growth","finance"]
 ---
 
@@ -18,8 +18,6 @@ For luxury custom home builders generating $10M+ annually, succession planning i
 Most successful builders dramatically underestimate the complexity of creating a truly valuable, transferable business. While your craftsmanship and client relationships drive current success, buyers and successors evaluate entirely different metrics when determining value.
 
 Consider the stark reality: luxury construction companies typically sell for 0.8x to 1.5x annual revenue, while systematically managed building enterprises command 2x to 3x revenue multiples. The difference lies in how transferable your business model truly is.
-
-![]({{ '/assets/images/blog/blog-luxury-builder-succession-planning-1.jpg' | url}})
 
 ### The Four Pillars of Transferable Value
 

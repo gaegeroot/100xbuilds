@@ -41,7 +41,7 @@
                             <div class="site-blog-post-thumb">
                                 <img src="{{ blogpost.data.img | url }}" alt="{{ blogpost.data.title }}"></div>
                                 <div class="site-blog-post-content">
-                                    <span>{{ blogpost.data.postDate }}</span>
+                                    <span>{{ blogpost.data.postDate | postDate }}</span>
                                     <h3>
                                         <a href="{{ blogpost.data.page.url | url }}">{{ blogpost.data.title }}</a>
                                     </h3>
