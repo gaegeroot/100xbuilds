@@ -60,8 +60,6 @@ How does smart home integration translate into hard numbers? Let's break it down
 - **Improved project timelines by 10%**
 - **Secured 3 new referrals from clients impressed by the turnkey experience**
 
-![]({{ '/assets/images/blog/blog-the-smart-home-integration-business-50k-additional-revenue-per-project-feature.jpg' | url}})
-
 ---
 
 ## Key Components of a Luxury Smart Home Integration
