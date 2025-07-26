@@ -24,8 +24,6 @@ High-net-worth individuals don't search for "cheap homes" or "quick builds." The
 
 This means your SEO strategy must capture these extended research phases while positioning your firm as the definitive authority in luxury construction.
 
-![]({{ '/assets/images/blog/blog-luxury-builder-seo-local-markets-1.jpg' | url}})
-
 ## Keyword Architecture for Million-Dollar Markets
 
 Forget broad keywords like "home builder." Luxury buyers search with precision, and your keyword strategy must match their sophistication. Here's the framework that's generated over $47M in trackable revenue for our luxury builder clients:

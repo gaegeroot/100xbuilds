@@ -21,8 +21,6 @@ Most $10M+ builders operate with incomplete financial intelligence. They track r
 
 This performance gap isn't accidental. Elite builders deploy sophisticated benchmarking frameworks that reveal exactly where profit leakage occurs and how to systematically eliminate it.
 
-![]({{ '/assets/images/blog/blog-luxury-builder-profit-margin-analysis-1.jpg' | url}})
-
 ## Deconstructing Elite Builder Margin Architecture
 
 ### The Four Pillars of Superior Profitability
