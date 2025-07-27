@@ -21,8 +21,6 @@ Traditional conversion tactics—pop-ups, countdown timers, aggressive CTAs—no
 
 > "We discovered that our highest-converting pages weren't our project galleries—they were our process explanation pages. Luxury buyers want to understand exactly how we'll manage their $5M investment before they'll even consider contacting us." - Principal, $12M annual revenue custom builder
 
-![]({{ '/assets/images/blog/blog-luxury-builder-website-conversion-optimization-1.jpg' | url}})
-
 ## The Luxury Conversion Framework: Beyond Basic Optimization
 
 ### 1. Trust-First Landing Page Architecture
