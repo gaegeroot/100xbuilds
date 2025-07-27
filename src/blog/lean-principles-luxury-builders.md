@@ -13,8 +13,6 @@ When Toll Brothers implemented lean principles across their luxury home building
 
 For luxury home builders generating $5M+ annually, operational inefficiencies aren't just costly—they're reputation killers. When a $2.8 million custom home experiences delays due to rework, material shortages, or coordination failures, the financial impact extends far beyond immediate costs to include client dissatisfaction, referral losses, and brand damage.
 
-![]({{ '/assets/images/blog/blog-lean-principles-luxury-builders-1.jpg' | url}})
-
 ## The Hidden Cost of Operational Waste in Luxury Construction
 
 Most luxury builders unknowingly operate with 25-40% waste embedded in their processes. This waste manifests in eight distinct forms that directly impact your bottom line:
