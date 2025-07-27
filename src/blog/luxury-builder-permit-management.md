@@ -21,8 +21,6 @@ The problem runs deeper than just time. Permit delays create cascading effects:
 - Client confidence erodes, leading to change orders and scope creep
 - Your reputation for on-time delivery suffers in a market where referrals drive 67% of new business
 
-![]({{ '/assets/images/blog/blog-luxury-builder-permit-management-1.jpg' | url}})
-
 ## The Strategic Framework for Permit Mastery
 
 ### Phase 1: Pre-Application Intelligence Gathering
