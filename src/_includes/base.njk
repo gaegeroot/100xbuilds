@@ -34,6 +34,14 @@
                     <a class="navbar-brand" href="{{ '/' | url }}">
                         <img src="{{ nav.navLogo | url }}" alt="nav-logo"/>
                     </a>
+                    <div class="d-flex align-items-center">
+                    <a class="nav-link btn btn-sm btn-primary btn-sm-rounded text-light d-lg-none me-2" href="{{ ('/' + nav.navBtnLink) | url }}">
+                        <span class="btn-area">
+                            <span data-text="{{ nav.navBtnText }}">
+                                {{ nav.navBtnText }}
+                            </span>
+                        </span>
+                    </a>
                     <button
                         class="navbar-toggler collapsed"
                         type="button"
@@ -46,6 +54,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
+                    </div>
                     <div class="collapse navbar-collapse" id="sitenavbar">
                         <ul class="navbar-nav ms-auto main-nav">
                             {% for navLink in nav.navLinks %}
@@ -57,7 +66,7 @@
                                     {% endif %}
                                 </li>
                             {% endfor %}
-                            <li class="nav-item">
+                            <li class="d-none d-lg-block nav-item">
                                 <a class="nav-link btn btn-sm btn-primary btn-sm-rounded text-light" href="{{ ('/' + nav.navBtnLink) | url }}">
                                     <span class="btn-area">
                                         <span data-text="{{ nav.navBtnText }}">
@@ -108,7 +117,8 @@
         {% block footer %}
             <footer class="site-footer">
                 <div class="container">
-                    <div class="row">
+                    <div
+                        class="row">
                         {# <div class="col-12"></div> #}
                         <div class="col-lg-3 col-md-6">
                             <div class="site-footer-widget">
@@ -117,11 +127,11 @@
                                         <img src="{{ footer.footerLogo | url }}" alt="logo-footer" width="100">
                                     </a>
                                 </div>
-                                <p class="site-footer-widget-description">
-                                    {# {% for contactInfo in footer.contactsInfo %}
-                                        <a href="{{ contactInfo.link }}">{{ contactInfo.text }}</a>
-                                        <br>
-                                    {% endfor %} #}
+                                <p
+                                    class="site-footer-widget-description">{# {% for contactInfo in footer.contactsInfo %}
+                                                                                <a href="{{ contactInfo.link }}">{{ contactInfo.text }}</a>
+                                                                                <br>
+                                                                            {% endfor %} #}
                                 </p>
                             </div>
                         </div>
