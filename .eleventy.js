@@ -3,51 +3,45 @@ const { DateTime } = require("luxon");
 module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("assets");
 
-    eleventyConfig.addCollection("automationPosts", function (collectionApi) {
-        return collectionApi.getFilteredByTag("blogpost").filter(post => {
-            return post.data.categories && post.data.categories.includes('automation');
+    const blogCategories = [
+        'automation',
+        'technology',
+        'sales',
+        'operations',
+        'insights',
+        'growth',
+        'finance'
+    ];
+
+    // Helper function to sort posts by date (newest first)
+    const sortPostsByDate = (posts) => {
+        return posts.sort((a, b) => {
+            return new Date(b.data.postDate || b.date) - new Date(a.data.postDate || a.date);
         });
+    };
+
+    // Main blogpost collection
+    eleventyConfig.addCollection("blogpost", function (collectionApi) {
+        return sortPostsByDate(collectionApi.getFilteredByTag("blogpost"));
     });
 
-    eleventyConfig.addCollection("technologyPosts", function (collectionApi) {
-        return collectionApi.getFilteredByTag("blogpost").filter(post => {
-            return post.data.categories && post.data.categories.includes('technology');
-        });
-    });
+    // Generate category collections dynamically
+    blogCategories.forEach(category => {
+        const collectionName = `${category}Posts`;
 
-    eleventyConfig.addCollection("salesPosts", function (collectionApi) {
-        return collectionApi.getFilteredByTag("blogpost").filter(post => {
-            return post.data.categories && post.data.categories.includes('sales');
-        });
-    });
+        eleventyConfig.addCollection(collectionName, function (collectionApi) {
+            const filteredPosts = collectionApi.getFilteredByTag("blogpost")
+                .filter(post => {
+                    return post.data.categories && post.data.categories.includes(category);
+                });
 
-    eleventyConfig.addCollection("operationsPosts", function (collectionApi) {
-        return collectionApi.getFilteredByTag("blogpost").filter(post => {
-            return post.data.categories && post.data.categories.includes('operations');
-        });
-    });
-
-    eleventyConfig.addCollection("marketInsightPosts", function (collectionApi) {
-        return collectionApi.getFilteredByTag("blogpost").filter(post => {
-            return post.data.categories && post.data.categories.includes('insights');
-        });
-    });
-
-    eleventyConfig.addCollection("growthPosts", function (collectionApi) {
-        return collectionApi.getFilteredByTag("blogpost").filter(post => {
-            return post.data.categories && post.data.categories.includes('growth');
-        });
-    });
-
-    eleventyConfig.addCollection("financePosts", function (collectionApi) {
-        return collectionApi.getFilteredByTag("blogpost").filter(post => {
-            return post.data.categories && post.data.categories.includes('finance');
+            return sortPostsByDate(filteredPosts);
         });
     });
 
     eleventyConfig.addFilter("postDate", (dateObj) => {
-    return DateTime.fromJSDate(new Date(dateObj)).toLocaleString(DateTime.DATE_FULL);
-  });
+        return DateTime.fromJSDate(new Date(dateObj)).toLocaleString(DateTime.DATE_FULL);
+    });
 
     return {
         passthroughFileCopy: true,
