@@ -11,8 +11,6 @@ categories: ["sales","technology"]
 
 A luxury home builder in Austin recently slashed their cost-per-qualified-lead from $847 to $312 while increasing lead volume by 73% in just 90 days. The secret? A precision-engineered Google Ads strategy that treats every dollar like it's coming from their own pocket.
 
-![]({{ '/assets/images/blog/blog-google-ads-luxury-builders-lead-generation-1.jpg' | url}})
-
 Most luxury builders hemorrhage money on Google Ads because they approach it like traditional advertising. They cast wide nets, hope for the best, and wonder why their $10,000 monthly ad spend generates leads that never convert. The reality is brutal: **94% of luxury home builder Google Ads campaigns fail to achieve profitable ROAS within the first six months.**
 
 ## The $2.3M Revenue Gap: Why Traditional Google Ads Fail Luxury Builders
