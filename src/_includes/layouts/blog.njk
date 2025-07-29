@@ -21,14 +21,11 @@
                 <div class="col-12">
                     <div id="categoryContainer">
                         <div class="category-links blog-categories" id="categoryScroll">
-                            <a href="{{ '/blog/' | url }}" class="category-link {% if page.url == '/blog/' or page.url.startsWith('/blog/page-') %}active{% endif %}">View All</a>
-                            <a href="{{ '/blog/business-operations/' | url }}" class="category-link {% if page.url.startsWith('/blog/business-operations/') %}active{% endif %}">Operations</a>
-                            <a href="{{ '/blog/automation/' | url }}" class="category-link {% if page.url.startsWith('/blog/automation/') %}active{% endif %}">Automation</a>
-                            <a href="{{ '/blog/financial-management/' | url }}" class="category-link {% if page.url.startsWith('/blog/financial-management/') %}active{% endif %}">Finances</a>
-                            <a href="{{ '/blog/growth-strategy/' | url }}" class="category-link {% if page.url.startsWith('/blog/growth-strategy/') %}active{% endif %}">Growth</a>
-                            <a href="{{ '/blog/market-insights/' | url }}" class="category-link {% if page.url.startsWith('/blog/market-insights/') %}active{% endif %}">Insights</a>
-                            <a href="{{ '/blog/sales-systems/' | url }}" class="category-link {% if page.url.startsWith('/blog/sales-systems/') %}active{% endif %}">Sales</a>
-                            <a href="{{ '/blog/technology/' | url }}" class="category-link {% if page.url.startsWith('/blog/technology/') %}active{% endif %}">Tech</a>
+                            {% for key, cat in blogCategories %}
+                                <a href="{{ cat.url | url }}" class="category-link {% if category == key %}active{% endif %}">
+                                    {{ cat.name }}
+                                </a>
+                            {% endfor %}
                         </div>
                     </div>
                 </div>
@@ -39,7 +36,7 @@
                     <div class="col-lg-6 col-md-6">
                         <article class="site-blog-post">
                             <div class="site-blog-post-thumb">
-                                <img src="{{ blogpost.data.img | url }}" alt="{{ blogpost.data.title }}"></div>
+                                <img src="{{ blogpost.data.featureImg | url }}" alt="{{ blogpost.data.title }}"></div>
                                 <div class="site-blog-post-content">
                                     <span>{{ blogpost.data.postDate | postDate }}</span>
                                     <h3>

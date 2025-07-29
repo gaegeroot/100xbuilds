@@ -1,0 +1,34 @@
+{
+  "all": {
+    "name": "View All",
+    "url": "/blog/"
+  },
+  "operations": {
+    "name": "Operations", 
+    "url": "/blog/business-operations/"
+  },
+  "automation": {
+    "name": "Automation",
+    "url": "/blog/automation/"
+  },
+  "finance": {
+    "name": "Finances",
+    "url": "/blog/financial-management/"
+  },
+  "growth": {
+    "name": "Growth",
+    "url": "/blog/growth-strategy/"
+  },
+  "insights": {
+    "name": "Insights", 
+    "url": "/blog/market-insights/"
+  },
+  "sales": {
+    "name": "Sales",
+    "url": "/blog/sales-systems/"
+  },
+  "technology": {
+    "name": "Tech",
+    "url": "/blog/technology/"
+  }
+}

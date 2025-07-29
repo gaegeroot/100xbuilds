@@ -2,7 +2,6 @@
 title: "SEO for Luxury Home Builders: Dominate Local Markets"
 des: "Discover how luxury builders generate $23M+ in qualified leads through strategic SEO. Complete guide to keywords, content, and local dominance tactics."
 postDate: 2025-07-26
-img: "/assets/images/blog/blog-luxury-builder-seo-local-markets-2.jpg"
 btnText: "read more"
 author: "100XBuilds Team"
 featureImg: "/assets/images/blog/blog-luxury-builder-seo-local-markets-1.jpg"

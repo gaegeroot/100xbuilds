@@ -2,7 +2,6 @@
 title: "Luxury Builder Negotiation: Million-Dollar Contract Strategies"
 des: "Master high-stakes negotiation tactics that close $3M+ luxury home contracts. Learn psychology-driven strategies, value positioning, and margin-protecting techniques."
 postDate: 2025-07-26
-img: "/assets/images/blog/blog-luxury-builder-negotiation-strategies-2.jpg"
 btnText: "read more"
 author: "100XBuilds Team"
 featureImg: "/assets/images/blog/blog-luxury-builder-negotiation-strategies-1.jpg"

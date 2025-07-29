@@ -2,7 +2,6 @@
 title: "Succession Planning for Luxury Builders: Exit Strategy Guide"
 des: "Discover how luxury home builders create 2-3x revenue valuations through strategic succession planning. Expert strategies for family transition, strategic sales, and management buyouts."
 postDate: 2025-07-26
-img: "/assets/images/blog/blog-luxury-builder-succession-planning-2.jpg"
 btnText: "read more"
 author: "100XBuilds Team"
 featureImg: "/assets/images/blog/blog-luxury-builder-succession-planning-1.jpg"

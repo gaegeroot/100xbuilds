@@ -2,7 +2,6 @@
 title: "Google Ads for Luxury Builders: Cut Lead Costs by 63%"
 des: "Discover how luxury builders slash Google Ads costs from $847 to $312 per lead while boosting volume 73%. Get proven strategies and benchmarks."
 postDate: 2025-07-29
-img: "/assets/images/blog/blog-google-ads-luxury-builders-lead-generation-2.jpg"
 btnText: "read more"
 author: "100XBuilds Team"
 featureImg: "/assets/images/blog/blog-google-ads-luxury-builders-lead-generation-1.jpg"

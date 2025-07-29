@@ -2,7 +2,6 @@
 title: "Lean Principles for Luxury Builders: Cut Waste & Boost ROI"
 des: "Discover how luxury home builders reduce construction time by 23% and cut waste $2.3M annually using proven lean principles. Get your implementation roadmap."
 postDate: 2025-07-27
-img: "/assets/images/blog/blog-lean-principles-luxury-builders-2.jpg"
 btnText: "read more"
 author: "100XBuilds Team"
 featureImg: "/assets/images/blog/blog-lean-principles-luxury-builders-1.jpg"

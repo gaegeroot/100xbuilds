@@ -2,6 +2,7 @@
 layout: "layouts/blog.njk"
 title: "Growth Strategy"
 des: "Discover how luxury home builders are streamlining operations, reducing costs, and improving efficiency through strategic automation and process optimization."
+category: "growth"
 pagination:
   data: collections.growthPosts
   size: 6

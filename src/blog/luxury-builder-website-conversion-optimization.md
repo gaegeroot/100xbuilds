@@ -2,7 +2,6 @@
 title: "Luxury Builder Website Conversion: 1.2% to 4.8% in 90 Days"
 des: "Discover how a Scottsdale luxury builder increased website conversions 300% and generated $2.3M in additional leads using proven optimization strategies."
 postDate: 2025-07-27
-img: "/assets/images/blog/blog-luxury-builder-website-conversion-optimization-2.jpg"
 btnText: "read more"
 author: "100XBuilds Team"
 featureImg: "/assets/images/blog/blog-luxury-builder-website-conversion-optimization-1.jpg"

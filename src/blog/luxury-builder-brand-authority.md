@@ -2,7 +2,6 @@
 title: "Luxury Builder Brand Authority: $3.2M to $12.8M Growth Guide"
 des: "Transform your building business into a luxury market authority. Learn proven strategies that grew one Austin builder 400% in 18 months through strategic positioning."
 postDate: 2025-07-26
-img: "/assets/images/blog/blog-luxury-builder-brand-authority-2.jpg"
 btnText: "read more"
 author: "100XBuilds Team"
 featureImg: "/assets/images/blog/blog-luxury-builder-brand-authority-1.jpg"

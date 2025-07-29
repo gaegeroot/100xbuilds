@@ -2,10 +2,9 @@
 title: "Luxury Builder Vendor Optimization: Strategic Supply Chain"
 des: "Discover how luxury builders reduce vendor bases 23% while boosting project completion 18%. Strategic vendor relationship optimization drives competitive advantage."
 postDate: 2025-07-29
-img: "/assets/images/blog/blog-luxury-builder-vendor-optimization-2.jpg"
 btnText: "read more"
 author: "100XBuilds Team"
-featureImg: "/assets/images/blog/blog-luxury-builder-vendor-optimization-1.jpg"
+featureImg: "/assets/images/blog/blog-luxury-builder-vendor-optimization-feature.jpg"
 categories: ["operations","growth"]
 ---
 

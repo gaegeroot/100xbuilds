@@ -2,7 +2,6 @@
 title: "Subcontractor Management for Luxury Builders: Strategic Networks"
 des: "Discover how luxury home builders save $340K+ per project through strategic subcontractor management. Build reliable trade networks that eliminate delays."
 postDate: 2025-07-26
-img: "/assets/images/blog/blog-luxury-builder-subcontractor-management-2.jpg"
 btnText: "read more"
 author: "100XBuilds Team"
 featureImg: "/assets/images/blog/blog-luxury-builder-subcontractor-management-1.jpg"

@@ -2,7 +2,6 @@
 title: "The Smart Home Integration Business: $50K+ Additional Revenue Per Project"
 des: "In the luxury custom home industry, innovation is no longer optional—it’s expected. Discerning clients demand not just architectural brilliance but al..."
 postDate: "Jul 24 2025"
-img: "/assets/images/blog/blog-the-smart-home-integration-business-50k-additional-revenue-per-project-main.jpg"
 btnText: "read more"
 author: "100XBuilds Team"
 featureImg: "/assets/images/blog/blog-the-smart-home-integration-business-50k-additional-revenue-per-project-feature.jpg"

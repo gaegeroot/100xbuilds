@@ -2,7 +2,6 @@
 title: "Profit Margin Analysis: Luxury Builder Benchmarking Guide"
 des: "Discover how luxury builders increased margins from 18% to 26% in 18 months. Learn benchmarking strategies that top-quartile builders use to achieve 28-35% margins."
 postDate: 2025-07-26
-img: "/assets/images/blog/blog-luxury-builder-profit-margin-analysis-2.jpg"
 btnText: "read more"
 author: "100XBuilds Team"
 featureImg: "/assets/images/blog/blog-luxury-builder-profit-margin-analysis-1.jpg"

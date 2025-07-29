@@ -2,7 +2,6 @@
 title: "Luxury Builder Permit Management: Cut 127 Days Off Timeline"
 des: "Discover how luxury builders save $340K+ per project with strategic permit management. Streamline approvals, reduce delays, boost profits."
 postDate: 2025-07-27
-img: "/assets/images/blog/blog-luxury-builder-permit-management-2.jpg"
 btnText: "read more"
 author: "100XBuilds Team"
 featureImg: "/assets/images/blog/blog-luxury-builder-permit-management-1.jpg"
