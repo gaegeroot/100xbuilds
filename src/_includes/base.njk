@@ -1,8 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8"/>
-        <title>100xBuilds - Marketing & Sales Systems for Luxury Custom Home Builders</title>
+        <meta
+        charset="utf-8"/>
+        {# Dynamic SEO Title - Use page title if available, otherwise site default #}
+        {% if title %}
+            <title>{{ title }} | 100XBuilds</title>
+        {% else %}
+            <title>100XBuilds - Marketing & Sales Automation for Luxury Custom Home Builders</title>
+        {% endif %}
+        {# Dynamic Meta Description - Use page description if available #}
+        {% if des %}
+            <meta name="description" content="{{ des }}">
+        {% else %}
+            <meta
+                name="description"
+                content="100XBuilds provides marketing automation, sales systems, and business operations solutions for luxury custom
+                    home builders with $5M+ annual revenue. Guaranteed ROI improvements.">
+        {% endif %}
+        
         <meta name="generator" content="Eleventy">
         <meta name="robots" content="noindex, Nofollow, Noimageindex">
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -35,25 +51,25 @@
                         <img src="{{ nav.navLogo | url }}" alt="nav-logo"/>
                     </a>
                     <div class="d-flex align-items-center">
-                    <a class="nav-link btn btn-sm btn-primary btn-sm-rounded text-light d-lg-none me-2" href="{{ ('/' + nav.navBtnLink) | url }}">
-                        <span class="btn-area">
-                            <span data-text="{{ nav.navBtnText }}">
-                                {{ nav.navBtnText }}
+                        <a class="nav-link btn btn-sm btn-primary btn-sm-rounded text-light d-lg-none me-2" href="{{ ('/' + nav.navBtnLink) | url }}">
+                            <span class="btn-area">
+                                <span data-text="{{ nav.navBtnText }}">
+                                    {{ nav.navBtnText }}
+                                </span>
                             </span>
-                        </span>
-                    </a>
-                    <button
-                        class="navbar-toggler collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#sitenavbar"
-                        aria-controls="sitenavbar"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
+                        </a>
+                        <button
+                            class="navbar-toggler collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#sitenavbar"
+                            aria-controls="sitenavbar"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
                     </div>
                     <div class="collapse navbar-collapse" id="sitenavbar">
                         <ul class="navbar-nav ms-auto main-nav">
@@ -129,9 +145,9 @@
                                 </div>
                                 <p
                                     class="site-footer-widget-description">{# {% for contactInfo in footer.contactsInfo %}
-                                                                                <a href="{{ contactInfo.link }}">{{ contactInfo.text }}</a>
-                                                                                <br>
-                                                                            {% endfor %} #}
+                                                                                                                        <a href="{{ contactInfo.link }}">{{ contactInfo.text }}</a>
+                                                                                                                        <br>
+                                                                                                                    {% endfor %} #}
                                 </p>
                             </div>
                         </div>
