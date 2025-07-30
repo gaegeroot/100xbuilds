@@ -172,6 +172,86 @@
       }
     }
   },
+  "processMethodology": {
+    "subTitle": "ENTERPRISE-PROVEN METHODOLOGY",
+    "title": "The Same Automation Frameworks Fortune 1000 Companies Use—Adapted for Luxury Builders",
+    "description": "Our systematic approach combines over a decade of enterprise-level automation experience with luxury construction industry expertise. We don't reinvent processes—we adapt proven Fortune 1000 frameworks to transform your operations.",
+    "credibility": {
+      "statement": "Built on 12+ years of enterprise automation experience",
+      "details": "The same systematic methodologies used by Fortune 1000 companies, refined specifically for luxury home builders"
+    },
+    "process": {
+      "title": "Our Proven 4-Phase Implementation Process",
+      "subtitle": "From Assessment to Automation Excellence",
+      "phases": [
+        {
+          "phase": "Phase 1",
+          "name": "Operations Assessment",
+          "duration": "Week 1-2",
+          "description": "Comprehensive analysis using enterprise diagnostic frameworks to identify inefficiencies, bottlenecks, and automation opportunities specific to luxury construction workflows.",
+          "deliverables": [
+            "Complete operational audit with quantified improvement opportunities",
+            "ROI projections with specific timeline and metrics",
+            "Custom automation roadmap prioritized by impact"
+          ]
+        },
+        {
+          "phase": "Phase 2",
+          "name": "System Architecture",
+          "duration": "Week 3-6",
+          "description": "Design and configure automation infrastructure using proven enterprise frameworks adapted for luxury builder requirements and workflows.",
+          "deliverables": [
+            "CRM and workflow automation setup",
+            "Integration architecture for existing tools",
+            "Process documentation and training materials"
+          ]
+        },
+        {
+          "phase": "Phase 3",
+          "name": "Implementation & Testing",
+          "duration": "Week 7-10",
+          "description": "Deploy systems using controlled rollout methodology that minimizes disruption while ensuring smooth adoption across all operational areas.",
+          "deliverables": [
+            "Full automation system deployment",
+            "Team training and adoption support",
+            "Performance monitoring dashboard setup"
+          ]
+        },
+        {
+          "phase": "Phase 4",
+          "name": "Optimization & Scaling",
+          "duration": "Week 11-12+",
+          "description": "Monitor performance metrics, refine processes based on real data, and scale successful automations across additional operational areas.",
+          "deliverables": [
+            "90-day performance validation report",
+            "Ongoing optimization recommendations",
+            "Scaling roadmap for continued growth"
+          ]
+        }
+      ]
+    },
+    "guarantees": {
+      "title": "Our Performance Commitments",
+      "subtitle": "We Stand Behind Every Implementation",
+      "items": [
+        {
+          "metric": "90-Day ROI",
+          "commitment": "Measurable efficiency improvements within 90 days or full refund",
+          "description": "Your automation investment pays for itself in first quarter, guaranteed"
+        },
+        {
+          "metric": "Territory Exclusive",
+          "commitment": "Only one luxury builder per geographic market",
+          "description": "Your competitive advantages stay competitive—we protect your market position"
+        },
+        {
+          "metric": "Implementation Timeline",
+          "commitment": "Full system deployment within 12 weeks maximum",
+          "description": "Unlike 12-18 month enterprise implementations, see results in first quarter"
+        }
+      ]
+    }
+  },
 
   "guarantee": {
     "title": "Performance Guarantee",

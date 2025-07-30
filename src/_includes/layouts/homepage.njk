@@ -190,7 +190,7 @@
                                     <p class="txt-secondary mb-3">{{ homepage.solutionOverview.serviceTiers.subtitle }}</p>
                                     <p class="txt-medium">{{ homepage.solutionOverview.serviceTiers.description }}</p>
                                 </div>
-                                <div class="row g-4">
+                                <div class="row g-4 justify-content-center">
                                     {% for tier in homepage.solutionOverview.serviceTiers.tiers %}
                                         <div class="col-lg-4 col-md-6">
                                             <div class="site-project-item h-100 p-4 text-center">
@@ -216,7 +216,7 @@
                                 <div class="row g-4">
                                     {% for diff in homepage.solutionOverview.differentiators.points %}
                                         <div class="col-lg-6">
-                                            <div class="d-flex align-items-start p-3 rounded shadow-sm border-start border-4 brdr-secondary">
+                                            <div class="d-flex align-items-start p-3 rounded shadow-md border-1 brdr-secondary">
                                                 <div class="flex-grow-1">
                                                     <div class="row">
                                                         <div class="col-6">
@@ -260,8 +260,6 @@
                     </div>
                 </div>
             </section>
-
-
             <section class="site-counter" id="counter">
                 <div class="container">
                     <div class="row">
@@ -281,61 +279,120 @@
                     </div>
                 </div>
             </section>
-            <section class="site-project" id="project">
+            <!-- Process & Methodology Section -->
+            <section class="py-5 mybg-white">
+                <div class="container">
+                    <div class="row">
+                        <div
+                            class="col-lg-10 mx-auto">
+                            <!-- Section Header -->
+                            <div class="section-title text-center mb-5">
+                                <span class="text-byline txt-secondary mb-3 d-block">{{ homepage.processMethodology.subTitle }}</span>
+                                <h2 class="txt-primary mb-4">{{ homepage.processMethodology.title }}</h2>
+                                <p class="text-lead txt-medium">{{ homepage.processMethodology.description }}</p>
+                                <div class="mt-4">
+                                    <div class="d-inline-block p-3 mybg-light rounded">
+                                        <div class="stat-label mb-1">{{ homepage.processMethodology.credibility.statement }}</div>
+                                        <small class="txt-medium">{{ homepage.processMethodology.credibility.details }}</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Implementation Process -->
+                            <div class="mb-5">
+                                <div class="text-center mb-4">
+                                    <h3 class="txt-primary mb-2">{{ homepage.processMethodology.process.title }}</h3>
+                                    <p class="txt-secondary">{{ homepage.processMethodology.process.subtitle }}</p>
+                                </div>
+                                <div class="row g-4">
+                                    {% for phase in homepage.processMethodology.process.phases %}
+                                        <div class="col-lg-6 mb-4">
+                                            <div
+                                                class="site-project-item h-100 p-4">
+                                                <!-- Phase Header -->
+                                                <div class="d-flex align-items-center mb-3">
+                                                    <div
+                                                        class="mybg-secondary text-white rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0"
+                                                        style="width: 40px; height: 40px;">
+                                                        <small class="fw-bold">{{ loop.index }}</small>
+                                                    </div>
+                                                    <div>
+                                                        <span class="text-byline txt-secondary">{{ phase.phase }}</span>
+                                                        <h4 class="txt-primary h5 mb-1">{{ phase.name }}</h4>
+                                                        <small class="stat-label">{{ phase.duration }}</small>
+                                                    </div>
+                                                </div>
+                                                <!-- Phase Description -->
+                                                <p class="txt-medium mb-3">{{ phase.description }}</p>
+                                                <!-- Deliverables -->
+                                                <div class="mb-0">
+                                                    <div class="small txt-secondary fw-semibold mb-2">Key Deliverables:</div>
+                                                    <ul class="list-unstyled">
+                                                        {% for deliverable in phase.deliverables %}
+                                                            <li class="d-flex align-items-start mb-1">
+                                                                <span class="txt-accent me-2 small">✓</span>
+                                                                <small class="txt-dark">{{ deliverable }}</small>
+                                                            </li>
+                                                        {% endfor %}
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                            <!-- Performance Guarantees -->
+                            <div class="mb-5">
+                                <div class="text-center mb-4">
+                                    <h3 class="txt-primary mb-2">{{ homepage.processMethodology.guarantees.title }}</h3>
+                                    <p class="txt-secondary">{{ homepage.processMethodology.guarantees.subtitle }}</p>
+                                </div>
+                                <div class="row g-4">
+                                    {% for guarantee in homepage.processMethodology.guarantees.items %}
+                                        <div class="col-lg-4">
+                                            <div class="text-center p-4 border rounded shadow-sm h-100">
+                                                <div class="mb-3">
+                                                    <div class="text-financial h4 txt-secondary mb-1">{{ guarantee.metric }}</div>
+                                                    <div class="txt-primary fw-semibold mb-2">{{ guarantee.commitment }}</div>
+                                                </div>
+                                                <p class="txt-medium mb-0 small">{{ guarantee.description }}</p>
+                                            </div>
+                                        </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="site-testimonial">
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
                             <div class="section-title">
-                                <h2>{{ portfolio.subTitle }}</h2>
-                                <p>{{ portfolio.title }}</p>
+                                <h2>{{ testimonials.title }}</h2>
+                                <p>{{ testimonials.des }}</p>
                             </div>
                         </div>
-                        {% for portfolio in collections.portfolios %}
-                            <div class="col-lg-6 col-md-10 mx-auto">
-                                <div class="site-project-item">
-                                    <div class="site-project-item-thumb">
-                                        <img src="{{ portfolio.data.img | url }}" alt="project-thumb"></div>
-                                        <div class="site-project-item-content">
-                                            <span>{{ portfolio.data.subTitle }}</span>
-                                            <h3>{{ portfolio.data.title }}</h3>
-                                            <a href="{{ portfolio.data.page.url }}" class="read-more">{{ portfolio.data.linkText }}</a>
+                        {% for opinion in testimonials.opinion %}
+                            <div class="col-lg-4 col-md-6">
+                                <div class="site-testimonial-item">
+                                    <div class="site-testimonial-item-header">
+                                        <div class="thumb">
+                                            <img src="{{ opinion.img| url }}" alt="user-thumb"></div>
+                                            <div class="person">
+                                                <h5>{{ opinion.name }}</h5>
+                                                <p>{{ opinion.dig }}</p>
+                                            </div>
                                         </div>
+                                        <p class="site-testimonial-item-body">
+                                            {{ opinion.comment }}
+                                        </p>
                                     </div>
                                 </div>
                             {% endfor %}
-                            <div class="col-12 text-center text-lg-start">
-                                <a href="{{ portfolio.seeAllbtn.link | url }}" class="text-disrupt">{{ portfolio.seeAllbtn.text }}</a>
-                            </div>
                         </div>
                     </div>
                 </section>
-                <section class="site-testimonial">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="section-title">
-                                    <h2>{{ testimonials.title }}</h2>
-                                    <p>{{ testimonials.des }}</p>
-                                </div>
-                            </div>
-                            {% for opinion in testimonials.opinion %}
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="site-testimonial-item">
-                                        <div class="site-testimonial-item-header">
-                                            <div class="thumb">
-                                                <img src="{{ opinion.img| url }}" alt="user-thumb"></div>
-                                                <div class="person">
-                                                    <h5>{{ opinion.name }}</h5>
-                                                    <p>{{ opinion.dig }}</p>
-                                                </div>
-                                            </div>
-                                            <p class="site-testimonial-item-body">
-                                                {{ opinion.comment }}
-                                            </p>
-                                        </div>
-                                    </div>
-                                {% endfor %}
-                            </div>
-                        </div>
-                    </section>
-                {% endblock %}
+            {% endblock %}
