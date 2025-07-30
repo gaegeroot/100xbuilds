@@ -66,76 +66,111 @@
     }
   },
 
-  "serviceEcosystem": {
-    "title": "Complete Growth Ecosystem",
-    "subtitle": "From free resources to full automation, we support luxury builders at every stage of growth",
-    "tiers": [
-      {
-        "category": "FOUNDATION",
-        "name": "Free Resources",
-        "priceRange": "$0",
-        "description": "Build trust and get immediate value with our proven tools and industry insights.",
-        "icon": "fas fa-gift",
-        "features": [
-          "ROI Calculators & Assessment Tools",
-          "Industry Reports & Market Analysis",
-          "Best Practice Guides",
-          "Weekly Newsletter & Insights"
-        ],
-        "ctaText": "Access Resources",
-        "ctaLink": "/blog",
-        "featured": false
+  "solutionOverview": {
+    "subTitle": "THE 100XBUILDS METHODOLOGY",
+    "title": "From Operational Chaos to Profit-Maximizing Machine",
+    "description": "Our proven 5-tier system transforms luxury builders through systematic automation, not generic software. We rebuild your operations from the ground up with industry-specific solutions that deliver measurable ROI.",
+    "methodology": {
+      "title": "Our Unique Approach",
+      "subtitle": "Built Exclusively for Luxury Home Builders",
+      "points": [
+        {
+          "title": "Industry-Specific Frameworks",
+          "description": "Custom-built for luxury construction workflows, not adapted from generic business software"
+        },
+        {
+          "title": "Performance-Based Implementation",
+          "description": "We only succeed when you achieve measurable efficiency improvements and profit increases"
+        },
+        {
+          "title": "Territory Exclusivity",
+          "description": "Your competitive advantages stay competitive - we protect your market position"
+        },
+        {
+          "title": "90-Day Results Timeline",
+          "description": "Rapid implementation with guaranteed ROI validation in first quarter"
+        }
+      ]
+    },
+    "serviceTiers": {
+      "title": "The Complete Growth Ecosystem",
+      "subtitle": "From Free Resources to $500K+ Enterprise Solutions",
+      "description": "Unlike competitors who offer one-size-fits-all packages, we provide a strategic progression path that grows with your business.",
+      "tiers": [
+        {
+          "level": "Level 1",
+          "name": "Foundation",
+          "priceRange": "Free",
+          "description": "ROI calculators, industry insights, and educational resources to start your optimization journey",
+          "ideal": "Builders exploring automation options"
+        },
+        {
+          "level": "Level 2",
+          "name": "Assessment",
+          "priceRange": "$197-$1,497",
+          "description": "Operations audits, template bundles, and profit tracking tools for immediate improvements",
+          "ideal": "Ready to identify specific opportunities"
+        },
+        {
+          "level": "Level 3",
+          "name": "Implementation",
+          "priceRange": "$2,497-$7,497",
+          "description": "CRM setup, business reviews, and mastermind access for systematic improvements",
+          "ideal": "Committed to process optimization"
+        },
+        {
+          "level": "Level 4",
+          "name": "Transformation",
+          "priceRange": "$150K-$500K",
+          "description": "Full automation implementation with guaranteed ROI and ongoing optimization",
+          "ideal": "$5M+ builders ready for complete transformation"
+        },
+        {
+          "level": "Level 5",
+          "name": "Enterprise",
+          "priceRange": "$500K+",
+          "description": "Multi-location systems, joint ventures, and licensing for market dominance",
+          "ideal": "Scaling operations across multiple markets"
+        }
+      ]
+    },
+    "differentiators": {
+      "title": "Why Traditional Solutions Fail Luxury Builders",
+      "points": [
+        {
+          "problem": "Generic Software",
+          "solution": "Industry-Specific Automation",
+          "description": "Built for luxury construction workflows, not adapted business software"
+        },
+        {
+          "problem": "One-Size-Fits-All",
+          "solution": "Customized Implementation",
+          "description": "Tailored to your specific market, processes, and growth goals"
+        },
+        {
+          "problem": "No ROI Guarantees",
+          "solution": "Performance-Based Results",
+          "description": "We guarantee measurable improvements or you don't pay"
+        },
+        {
+          "problem": "Long Implementation",
+          "solution": "90-Day Results Timeline",
+          "description": "See efficiency gains in 30 days, full ROI by day 90"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready to See Your Custom ROI Projection?",
+      "description": "Get a detailed analysis of your potential profit improvements with our free assessment tool.",
+      "primaryBtn": {
+        "text": "Calculate My ROI Potential",
+        "link": "#roi-calculator"
       },
-      {
-        "category": "QUICK WINS",
-        "name": "Entry Products",
-        "priceRange": "$197 - $1,497",
-        "description": "Quick-win solutions and templates to start optimizing your operations immediately.",
-        "icon": "fas fa-tools",
-        "features": [
-          "Operations Audits ($497)",
-          "Template Bundles ($297)",
-          "Profit Dashboards ($697)",
-          "Process Playbooks"
-        ],
-        "ctaText": "Browse Products",
-        "ctaLink": "/products",
-        "featured": false
-      },
-      {
-        "category": "GROWTH ACCELERATION",
-        "name": "Premium Services",
-        "priceRange": "$2,497 - $7,497",
-        "description": "Done-with-you implementation and ongoing support for sustained growth.",
-        "icon": "fas fa-users",
-        "features": [
-          "90-Day CRM Setup Sprints",
-          "Quarterly Business Reviews",
-          "Mastermind Program Access",
-          "Custom Operations Playbooks"
-        ],
-        "ctaText": "Learn More",
-        "ctaLink": "/premium-services",
-        "featured": false
-      },
-      {
-        "category": "TRANSFORMATION",
-        "name": "Core Automation",
-        "priceRange": "$150K - $500K",
-        "description": "Complete business transformation with guaranteed ROI and exclusive territory protection.",
-        "icon": "fas fa-rocket",
-        "features": [
-          "Full Automation Implementation",
-          "15-25% Efficiency Guarantee",
-          "Territory Exclusivity",
-          "Performance-Based Contracts"
-        ],
-        "ctaText": "See If You Qualify",
-        "ctaLink": "/luxury-builder-ascension",
-        "featured": true,
-        "badge": "CORE OFFERING"
+      "secondaryBtn": {
+        "text": "Schedule Strategy Call",
+        "link": "#consultation"
       }
-    ]
+    }
   },
 
   "guarantee": {
