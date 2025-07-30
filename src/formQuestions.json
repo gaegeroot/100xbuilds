@@ -1,0 +1,407 @@
+{
+  "tier1": {
+    "revenueRange": {
+      "type": "select",
+      "required": true,
+      "label": "Annual Revenue Range",
+      "description": "Select your company's total annual revenue range",
+      "help": "Include all revenue sources: custom homes, remodeling, and any other construction services",
+      "options": [
+        {"value": "5-10", "label": "$5M - $10M"},
+        {"value": "10-25", "label": "$10M - $25M"},
+        {"value": "25-50", "label": "$25M - $50M"},
+        {"value": "50+", "label": "$50M+"}
+      ]
+    },
+    "homesCompleted": {
+      "type": "select",
+      "required": true,
+      "label": "Homes Completed Annually",
+      "description": "Number of luxury homes completed per year",
+      "help": "Count only completed homes, not homes under construction or in planning",
+      "options": [
+        {"value": "8-15", "label": "8-15 homes"},
+        {"value": "16-25", "label": "16-25 homes"},
+        {"value": "26-40", "label": "26-40 homes"},
+        {"value": "40+", "label": "40+ homes"}
+      ]
+    },
+    "profitMargin": {
+      "type": "range",
+      "required": true,
+      "label": "Current Gross Profit Margin",
+      "description": "Your typical gross profit margin on luxury projects",
+      "help": "Gross profit = (Revenue - Direct Costs) ÷ Revenue. Include labor, materials, and subcontractors as direct costs",
+      "min": 15,
+      "max": 40,
+      "default": 25,
+      "unit": "%"
+    },
+    "bottleneck": {
+      "type": "select",
+      "required": true,
+      "label": "Biggest Business Growth Bottleneck",
+      "description": "The primary constraint limiting your business growth and profitability",
+      "help": "Choose the area that most limits your ability to scale and increase profits",
+      "options": [
+        {"value": "lead-generation", "label": "Not enough qualified leads"},
+        {"value": "sales-conversion", "label": "Low sales conversion rates"},
+        {"value": "project-management", "label": "Project management & scheduling"},
+        {"value": "client-communication", "label": "Client communication & updates"},
+        {"value": "change-orders", "label": "Change order processing"},
+        {"value": "vendor-coordination", "label": "Vendor & subcontractor coordination"},
+        {"value": "quality-control", "label": "Quality control & inspections"},
+        {"value": "financial-tracking", "label": "Financial tracking & reporting"}
+      ]
+    },
+    "communicationChallenge": {
+      "type": "select",
+      "required": true,
+      "label": "Primary Business Challenge",
+      "description": "The most critical issue impacting your growth and client relationships",
+      "help": "Choose the challenge that has the biggest impact on your revenue and client satisfaction",
+      "options": [
+        {"value": "lead-quality", "label": "Poor quality leads wasting sales time"},
+        {"value": "sales-process", "label": "Inconsistent or ineffective sales process"},
+        {"value": "response-time", "label": "Slow response times to prospects/clients"},
+        {"value": "project-updates", "label": "Inconsistent project progress updates"},
+        {"value": "change-order-clarity", "label": "Unclear change order communication"},
+        {"value": "timeline-expectations", "label": "Managing timeline expectations"},
+        {"value": "decision-tracking", "label": "Tracking client decisions and approvals"},
+        {"value": "documentation", "label": "Document sharing and organization"}
+      ]
+    },
+    "tier1Email": {
+      "type": "email",
+      "required": false,
+      "label": "Email Address (Optional)",
+      "description": "Get your benchmark report via email",
+      "help": "Optional: Receive industry comparison data and quick-win recommendations",
+      "placeholder": "your@email.com"
+    }
+  },
+  "tier2": {
+    "leadGenMetrics": {
+      "monthlyLeads": {
+        "type": "number",
+        "required": true,
+        "label": "Monthly Qualified Leads",
+        "description": "Average number of qualified prospects per month",
+        "help": "Leads who meet your project size/budget criteria and are actively looking to build",
+        "min": 1,
+        "max": 200,
+        "placeholder": "15"
+      },
+      "leadSources": {
+        "type": "multiselect",
+        "required": true,
+        "label": "Primary Lead Sources",
+        "description": "Your top 3 sources of qualified leads (select multiple)",
+        "help": "Choose your most productive lead sources. This helps us optimize your lead generation strategy",
+        "options": [
+          {"value": "referrals", "label": "Client referrals"},
+          {"value": "website", "label": "Website/SEO"},
+          {"value": "social-media", "label": "Social media"},
+          {"value": "paid-advertising", "label": "Paid advertising (Google/Facebook)"},
+          {"value": "print-advertising", "label": "Print advertising"},
+          {"value": "trade-shows", "label": "Trade shows/events"},
+          {"value": "partnerships", "label": "Architect/designer partnerships"},
+          {"value": "past-clients", "label": "Repeat clients"},
+          {"value": "cold-outreach", "label": "Cold outreach"}
+        ]
+      },
+      "leadQualificationTime": {
+        "type": "number",
+        "required": true,
+        "label": "Lead Qualification Time",
+        "description": "Average time to determine if a lead is qualified",
+        "help": "From first contact to knowing if they're a good fit (budget, timeline, project scope)",
+        "min": 1,
+        "max": 168,
+        "placeholder": "24",
+        "suffix": "hours"
+      },
+      "costPerLead": {
+        "type": "number",
+        "required": true,
+        "label": "Average Cost Per Qualified Lead",
+        "description": "Total marketing spend divided by qualified leads",
+        "help": "Include all marketing costs: advertising, website, staff time, materials. Qualified leads only",
+        "min": 0,
+        "max": 10000,
+        "placeholder": "850",
+        "prefix": "$"
+      }
+    },
+    "salesMetrics": {
+      "conversionRate": {
+        "type": "number",
+        "required": true,
+        "label": "Lead to Sale Conversion Rate",
+        "description": "Percentage of qualified leads that become signed contracts",
+        "help": "Qualified leads who become paying clients. Industry benchmark for luxury builders: 15-25%",
+        "min": 1,
+        "max": 80,
+        "placeholder": "18",
+        "suffix": "%"
+      },
+      "salesCycleDays": {
+        "type": "number",
+        "required": true,
+        "label": "Average Sales Cycle Length",
+        "description": "Days from first qualified contact to signed contract",
+        "help": "Time from initial qualified inquiry to contract signing. Luxury homes typically 60-180 days",
+        "min": 7,
+        "max": 365,
+        "placeholder": "90",
+        "suffix": "days"
+      },
+      "presentationToCloseRate": {
+        "type": "number",
+        "required": true,
+        "label": "Presentation to Close Rate",
+        "description": "Percentage of formal presentations that result in contracts",
+        "help": "After you've done a full presentation/proposal, what percentage sign contracts?",
+        "min": 5,
+        "max": 90,
+        "placeholder": "35",
+        "suffix": "%"
+      },
+      "avgMeetingsToClose": {
+        "type": "number",
+        "required": true,
+        "label": "Average Meetings to Close",
+        "description": "Number of meetings/touchpoints before contract signing",
+        "help": "Include initial consultations, design meetings, proposal presentations, negotiations",
+        "min": 2,
+        "max": 20,
+        "placeholder": "6"
+      },
+      "followUpEffectiveness": {
+        "type": "number",
+        "required": true,
+        "label": "Follow-up Response Rate",
+        "description": "Percentage of follow-up attempts that get responses",
+        "help": "When you follow up with prospects who haven't decided, what percentage respond positively?",
+        "min": 5,
+        "max": 90,
+        "placeholder": "45",
+        "suffix": "%"
+      }
+    },
+    "marketingMetrics": {
+      "monthlyMarketingSpend": {
+        "type": "number",
+        "required": true,
+        "label": "Monthly Marketing Investment",
+        "description": "Total monthly marketing and advertising budget",
+        "help": "Include all marketing: digital ads, print, website, trade shows, staff time on marketing activities",
+        "min": 500,
+        "max": 100000,
+        "placeholder": "8500",
+        "prefix": "$"
+      },
+      "websiteConversionRate": {
+        "type": "number",
+        "required": true,
+        "label": "Website Conversion Rate",
+        "description": "Percentage of website visitors who become leads",
+        "help": "Visitors who fill out contact forms, call, or otherwise express interest. Luxury builders should target 2-5%",
+        "min": 0.1,
+        "max": 20,
+        "placeholder": "2.8",
+        "suffix": "%",
+        "step": 0.1
+      },
+      "socialMediaROI": {
+        "type": "select",
+        "required": true,
+        "label": "Social Media Lead Generation",
+        "description": "How effective is social media for generating qualified leads?",
+        "help": "Specifically for qualified prospects, not just followers or engagement",
+        "options": [
+          {"value": "highly-effective", "label": "Highly effective - generates 20%+ of our leads"},
+          {"value": "moderately-effective", "label": "Moderately effective - generates 5-20% of leads"},
+          {"value": "minimally-effective", "label": "Minimally effective - generates <5% of leads"},
+          {"value": "ineffective", "label": "Ineffective - generates no meaningful leads"},
+          {"value": "not-using", "label": "Not currently using social media for lead gen"}
+        ]
+      },
+      "brandRecognition": {
+        "type": "number",
+        "required": true,
+        "label": "Brand Recognition Rate",
+        "description": "Percentage of prospects who already know your company",
+        "help": "When meeting new prospects, what percentage have already heard of your company?",
+        "min": 0,
+        "max": 100,
+        "placeholder": "25",
+        "suffix": "%"
+      }
+    },
+    "clientRelationshipMetrics": {
+      "clientLifetimeValue": {
+        "type": "number",
+        "required": true,
+        "label": "Average Client Lifetime Value",
+        "description": "Total revenue from average client relationship",
+        "help": "Include initial project, change orders, referrals they generate, and any repeat business",
+        "min": 500000,
+        "max": 20000000,
+        "placeholder": "2800000",
+        "prefix": "$"
+      },
+      "referralConversionRate": {
+        "type": "number",
+        "required": true,
+        "label": "Referral Conversion Rate",
+        "description": "Percentage of referrals that become clients",
+        "help": "Referrals typically convert much higher than other lead sources. Industry average: 40-70%",
+        "min": 10,
+        "max": 100,
+        "placeholder": "65",
+        "suffix": "%"
+      },
+      "repeatClientRate": {
+        "type": "number",
+        "required": true,
+        "label": "Repeat Client Rate",
+        "description": "Percentage of clients who hire you for additional projects",
+        "help": "Second homes, renovations, additions within 5 years of initial project",
+        "min": 0,
+        "max": 80,
+        "placeholder": "15",
+        "suffix": "%"
+      }
+    },
+    "operationalMetrics": {
+      "adminHoursPerProject": {
+        "type": "number",
+        "required": true,
+        "label": "Administrative Hours Per Project",
+        "description": "Total admin/office hours per project completion",
+        "help": "Include project management, client communication, scheduling, documentation, invoicing. Don't include field supervision",
+        "min": 10,
+        "max": 200,
+        "placeholder": "45",
+        "suffix": "hours"
+      },
+      "avgResponseTimeHours": {
+        "type": "number",
+        "required": true,
+        "label": "Average Response Time",
+        "description": "Typical time to respond to client/prospect inquiries",
+        "help": "From when client/prospect contacts you to when you provide a substantive response. Luxury clients expect <4 hours",
+        "min": 1,
+        "max": 72,
+        "placeholder": "4",
+        "suffix": "hours"
+      },
+      "proposalPreparationTime": {
+        "type": "number",
+        "required": true,
+        "label": "Proposal Preparation Time",
+        "description": "Average hours to prepare a complete project proposal",
+        "help": "Time from qualified lead to delivering detailed proposal/estimate. Include design time if you do preliminary design",
+        "min": 5,
+        "max": 100,
+        "placeholder": "20",
+        "suffix": "hours"
+      }
+    },
+    "technologyMetrics": {
+      "crmUsage": {
+        "type": "select",
+        "required": true,
+        "label": "CRM System Usage",
+        "description": "How do you currently manage leads and client relationships?",
+        "help": "Choose the option that best describes your current system",
+        "options": [
+          {"value": "none", "label": "No formal system - use spreadsheets/notes"},
+          {"value": "basic", "label": "Basic CRM (contacts and notes only)"},
+          {"value": "integrated", "label": "Integrated CRM with project management"},
+          {"value": "custom", "label": "Custom-built system"},
+          {"value": "advanced", "label": "Advanced CRM with automation"}
+        ]
+      },
+      "leadTrackingAccuracy": {
+        "type": "number",
+        "required": true,
+        "label": "Lead Tracking Accuracy",
+        "description": "Percentage of leads properly tracked from source to outcome",
+        "help": "Can you accurately track where leads come from and what happens to them? Critical for ROI analysis",
+        "min": 10,
+        "max": 100,
+        "placeholder": "60",
+        "suffix": "%"
+      },
+      "automationCurrentLevel": {
+        "type": "select",
+        "required": true,
+        "label": "Current Automation Level",
+        "description": "How much of your sales/marketing process is automated?",
+        "help": "Automation includes email sequences, lead scoring, appointment scheduling, follow-ups",
+        "options": [
+          {"value": "none", "label": "No automation - everything is manual"},
+          {"value": "minimal", "label": "Minimal automation (basic email responses)"},
+          {"value": "moderate", "label": "Moderate automation (some sequences and scheduling)"},
+          {"value": "significant", "label": "Significant automation (most processes have some automation)"},
+          {"value": "advanced", "label": "Advanced automation (sophisticated sequences and workflows)"}
+        ]
+      }
+    },
+    "businessGoals": {
+      "growthGoal": {
+        "type": "select",
+        "required": true,
+        "label": "Primary Growth Objective",
+        "description": "Your main business growth goal for the next 2 years",
+        "help": "Choose the most important growth objective that drives your decision-making",
+        "options": [
+          {"value": "more-leads", "label": "Generate more qualified leads"},
+          {"value": "better-conversion", "label": "Improve sales conversion rates"},
+          {"value": "higher-margins", "label": "Increase profit margins"},
+          {"value": "faster-sales", "label": "Shorten sales cycle times"},
+          {"value": "scale-operations", "label": "Scale operations to handle more volume"},
+          {"value": "premium-positioning", "label": "Position as premium/luxury brand"}
+        ]
+      },
+      "topPriority": {
+        "type": "select",
+        "required": true,
+        "label": "Top Priority for Improvement",
+        "description": "The most important area where you want to see immediate improvement",
+        "help": "Choose the single most important area where improvement would have the biggest business impact",
+        "options": [
+          {"value": "lead-generation", "label": "Generate more qualified leads"},
+          {"value": "sales-conversion", "label": "Improve sales conversion rates"},
+          {"value": "client-communication", "label": "Better client communication"},
+          {"value": "project-efficiency", "label": "Faster project completion"},
+          {"value": "team-productivity", "label": "Increase team productivity"},
+          {"value": "profit-margins", "label": "Increase profit margins"},
+          {"value": "quality-control", "label": "Enhanced quality control"},
+          {"value": "cost-control", "label": "Better cost control"}
+        ]
+      },
+      "painPoint": {
+        "type": "textarea",
+        "required": true,
+        "label": "Biggest Business Challenge",
+        "description": "Describe your most critical business challenge impacting growth or profitability",
+        "help": "Be specific about the problem, its impact on revenue/operations, and what you've tried to solve it",
+        "rows": 3,
+        "placeholder": "e.g., 'We get plenty of inquiries but only 12% convert to contracts. We spend hours qualifying leads that turn out to be tire-kickers, and our sales process is inconsistent across team members...'"
+      }
+    },
+    "contact": {
+      "tier2Email": {
+        "type": "email",
+        "required": true,
+        "label": "Professional Email Address",
+        "description": "Where should we send your custom analysis report?",
+        "help": "You'll receive a detailed PDF report within 24 hours with specific recommendations for your lead generation and sales optimization",
+        "placeholder": "your@company.com"
+      }
+    }
+  }
+}

@@ -21,7 +21,6 @@
 .txt-dark { color: var(--color-text-primary); }
 .txt-medium { color: var(--color-text-secondary); }
 .txt-light { color: var(--color-text-light); }
-.txt-white { color: var(--color-text-inverse); }
 
 /* Border Classes */
 .brdr-light {border: 2px solid var(--color-border-light);}

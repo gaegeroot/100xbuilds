@@ -1,6 +1,6 @@
 {
   "navLogo":"/assets/images/100xBuildsLogoDark.png",
-  "navLinks":["home","about","portfolio","blog"],
+  "navLinks":["home","about","blog"],
   "navBtnLink":"luxury-builder-ascension",
   "navBtnText":"See If You Qualify"
 }

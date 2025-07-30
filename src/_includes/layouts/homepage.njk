@@ -13,19 +13,10 @@
                             </h1>
                             <ul class="site-hero-content-buttons">
                                 <li>
-                                    <a href="{{ homepage.hero.seeWorkBtn.link | url }}" class="btn btn-secondary scroll-to">
+                                    <a href="{{ homepage.hero.ctaButton.link | url }}" class="btn btn-secondary scroll-to">
                                         <span class="btn-area">
-                                            <span data-text="{{ homepage.hero.seeWorkBtn.text }}">
-                                                {{ homepage.hero.seeWorkBtn.text }}
-                                            </span>
-                                        </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/{{ homepage.hero.connectBtn.link | url }}" class="btn btn-primary">
-                                        <span class="btn-area">
-                                            <span data-text="{{ homepage.hero.connectBtn.text }}">
-                                                {{ homepage.hero.connectBtn.text }}
+                                            <span data-text="{{ homepage.hero.ctaButton.text }}">
+                                                {{ homepage.hero.ctaButton.text }}
                                             </span>
                                         </span>
                                     </a>
@@ -89,9 +80,6 @@
                                         <div class="d-flex gap-3 justify-content-center flex-wrap">
                                             <a href="{{ homepage.valueProposition.cta.primaryBtn.link }}" class="btn btn-secondary btn-lg">
                                                 {{ homepage.valueProposition.cta.primaryBtn.text }}
-                                            </a>
-                                            <a href="{{ homepage.valueProposition.cta.secondaryBtn.link }}" class="btn btn-outline btn-lg">
-                                                {{ homepage.valueProposition.cta.secondaryBtn.text }}
                                             </a>
                                         </div>
                                     </div>
@@ -265,14 +253,14 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="section-title">
-                                <h2 class="txt-dark">{{ achieve.title }}</h2>
+                                <h2 class="txt-dark">{{ homepage.stats.title }}</h2>
                             </div>
                         </div>
-                        {% for achievement in achieve.achievements %}
+                        {% for achievement in homepage.stats.items %}
                             <div class="col-lg-3 col-md-6">
                                 <div class="site-counter-item">
-                                    <span class="site-counter-item-title txt-dark">{{ achievement.title }}</span>
-                                    <h3 class="site-counter-item-number txt-dark">{{ achievement.counter }}+</h3>
+                                    <span class="site-counter-item-title txt-dark">{{ achievement.label }}</span>
+                                    <h3 class="site-counter-item-number txt-dark">{{ achievement.number }}</h3>
                                 </div>
                             </div>
                         {% endfor %}
@@ -340,7 +328,7 @@
                                     {% endfor %}
                                 </div>
                             </div>
-                            <!-- Performance Guarantees -->
+                            <!-- Performance homepage.guarantees -->
                             <div class="mb-5">
                                 <div class="text-center mb-4">
                                     <h3 class="txt-primary mb-2">{{ homepage.processMethodology.guarantees.title }}</h3>
@@ -351,10 +339,10 @@
                                         <div class="col-lg-4">
                                             <div class="text-center p-4 border rounded shadow-sm h-100">
                                                 <div class="mb-3">
-                                                    <div class="text-financial h4 txt-secondary mb-1">{{ guarantee.metric }}</div>
-                                                    <div class="txt-primary fw-semibold mb-2">{{ guarantee.commitment }}</div>
+                                                    <div class="text-financial h4 txt-secondary mb-1">{{ homepage.guarantee.metric }}</div>
+                                                    <div class="txt-primary fw-semibold mb-2">{{ homepage.guarantee.commitment }}</div>
                                                 </div>
-                                                <p class="txt-medium mb-0 small">{{ guarantee.description }}</p>
+                                                <p class="txt-medium mb-0 small">{{ homepage.guarantee.description }}</p>
                                             </div>
                                         </div>
                                     {% endfor %}
@@ -364,8 +352,173 @@
                     </div>
                 </div>
             </section>
-
-
+            <!-- homepage.guarantee Section -->
+            <section class="py-5 mybg-light">
+                <div class="container">
+                    <div class="row">
+                        <div
+                            class="col-lg-10 mx-auto">
+                            <!-- Section Header -->
+                            <div class="section-title text-center mb-5">
+                                <span class="text-byline txt-secondary mb-3 d-block">{{ homepage.guarantee.subTitle }}</span>
+                                <h2 class="txt-primary mb-4">{{ homepage.guarantee.title }}</h2>
+                                <p class="text-lead txt-medium">{{ homepage.guarantee.description }}</p>
+                            </div>
+                            <!-- Main homepage.guarantee Highlight -->
+                            <div class="row justify-content-center mb-5">
+                                <div class="col-lg-8">
+                                    <div class="site-testimonial-item text-center p-5">
+                                        <div class="mb-4">
+                                            <h3 class="txt-primary mb-3">{{ homepage.guarantee.mainGuarantee.title }}</h3>
+                                            <div class="text-financial h4 txt-secondary mb-3">{{ homepage.guarantee.mainGuarantee.promise }}</div>
+                                            <p class="txt-medium">{{ homepage.guarantee.mainGuarantee.details }}</p>
+                                        </div>
+                                        <div class="d-inline-block px-4 py-2 mybg-secondary text-white rounded">
+                                            <small class="fw-semibold">100% Performance Guaranteed</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- homepage.guarantee Details -->
+                            <div class="mb-5">
+                                <div class="row g-4">
+                                    {% for detail in homepage.guarantee.guaranteeDetails %}
+                                        <div class="col-lg-6">
+                                            <div class="site-project-item h-100 p-4">
+                                                <div class="d-flex align-items-start mb-3">
+                                                    <div class="flex-grow-1">
+                                                        <h4 class="txt-primary h5 mb-2">{{ detail.title }}</h4>
+                                                        <div class="mb-2">
+                                                            <div class="text-financial h5 txt-secondary mb-1">{{ detail.metric }}</div>
+                                                            <div class="stat-label">{{ detail.metricLabel }}</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <p class="txt-medium mb-0">{{ detail.description }}</p>
+                                            </div>
+                                        </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                            <!-- Risk Reversal Section -->
+                            <div class="mb-5">
+                                <div class="text-center mb-4">
+                                    <h3 class="txt-primary mb-2">{{ homepage.guarantee.riskReversal.title }}</h3>
+                                    <p class="txt-secondary">{{ homepage.guarantee.riskReversal.subtitle }}</p>
+                                </div>
+                                <div class="row g-3">
+                                    {% for point in homepage.guarantee.riskReversal.points %}
+                                        <div class="col-lg-6">
+                                            <div class="d-flex align-items-start p-3 bg-white rounded shadow-sm border-start border-4 brdr-accent">
+                                                <div class="txt-accent me-3 fs-5 flex-shrink-0">✓</div>
+                                                <div>
+                                                    <h5 class="txt-primary mb-2 h6">{{ point.guarantee }}</h5>
+                                                    <p class="txt-medium mb-0 small">{{ point.description }}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                            <!-- Why We Can homepage.guarantee -->
+                            <div class="mb-5">
+                                <div class="text-center mb-4">
+                                    <h3 class="txt-primary mb-2">{{ homepage.guarantee.whyWeCanGuarantee.title }}</h3>
+                                    <p class="txt-secondary">{{ homepage.guarantee.whyWeCanGuarantee.subtitle }}</p>
+                                </div>
+                                <div class="row g-4">
+                                    {% for reason in homepage.guarantee.whyWeCanGuarantee.reasons %}
+                                        <div class="col-lg-6">
+                                            <div class="text-center p-4 bg-white rounded shadow-sm h-100">
+                                                <h5 class="txt-primary mb-3 h6">{{ reason.title }}</h5>
+                                                <p class="txt-medium mb-0 small">{{ reason.description }}</p>
+                                            </div>
+                                        </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                            <!-- Final CTA -->
+                            <div class="text-center">
+                                <div class="row">
+                                    <div class="col-lg-8 mx-auto">
+                                        <h3 class="txt-primary mb-3">{{ homepage.guarantee.cta.title }}</h3>
+                                        <p class="txt-medium mb-4">{{ homepage.guarantee.cta.description }}</p>
+                                        <div class="d-flex gap-3 justify-content-center flex-wrap">
+                                            <a href="{{ homepage.guarantee.cta.primaryBtn.link }}" class="btn btn-secondary btn-lg">
+                                                {{ homepage.guarantee.cta.primaryBtn.text }}
+                                            </a>
+                                            <a href="{{ homepage.guarantee.cta.secondaryBtn.link }}" class="btn btn-outline btn-lg">
+                                                {{ homepage.guarantee.cta.secondaryBtn.text }}
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- homepage.faq Section -->
+            <section class="py-5 mybg-white">
+                <div class="container">
+                    <div class="row">
+                        <div
+                            class="col-lg-10 mx-auto">
+                            <!-- Section Header -->
+                            <div class="section-title text-center mb-5">
+                                <span class="text-byline txt-secondary mb-3 d-block">{{ homepage.faq.subTitle }}</span>
+                                <h2 class="txt-primary mb-4">{{ homepage.faq.title }}</h2>
+                                <p class="text-lead txt-medium">{{ homepage.faq.description }}</p>
+                            </div>
+                            <!-- homepage.faq Accordion -->
+                            <div class="row">
+                                <div class="col-lg-10 mx-auto">
+                                    <div class="accordion" id="faqAccordion">
+                                        {% for item in homepage.faq.questions %}
+                                            <div class="accordion-item border-0 mb-3 shadow-sm">
+                                                <h3 class="accordion-header" id="faqHeading{{ loop.index }}">
+                                                    <button
+                                                        class="accordion-button collapsed bg-white txt-primary fw-semibold py-4 px-4 border-0 shadow-none"
+                                                        type="button"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#faqCollapse{{ loop.index }}"
+                                                        aria-expanded="false"
+                                                        aria-controls="faqCollapse{{ loop.index }}">
+                                                        {{ item.question }}
+                                                    </button>
+                                                </h3>
+                                                <div
+                                                    id="faqCollapse{{ loop.index }}"
+                                                    class="accordion-collapse collapse"
+                                                    aria-labelledby="faqHeading{{ loop.index }}"
+                                                    data-bs-parent="#faqAccordion">
+                                                    <div class="accordion-body px-4 pb-4 pt-0">
+                                                        <p class="txt-medium mb-0">{{ item.answer }}</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Additional Support CTA -->
+                            <div class="text-center mt-5">
+                                <div class="row">
+                                    <div class="col-lg-6 mx-auto">
+                                        <div class="site-project-item p-4 text-center">
+                                            <h3 class="txt-primary h4 mb-3">{{ homepage.faq.additionalSupport.title }}</h3>
+                                            <p class="txt-medium mb-4">{{ homepage.faq.additionalSupport.description }}</p>
+                                            <a href="{{ homepage.faq.additionalSupport.cta.link }}" class="btn btn-secondary btn-lg">
+                                                {{ homepage.faq.additionalSupport.cta.text }}
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section class="site-testimonial">
                 <div class="container">
                     <div class="row">
@@ -395,4 +548,5 @@
                         </div>
                     </div>
                 </section>
+               
             {% endblock %}

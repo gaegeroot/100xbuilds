@@ -5,13 +5,119 @@
       "firstPara": "The Growth Partner",
       "secondPara": "For Luxury Home Builders"
     },
-    "seeWorkBtn": {
-      "text": "See Our Works",
+    "ctaButton": {
+      "text": "Calculate Your Profit Potential",
       "link": "#project"
+    }
+  },
+  "finalCTA": {
+    "subTitle": "READY TO TRANSFORM YOUR OPERATIONS?",
+    "title": "Join the Elite Group of Luxury Builders Who've Automated Their Way to $25M+",
+    "description": "Stop leaving profits on the table while competitors gain ground. Get your custom ROI analysis and discover exactly how much our enterprise automation can increase your annual profits.",
+    "urgencyMessage": "Limited to one builder per market. Your territory protection begins the moment you start.",
+    "primaryOffer": {
+      "title": "Free Comprehensive Operations Assessment",
+      "value": "$2,500 Value",
+      "benefits": [
+        "Complete operational efficiency audit using Fortune 1000 diagnostic frameworks",
+        "Custom ROI projection with specific timeline and guaranteed improvements",
+        "Territory availability analysis and competitive positioning review",
+        "Detailed automation roadmap prioritized by profit impact"
+      ],
+      "cta": {
+        "text": "Get My Free $2,500 Assessment",
+        "link": "#assessment-form"
+      }
     },
-    "connectBtn": {
-      "text": "Connect with us",
-      "link": "contact"
+    "alternativeAction": {
+      "title": "Prefer to Speak with Someone First?",
+      "description": "Schedule a 30-minute strategy call to discuss your specific challenges and see if automation is right for your business.",
+      "cta": {
+        "text": "Schedule Strategy Call",
+        "link": "#consultation"
+      }
+    },
+    "trustSignals": [
+      {
+        "icon": "🛡️",
+        "text": "100% Performance Guaranteed"
+      },
+      {
+        "icon": "⚡",
+        "text": "90-Day Implementation"
+      },
+      {
+        "icon": "🎯",
+        "text": "Territory Exclusive"
+      },
+      {
+        "icon": "💼",
+        "text": "Enterprise Experience"
+      }
+    ],
+    "contactInfo": {
+      "phone": "409-896-1444",
+      "email": "info@100xbuilds.com",
+      "availability": "Response within 4 business hours"
+    },
+    "finalUrgency": {
+      "text": "Your competitors are already looking for operational advantages.",
+      "action": "Don't let them find us first."
+    }
+  },
+  "faq": {
+    "subTitle": "FREQUENTLY ASKED QUESTIONS",
+    "title": "Everything You Need to Know About Automation for Luxury Builders",
+    "description": "Get answers to the most common questions about implementing enterprise automation in luxury construction operations.",
+    "questions": [
+      {
+        "question": "How do I know automation will actually work for my specific business?",
+        "answer": "Every implementation begins with a comprehensive operations assessment using our proven diagnostic framework. We analyze your specific workflows, identify quantified improvement opportunities, and provide a custom ROI projection before any automation work begins. You'll know exactly what improvements to expect and when—with a 90-day performance guarantee backing those projections."
+      },
+      {
+        "question": "What if my team resists the new systems or finds them too complicated?",
+        "answer": "Our enterprise frameworks are designed for user adoption, not just functionality. We include comprehensive training, gradual rollout protocols, and ongoing support to ensure smooth adoption. Plus, we configure systems to match your existing workflows rather than forcing you to change successful processes. The result: typically 95%+ team adoption within 30 days."
+      },
+      {
+        "question": "How much time will implementation actually take, and will it disrupt current projects?",
+        "answer": "Full implementation takes 12 weeks maximum, with a controlled rollout designed to minimize disruption. You'll see efficiency improvements in the first 30 days while maintaining normal operations. We schedule intensive work during your slower periods and use proven change management protocols from Fortune 1000 implementations."
+      },
+      {
+        "question": "What happens if I need to make changes after the initial setup?",
+        "answer": "All systems are built for flexibility and future growth. You own the complete automation infrastructure, and we provide month-to-month ongoing support without long-term contracts. Most clients need minimal changes after implementation because our diagnostic phase identifies future needs, but adjustments are included in ongoing support."
+      },
+      {
+        "question": "How does the ROI guarantee actually work in practice?",
+        "answer": "During the assessment phase, we identify specific, measurable improvements (like 20% faster change order processing or 15% reduction in administrative time). These become your guaranteed targets. We track performance monthly and provide detailed reporting. If targets aren't met by day 90, you receive a full refund—no questions asked."
+      },
+      {
+        "question": "Why should I choose you over other construction consultants or software companies?",
+        "answer": "Most construction consultants lack enterprise automation experience, and software companies provide generic tools requiring extensive customization. Our enterprise frameworks are proven at Fortune 1000 scale but adapted specifically for luxury construction. Plus, we're the only service offering performance guarantees with territory exclusivity—your competitive advantages stay competitive."
+      },
+      {
+        "question": "What's included in the territory exclusivity, and how does that protect my investment?",
+        "answer": "We work with only one luxury builder per geographic market (typically 25-50 mile radius, depending on market density). This ensures your automation advantages remain competitive differentiators rather than industry standards. Your investment creates lasting competitive positioning, not temporary efficiency gains that competitors can easily replicate."
+      },
+      {
+        "question": "What if my business grows or changes significantly after implementation?",
+        "answer": "The automation systems are designed to scale with your growth. Enterprise frameworks handle volume increases without performance degradation, and the modular architecture allows for expansion into new service areas or geographic markets. Many clients scale from $5M to $15M+ using the same core automation infrastructure."
+      },
+      {
+        "question": "How much does this actually cost, and what are the payment terms?",
+        "answer": "Investment varies by scope and current revenue, typically ranging from $150K-$500K for core automation implementations. We offer performance-based payment structures where you pay only after achieving guaranteed improvements. This aligns our success with yours—we only profit when you achieve measurable ROI."
+      },
+      {
+        "question": "What happens if I decide this isn't right for my business during the process?",
+        "answer": "You can exit at any time during implementation with no penalty. You own all work completed, including systems, processes, and documentation. If you exit before the 90-day guarantee period, you receive a prorated refund based on deliverables completed. Complete risk reversal means complete flexibility."
+      }
+    ],
+    "additionalSupport": {
+      "title": "Still Have Questions?",
+      "description": "Schedule a consultation to discuss your specific situation and get detailed answers about automation for your business.",
+      "cta": {
+        "text": "Schedule Free Consultation",
+        "link": "#consultation"
+      }
     }
   },
 
@@ -20,8 +126,8 @@
     "subtitle": "Real results from luxury builders who've transformed their operations with our systems",
     "items": [
       {
-        "number": "253+",
-        "label": "Luxury Builders Served"
+        "number": "31+",
+        "label": "Clients Served"
       },
       {
         "number": "$180M+",
@@ -254,8 +360,96 @@
   },
 
   "guarantee": {
-    "title": "Performance Guarantee",
-    "description": "We guarantee measurable results within 90 days for our core automation clients, or you don't pay. No other agency in the luxury building space offers this level of accountability."
+    "subTitle": "RISK-FREE TRANSFORMATION",
+    "title": "The Only Performance-Guaranteed Automation in the Luxury Builder Industry",
+    "description": "We're so confident in our enterprise-proven methodology that we guarantee measurable results. No other agency in the luxury building space offers this level of accountability.",
+    "mainGuarantee": {
+      "title": "90-Day ROI Guarantee",
+      "promise": "Measurable operational improvements within 90 days or full refund",
+      "details": "If we don't deliver the specific efficiency improvements outlined in your custom ROI projection, you pay nothing. Period."
+    },
+    "guaranteeDetails": [
+      {
+        "title": "Quantified Results",
+        "metric": "15-25%",
+        "metricLabel": "Minimum Efficiency Improvement",
+        "description": "We commit to specific, measurable improvements in your operations—not vague promises of 'better processes.'"
+      },
+      {
+        "title": "Timeline Accountability",
+        "metric": "90 Days",
+        "metricLabel": "Maximum Results Timeline",
+        "description": "See measurable improvements within first quarter, with full ROI validation by day 90 or receive complete refund."
+      },
+      {
+        "title": "Implementation Guarantee",
+        "metric": "12 Weeks",
+        "metricLabel": "Maximum Deployment Time",
+        "description": "Full system implementation completed within 12 weeks maximum—no endless enterprise timelines."
+      },
+      {
+        "title": "Territory Protection",
+        "metric": "1 Builder",
+        "metricLabel": "Per Geographic Market",
+        "description": "Your competitive advantages stay competitive—we guarantee market exclusivity for your automation systems."
+      }
+    ],
+    "riskReversal": {
+      "title": "Complete Risk Reversal",
+      "subtitle": "We Shoulder 100% of the Implementation Risk",
+      "points": [
+        {
+          "guarantee": "Performance-Based Investment",
+          "description": "Pay only when you achieve the measurable improvements outlined in your custom ROI analysis"
+        },
+        {
+          "guarantee": "No Long-Term Contracts",
+          "description": "Month-to-month ongoing support after initial implementation—no multi-year commitments required"
+        },
+        {
+          "guarantee": "Complete System Ownership",
+          "description": "You own all automation systems, processes, and intellectual property—never dependent on our platform"
+        },
+        {
+          "guarantee": "Transition Support Included",
+          "description": "If you choose to manage systems internally, we provide complete transition training at no additional cost"
+        }
+      ]
+    },
+    "whyWeCanGuarantee": {
+      "title": "Why We Can Make These Guarantees",
+      "subtitle": "12+ Years of Enterprise Success Transferred to Luxury Construction",
+      "reasons": [
+        {
+          "title": "Battle-Tested Methodology",
+          "description": "Our frameworks have been proven at Fortune 1000 scale—we're not experimenting with your business"
+        },
+        {
+          "title": "Industry-Specific Adaptation",
+          "description": "We've studied luxury construction workflows extensively to ensure enterprise frameworks translate perfectly"
+        },
+        {
+          "title": "Systematic Implementation",
+          "description": "Every implementation follows the same proven process—no custom experiments that might fail"
+        },
+        {
+          "title": "Performance-Based Business Model",
+          "description": "We only succeed when you achieve measurable results—our entire model depends on client success"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready to Transform Your Operations Risk-Free?",
+      "description": "Get your custom ROI analysis and see exactly what improvements we'll guarantee for your specific operation.",
+      "primaryBtn": {
+        "text": "Get My Guaranteed ROI Analysis",
+        "link": "#roi-calculator"
+      },
+      "secondaryBtn": {
+        "text": "View Implementation Details",
+        "link": "#process"
+      }
+    }
   },
 
   "testimonials": {
@@ -357,14 +551,10 @@
     ],
     "cta": {
       "title": "Ready to Transform Your Operations?",
-      "description": "Join 50+ luxury builders who've increased profits by $300K-$800K annually through our proven automation system.",
+      "description": "Join other builders increasing their profits by $300K-$800K/yr with our proven frameworks.",
       "primaryBtn": {
         "text": "Get My Free ROI Analysis",
         "link": "#consultation"
-      },
-      "secondaryBtn": {
-        "text": "View Success Stories",
-        "link": "#case-studies"
       }
     },
     "trustIndicators": [

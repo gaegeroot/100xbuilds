@@ -43,6 +43,34 @@ module.exports = function (eleventyConfig) {
         return DateTime.fromJSDate(new Date(dateObj)).toLocaleString(DateTime.DATE_FULL);
     });
 
+    eleventyConfig.addCollection("sitemap", function (collectionApi) {
+        return collectionApi.getAll().filter(function (item) {
+            // Exclude based on multiple criteria
+            const shouldExclude = (
+                // Standard exclusions
+                item.inputPath.includes('/_includes/') ||
+                item.inputPath.includes('/_data/') ||
+                item.inputPath.includes('/assets/') ||
+
+                // Explicit exclusion flags
+                item.data.excludeFromSitemap ||
+                item.data.draft ||
+
+                // Robots meta exclusions
+                item.data.noindex ||
+                (item.data.robots && item.data.robots.noindex) ||
+
+                // URL-based exclusions
+                !item.url ||
+                item.url.includes('/sitemap.xml') ||
+                item.url.includes('/robots.txt') ||
+                item.url.includes('/feed.xml')
+            );
+
+            return !shouldExclude;
+        });
+    });
+
     return {
         passthroughFileCopy: true,
         markdownTemplateEngine: "njk",
