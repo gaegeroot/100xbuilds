@@ -320,7 +320,6 @@ p {
   font-weight: var(--font-weight-normal);
   letter-spacing: var(--letter-spacing-wide);
   text-align: center;
-  max-width: 600px;
   margin: 0 auto;
 }
 

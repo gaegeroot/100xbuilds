@@ -1,0 +1,270 @@
+{
+  "hero": {
+    "subTitle": "TRUSTED BY TOP LUXURY BUILDERS",
+    "title": {
+      "firstPara": "The Growth Partner",
+      "secondPara": "For Luxury Home Builders"
+    },
+    "seeWorkBtn": {
+      "text": "See Our Works",
+      "link": "#project"
+    },
+    "connectBtn": {
+      "text": "Connect with us",
+      "link": "contact"
+    }
+  },
+
+  "stats": {
+    "title": "The Proof is in the Performance",
+    "subtitle": "Real results from luxury builders who've transformed their operations with our systems",
+    "items": [
+      {
+        "number": "253+",
+        "label": "Luxury Builders Served"
+      },
+      {
+        "number": "$180M+",
+        "label": "Revenue Generated"
+      },
+      {
+        "number": "67%",
+        "label": "Average Lead Increase"
+      },
+      {
+        "number": "95%",
+        "label": "Client Satisfaction Rate"
+      }
+    ]
+  },
+  "problem": {
+    "title": "The $15M Ceiling",
+    "subtitle": "Why exceptional builders get trapped between $5M-$15M revenue",
+    "coreProblems": [
+      {
+        "icon": "fa-line-chart",
+        "title": "Revenue Plateau",
+        "description": "You've mastered the craft, built stunning homes, earned client loyalty—yet revenue growth has stagnated. Quality alone doesn't scale to $25M+.",
+        "impact": "Trapped in feast-or-famine cycles"
+      },
+      {
+        "icon": "fa-eye-slash",
+        "title": "Market Invisibility",
+        "description": "While you focus on building, competitors systematically capture market share through strategic positioning and digital authority.",
+        "impact": "Premium prospects choose visible builders"
+      },
+      {
+        "icon": "fa-user",
+        "title": "Owner Dependency",
+        "description": "Every critical decision, client relationship, and problem still requires your personal involvement—creating an unscalable bottleneck.",
+        "impact": "Growth limited to your availability"
+      }
+    ],
+    "insight": {
+      "statement": "The builders who break through don't just build better homes—they build better businesses.",
+      "supporting": "Systems. Authority. Scalability."
+    }
+  },
+
+  "serviceEcosystem": {
+    "title": "Complete Growth Ecosystem",
+    "subtitle": "From free resources to full automation, we support luxury builders at every stage of growth",
+    "tiers": [
+      {
+        "category": "FOUNDATION",
+        "name": "Free Resources",
+        "priceRange": "$0",
+        "description": "Build trust and get immediate value with our proven tools and industry insights.",
+        "icon": "fas fa-gift",
+        "features": [
+          "ROI Calculators & Assessment Tools",
+          "Industry Reports & Market Analysis",
+          "Best Practice Guides",
+          "Weekly Newsletter & Insights"
+        ],
+        "ctaText": "Access Resources",
+        "ctaLink": "/blog",
+        "featured": false
+      },
+      {
+        "category": "QUICK WINS",
+        "name": "Entry Products",
+        "priceRange": "$197 - $1,497",
+        "description": "Quick-win solutions and templates to start optimizing your operations immediately.",
+        "icon": "fas fa-tools",
+        "features": [
+          "Operations Audits ($497)",
+          "Template Bundles ($297)",
+          "Profit Dashboards ($697)",
+          "Process Playbooks"
+        ],
+        "ctaText": "Browse Products",
+        "ctaLink": "/products",
+        "featured": false
+      },
+      {
+        "category": "GROWTH ACCELERATION",
+        "name": "Premium Services",
+        "priceRange": "$2,497 - $7,497",
+        "description": "Done-with-you implementation and ongoing support for sustained growth.",
+        "icon": "fas fa-users",
+        "features": [
+          "90-Day CRM Setup Sprints",
+          "Quarterly Business Reviews",
+          "Mastermind Program Access",
+          "Custom Operations Playbooks"
+        ],
+        "ctaText": "Learn More",
+        "ctaLink": "/premium-services",
+        "featured": false
+      },
+      {
+        "category": "TRANSFORMATION",
+        "name": "Core Automation",
+        "priceRange": "$150K - $500K",
+        "description": "Complete business transformation with guaranteed ROI and exclusive territory protection.",
+        "icon": "fas fa-rocket",
+        "features": [
+          "Full Automation Implementation",
+          "15-25% Efficiency Guarantee",
+          "Territory Exclusivity",
+          "Performance-Based Contracts"
+        ],
+        "ctaText": "See If You Qualify",
+        "ctaLink": "/luxury-builder-ascension",
+        "featured": true,
+        "badge": "CORE OFFERING"
+      }
+    ]
+  },
+
+  "guarantee": {
+    "title": "Performance Guarantee",
+    "description": "We guarantee measurable results within 90 days for our core automation clients, or you don't pay. No other agency in the luxury building space offers this level of accountability."
+  },
+
+  "testimonials": {
+    "title": "Results From Real Builders",
+    "des": "What luxury home builder executives say about our systems and training",
+    "featured": [
+      {
+        "name": "Michael Chen",
+        "title": "CEO",
+        "company": "Pinnacle Custom Homes",
+        "img": "/assets/images/testimonial/user-thumb-one.jpg",
+        "quote": "100xBuilds transformed our lead generation completely. We went from 12 qualified leads per month to 47, and our average project value increased by 32%.",
+        "result": "+292% Lead Growth"
+      },
+      {
+        "name": "Sarah Davidson",
+        "title": "President",
+        "company": "Heritage Luxury Builders",
+        "img": "/assets/images/testimonial/user-thumb-two.jpg",
+        "quote": "Their marketing automation system freed up 15 hours per week of manual follow-up work. We're now closing 68% more prospects, and our project pipeline is booked solid.",
+        "result": "+68% Close Rate"
+      },
+      {
+        "name": "James Richardson",
+        "title": "Owner",
+        "company": "Richardson Custom Estates",
+        "img": "/assets/images/testimonial/user-thumb-three.jpg",
+        "quote": "The media buying strategies 100xBuilds implemented generated $2.3M in new contracts within 6 months. We've never seen ROI like this from our marketing spend.",
+        "result": "$2.3M Revenue"
+      }
+    ]
+  },
+
+  "valueProposition": {
+    "subTitle": "THE 100XBUILDS ADVANTAGE",
+    "title": "The Only Performance-Guaranteed Automation System Built Exclusively for Luxury Builders",
+    "description": "While competitors offer generic solutions, we deliver industry-specific automation that transforms $5M+ builders into profit-maximizing powerhouses with measurable ROI guarantees.",
+    "pillars": [
+      {
+        "icon": "⭐",
+        "iconBg": "mybg-secondary",
+        "title": "Performance Guaranteed ROI",
+        "metric": {
+          "number": "15-25%",
+          "label": "Efficiency Improvement Guaranteed"
+        },
+        "description": "We guarantee measurable operational improvements within 90 days or you don't pay. Our proven system delivers 10:1 ROI minimum through systematic waste elimination and profit optimization.",
+        "benefits": [
+          "$300K-$800K annual profit increase for $15M builders",
+          "20-30% reduction in project completion time",
+          "Money-back guarantee if targets aren't met"
+        ]
+      },
+      {
+        "icon": "🛡️",
+        "iconBg": "mybg-primary",
+        "title": "Territory Exclusive Partnership",
+        "metric": {
+          "number": "1 Builder",
+          "label": "Per Geographic Market"
+        },
+        "description": "Gain competitive advantage through exclusive market positioning. We work with only one luxury builder per territory, ensuring your automation systems remain a competitive differentiator.",
+        "benefits": [
+          "Protected 25-50 mile exclusive radius",
+          "No competition from our other clients",
+          "Proprietary processes stay competitive"
+        ]
+      },
+      {
+        "icon": "⚡",
+        "iconBg": "mybg-accent",
+        "title": "90-Day Results Timeline",
+        "metric": {
+          "number": "90 Days",
+          "label": "To Full System Implementation"
+        },
+        "description": "Unlike enterprise solutions that take 12-18 months, our proven methodology delivers operational results in first quarter. Start seeing efficiency gains in 30 days, full ROI by day 90.",
+        "benefits": [
+          "30 days: 50% faster change order processing",
+          "60 days: 25% improvement in project speed",
+          "90 days: Full ROI validation and scaling"
+        ]
+      },
+      {
+        "icon": "🏠",
+        "iconBg": "mybg-secondary",
+        "title": "Luxury Builder Specialization",
+        "metric": {
+          "number": "100%",
+          "label": "Focus on $5M+ Builders"
+        },
+        "description": "Deep industry expertise exclusively serving luxury custom home builders. We understand your unique challenges, from high-maintenance clients to complex project coordination.",
+        "benefits": [
+          "50+ luxury builders optimized successfully",
+          "$180M+ in attributed efficiency gains",
+          "Industry-specific automation frameworks"
+        ]
+      }
+    ],
+    "cta": {
+      "title": "Ready to Transform Your Operations?",
+      "description": "Join 50+ luxury builders who've increased profits by $300K-$800K annually through our proven automation system.",
+      "primaryBtn": {
+        "text": "Get My Free ROI Analysis",
+        "link": "#consultation"
+      },
+      "secondaryBtn": {
+        "text": "View Success Stories",
+        "link": "#case-studies"
+      }
+    },
+    "trustIndicators": [
+      {
+        "number": "100%",
+        "label": "Success Rate"
+      },
+      {
+        "number": "$24M+",
+        "label": "Client Profit Gains"
+      },
+      {
+        "number": "94%",
+        "label": "Client Retention"
+      }
+    ]
+  }
+}
