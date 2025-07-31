@@ -19,7 +19,7 @@
     ],
     "ctaButton": {
       "text": "See If I Qualify",
-      "link": "#consultation"
+      "link": "/roi-calculator"
     }
   },
   "problems": {
@@ -449,7 +449,7 @@
     "buttons": [
       {
         "text": "Schedule My Strategic Assessment",
-        "link": "#consultation",
+        "link": "/roi-calculator",
         "type": "primary"
       },
       {
@@ -458,10 +458,6 @@
         "type": "secondary"
       }
     ],
-    "contact": {
-      "phone": "409-896-1444",
-      "email": "info@100xbuilds.com"
-    },
     "trustIndicators": [
       "100% Success Rate",
       "Performance Guaranteed",

@@ -72,13 +72,9 @@
                     </div>
                     <div class="collapse navbar-collapse" id="sitenavbar">
                         <ul class="navbar-nav ms-auto main-nav">
-                            {% for navLink in nav.navLinks %}
+                            {% for linkKey, linkUrl in nav.navLinks %}
                                 <li class="nav-item">
-                                    {% if navLink == "home" %}
-                                        <a class="nav-link" href="{{ '/' | url }}">{{ navLink | capitalize }}</a>
-                                    {% else %}
-                                        <a class="nav-link" href="{{ ('/' + navLink) | url }}">{{ navLink | capitalize }}</a>
-                                    {% endif %}
+                                    <a class="nav-link" href="{{ linkUrl | url }}">{{ linkKey | capitalize }}</a>
                                 </li>
                             {% endfor %}
                             <li class="d-none d-lg-block nav-item">
@@ -101,7 +97,7 @@
         {% block workTogether %}
             <!-- Final CTA Section -->
             <section
-                class="py-5 mybg-primary text-white position-relative overflow-hidden">
+                class="py-5 mybg-primary text-white position-relative overflow-hidden d-none">
                 <!-- Background Pattern/Texture (Optional) -->
                 <div class="position-absolute top-0 start-0 w-100 h-100 opacity-10">
                     <div
@@ -221,9 +217,9 @@
                                 </div>
                                 <p
                                     class="site-footer-widget-description">{# {% for contactInfo in footer.contactsInfo %}
-                                                                                                                                                                <a href="{{ contactInfo.link }}">{{ contactInfo.text }}</a>
-                                                                                                                                                                <br>
-                                                                                                                                                            {% endfor %} #}
+                                                                                                                                                                                                                                                <a href="{{ contactInfo.link }}">{{ contactInfo.text }}</a>
+                                                                                                                                                                                                                                                <br>
+                                                                                                                                                                                                                                            {% endfor %} #}
                                 </p>
                             </div>
                         </div>

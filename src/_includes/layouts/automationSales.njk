@@ -4,19 +4,17 @@
     <section class="site-hero">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-7">
+                <div class="col-lg-8 mx-auto">
                     <div class="site-hero-content">
                         <h1>{{ automationSales.hero.headline }}</h1>
                         <h2 class="txt-secondary">{{ automationSales.hero.subheadline }}</h2>
                         <p class="lead">{{ automationSales.hero.description }}</p>
                         <div class="site-hero-content-buttons">
-                            <ul>
-                                <li><ahref="{{ automationSales.hero.ctaButton.link }}" class="btn btn-secondary btn-lg">{{ automationSales.hero.ctaButton.text }}</a></li>
-                            </ul>
+                            <a href="{{ automationSales.hero.ctaButton.link | url }}" class="btn btn-secondary btn-lg">{{ automationSales.hero.ctaButton.text }}</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-5">
+                <div class="col-lg-5 d-none">
                     <div
                         class="text-center">
                         <!-- ROI Calculator Widget -->
@@ -105,6 +103,7 @@
                                 </div>
                             </div>
                         </div>
+                        
                     </section>
                     <!-- Value Props Section -->
                     <section class="mybg-light">
@@ -162,13 +161,6 @@
                         <div class="container">
                             <div class="text-center py-5">
                                 <div class="site-cta-title h3 mb-4">{{ automationSales.problems.calculation | safe }}</div>
-                                <div class="site-cta-buttons">
-                                    <li>
-                                        <a href="{{ automationSales.hero.ctaButton.link }}" class="btn btn-secondary btn-lg">
-                                            Stop Losing Money - Get Your Free ROI Analysis
-                                        </a>
-                                    </li>
-                                </div>
                             </div>
                         </div>
                     </section>
@@ -530,22 +522,9 @@
                                         </div>
                                         <!-- Primary CTA -->
                                         <div class="mb-5">
-                                            <a href="{{ automationSales.finalCta.buttons[0].link }}" class="btn btn-secondary btn-lg px-5 py-3 mb-4 fs-5 fw-semibold">
-                                                Schedule My Strategic Assessment
+                                            <a href="{{ automationSales.finalCta.buttons[0].link | url }}" class="btn btn-secondary btn-lg px-5 py-3 mb-4 fs-5 fw-semibold">
+                                                See If I Qualify
                                             </a>
-                                            <div class="d-block">
-                                                <a href="{{ automationSales.finalCta.buttons[1].link }}" class="btn btn-outline-light px-4 py-2">
-                                                    View Case Studies First
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <!-- Contact - Streamlined -->
-                                        <div class="mb-4 text-white small">
-                                            <span class="txt-secondary">Direct Line:</span>
-                                            {{ automationSales.finalCta.contact.phone }}
-                                            <span class="mx-3">|</span>
-                                            <span class="txt-secondary">Email:</span>
-                                            {{ automationSales.finalCta.contact.email }}
                                         </div>
                                         <!-- Trust Indicators - Minimal -->
                                         <div class="row justify-content-center">
@@ -581,8 +560,8 @@
                                     const margin = parseFloat(marginSelect.value);
                                     if (revenue && margin) { // Calculate potential savings based on operational inefficiencies
                                         const revenueMillions = revenue;
-                                        // Already in millions from dropdown values
-                                        // Different calculation based on current profit margin Lower margin = more operational waste, higher savings potential
+                                        // Already in millions from dropdown values Different calculation based on current profit margin Lower margin = more
+                                        // operational waste, higher savings potential
                                         let inefficiencyRate;
                                         let recoverableRate = 0.75; // Base recoverable rate
                                         if (margin <= 10) {
@@ -655,8 +634,7 @@
                                     // - Salesforce
                                     // - Mailchimp
                                     // - Zapier webhook
-                                    // - Your own backend
-                                    // For demo purposes, show success message
+                                    // - Your own backend For demo purposes, show success message
                                     leadCaptureForm.style.display = 'none';
                                     successMessage.style.display = 'block';
                                     // Example integration (replace with your actual endpoint):
@@ -677,3 +655,5 @@
                             });
                         </script>
                     {% endblock %}
+                    {% block workTogether %}
+{% endblock %}

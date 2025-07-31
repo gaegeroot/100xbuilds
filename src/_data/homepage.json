@@ -6,8 +6,8 @@
       "secondPara": "For Luxury Home Builders"
     },
     "ctaButton": {
-      "text": "Calculate Your Profit Potential",
-      "link": "#project"
+      "text": "Calculate My Profit Potential",
+      "link": "/roi-calculator"
     }
   },
   "finalCTA": {
@@ -25,8 +25,8 @@
         "Detailed automation roadmap prioritized by profit impact"
       ],
       "cta": {
-        "text": "Get My Free $2,500 Assessment",
-        "link": "#assessment-form"
+        "text": "Calculate My Profit Potential",
+        "link": "/roi-calculator"
       }
     },
     "alternativeAction": {
@@ -269,12 +269,8 @@
       "title": "Ready to See Your Custom ROI Projection?",
       "description": "Get a detailed analysis of your potential profit improvements with our free assessment tool.",
       "primaryBtn": {
-        "text": "Calculate My ROI Potential",
-        "link": "#roi-calculator"
-      },
-      "secondaryBtn": {
-        "text": "Schedule Strategy Call",
-        "link": "#consultation"
+        "text": "Calculate My Profit Potential",
+        "link": "/roi-calculator"
       }
     }
   },
@@ -443,11 +439,7 @@
       "description": "Get your custom ROI analysis and see exactly what improvements we'll guarantee for your specific operation.",
       "primaryBtn": {
         "text": "Get My Guaranteed ROI Analysis",
-        "link": "#roi-calculator"
-      },
-      "secondaryBtn": {
-        "text": "View Implementation Details",
-        "link": "#process"
+        "link": "/roi-calculator"
       }
     }
   },
@@ -553,8 +545,8 @@
       "title": "Ready to Transform Your Operations?",
       "description": "Join other builders increasing their profits by $300K-$800K/yr with our proven frameworks.",
       "primaryBtn": {
-        "text": "Get My Free ROI Analysis",
-        "link": "#consultation"
+        "text": "Calculate My Profit Potential",
+        "link": "/roi-calculator"
       }
     },
     "trustIndicators": [

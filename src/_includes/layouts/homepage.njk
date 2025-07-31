@@ -13,12 +13,8 @@
                             </h1>
                             <ul class="site-hero-content-buttons">
                                 <li>
-                                    <a href="{{ homepage.hero.ctaButton.link | url }}" class="btn btn-secondary scroll-to">
-                                        <span class="btn-area">
-                                            <span data-text="{{ homepage.hero.ctaButton.text }}">
-                                                {{ homepage.hero.ctaButton.text }}
-                                            </span>
-                                        </span>
+                                    <a href="{{ homepage.hero.ctaButton.link | url }}" class="btn btn-secondary">
+                                        {{ homepage.hero.ctaButton.text }}
                                     </a>
                                 </li>
                             </ul>
@@ -78,7 +74,7 @@
                                         <h3 class="txt-primary mb-3">{{ homepage.valueProposition.cta.title }}</h3>
                                         <p class="txt-medium mb-4">{{ homepage.valueProposition.cta.description }}</p>
                                         <div class="d-flex gap-3 justify-content-center flex-wrap">
-                                            <a href="{{ homepage.valueProposition.cta.primaryBtn.link }}" class="btn btn-secondary btn-lg">
+                                            <a href="{{ homepage.valueProposition.cta.primaryBtn.link | url }}" class="btn btn-secondary btn-lg">
                                                 {{ homepage.valueProposition.cta.primaryBtn.text }}
                                             </a>
                                         </div>
@@ -236,9 +232,6 @@
                                         <div class="d-flex gap-3 justify-content-center flex-wrap">
                                             <a href="{{ homepage.solutionOverview.cta.primaryBtn.link }}" class="btn btn-secondary btn-lg">
                                                 {{ homepage.solutionOverview.cta.primaryBtn.text }}
-                                            </a>
-                                            <a href="{{ homepage.solutionOverview.cta.secondaryBtn.link }}" class="btn btn-outline btn-lg">
-                                                {{ homepage.solutionOverview.cta.secondaryBtn.text }}
                                             </a>
                                         </div>
                                     </div>
@@ -444,11 +437,8 @@
                                         <h3 class="txt-primary mb-3">{{ homepage.guarantee.cta.title }}</h3>
                                         <p class="txt-medium mb-4">{{ homepage.guarantee.cta.description }}</p>
                                         <div class="d-flex gap-3 justify-content-center flex-wrap">
-                                            <a href="{{ homepage.guarantee.cta.primaryBtn.link }}" class="btn btn-secondary btn-lg">
+                                            <a href="{{ homepage.guarantee.cta.primaryBtn.link | url }}" class="btn btn-secondary btn-lg">
                                                 {{ homepage.guarantee.cta.primaryBtn.text }}
-                                            </a>
-                                            <a href="{{ homepage.guarantee.cta.secondaryBtn.link }}" class="btn btn-outline btn-lg">
-                                                {{ homepage.guarantee.cta.secondaryBtn.text }}
                                             </a>
                                         </div>
                                     </div>
@@ -502,7 +492,7 @@
                                 </div>
                             </div>
                             <!-- Additional Support CTA -->
-                            <div class="text-center mt-5">
+                            <div class="text-center mt-5 d-none">
                                 <div class="row">
                                     <div class="col-lg-6 mx-auto">
                                         <div class="site-project-item p-4 text-center">
