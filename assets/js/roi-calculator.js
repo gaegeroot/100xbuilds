@@ -124,7 +124,7 @@ let answers = {};
 let isShowingResults = false;
 
 // Add this to the top of your existing roi-calculator.js file, after the questions object
-const WEBHOOK_URL = 'https://n8n.supergoodsystems.com/webhook-test/roi-calculator-ai'; // Update this URL
+const WEBHOOK_URL = 'https://n8n.supergoodsystems.com/webhook/roi-calculator-ai'; // Update this URL
 
 // Add this submission function anywhere in your existing file
 async function submitCalculatorData(completedTier) {
@@ -587,7 +587,15 @@ function calculateTier1Results() {
     };
 }
 
-function showCompletionMessage() {
+async function showCompletionMessage() {
+
+    try {
+        await submitCalculatorData('tier2');
+        console.log('Tier 2 data submitted successfully');
+    } catch (error) {
+        console.error('Error submitting Tier 2 data:', error);
+    }
+
     document.getElementById('questionContainer').innerHTML = `
         <div class="completion-message">
             <h1 class="results-title">Thank You!</h1>
