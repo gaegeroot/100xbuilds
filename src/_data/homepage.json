@@ -7,7 +7,7 @@
     },
     "ctaButton": {
       "text": "Calculate My Profit Potential",
-      "link": "/roi-calculator"
+      "link": "/roi-calculator-landing"
     }
   },
   "finalCTA": {
@@ -26,7 +26,7 @@
       ],
       "cta": {
         "text": "Calculate My Profit Potential",
-        "link": "/roi-calculator"
+        "link": "/roi-calculator-landing"
       }
     },
     "alternativeAction": {
@@ -270,7 +270,7 @@
       "description": "Get a detailed analysis of your potential profit improvements with our free assessment tool.",
       "primaryBtn": {
         "text": "Calculate My Profit Potential",
-        "link": "/roi-calculator"
+        "link": "/roi-calculator-landing"
       }
     }
   },
@@ -439,7 +439,7 @@
       "description": "Get your custom ROI analysis and see exactly what improvements we'll guarantee for your specific operation.",
       "primaryBtn": {
         "text": "Get My Guaranteed ROI Analysis",
-        "link": "/roi-calculator"
+        "link": "/roi-calculator-landing"
       }
     }
   },
@@ -546,7 +546,7 @@
       "description": "Join other builders increasing their profits by $300K-$800K/yr with our proven frameworks.",
       "primaryBtn": {
         "text": "Calculate My Profit Potential",
-        "link": "/roi-calculator"
+        "link": "/roi-calculator-landing"
       }
     },
     "trustIndicators": [
