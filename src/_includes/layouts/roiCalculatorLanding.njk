@@ -1,0 +1,295 @@
+{% extends "base.njk" %}
+{% block content %}
+    <!-- Hero Section -->
+    <section class="site-hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="site-hero-content">
+                        <h6 class="txt-secondary">⏱️ Takes 3-5 minutes to complete</h6>
+                        <h1>Get Your Custom ROI Analysis</h1>
+                        <p>See exactly how much marketing, sales, and operational improvements could transform your luxury home building company</p>
+                        <p class="txt-light">Free 6-page report with personalized savings projections, efficiency gains, and payback timeline</p>
+                        <ul class="site-hero-content-buttons">
+                            <li>
+                                <a href="/roi-calculator" class="btn btn-secondary">
+                                    Start My Free Analysis →
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="report-preview-fan">
+                      <div class="report-card report-card-1">
+                            <img src="{{ '/assets/images/report2.png' | url }}" alt="ROI Report Page 2"/>
+                        </div>  
+                        <div class="report-card report-card-2">
+                            <img src="{{ '/assets/images/report1.png' | url }}" alt="ROI Report Page 1"/>
+                        </div>
+                         <div class="report-card report-card-3">
+                            <img src="{{ '/assets/images/report3.png' | url }}" alt="ROI Report Page 3"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#benefits" class="site-hero-scroll scroll-to">
+            <img src="{{ '/assets/images/arrow-down.svg' | url }}" alt="arrow-down"></a>
+        </section>
+        <style>
+            .report-preview-fan {
+                position: relative;
+                height: 400px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                perspective: 1000px;
+            }
+            .report-card {
+                position: absolute;
+                width: 290px;
+                height: 453px;
+                border-radius: var(--radius-lg);
+                box-shadow: 0 8px 25px var(--shadow-medium);
+                transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+                cursor: pointer;
+                overflow: hidden;
+            }
+            .report-card img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: var(--radius-lg);
+            }
+            .report-card-1 {
+                transform: translateX(-60px) rotateY(-15deg) rotateZ(-8deg);
+                z-index: 1;
+            }
+            .report-card-2 {
+                transform: translateX(0) rotateY(0deg) rotateZ(0deg);
+                z-index: 3;
+                box-shadow: 0 12px 35px var(--shadow-dark);
+            }
+            .report-card-3 {
+                transform: translateX(60px) rotateY(15deg) rotateZ(8deg);
+                z-index: 2;
+            }
+            .report-preview-fan:hover .report-card-1 {
+                transform: translateX(-80px) rotateY(-20deg) rotateZ(-12deg) translateY(-10px);
+                box-shadow: 0 15px 35px var(--shadow-medium);
+            }
+            .report-preview-fan:hover .report-card-2 {
+                transform: translateX(0) rotateY(0deg) rotateZ(0deg) translateY(-15px) scale(1.05);
+                box-shadow: 0 20px 45px var(--shadow-dark);
+            }
+            .report-preview-fan:hover .report-card-3 {
+                transform: translateX(80px) rotateY(20deg) rotateZ(12deg) translateY(-10px);
+                box-shadow: 0 15px 35px var(--shadow-medium);
+            }
+            @media(max-width: 991px) {
+                .site-hero .row {
+                    flex-direction: column-reverse;
+                }
+                .site-hero-content {
+                    text-align: center;
+                    margin-top: var(--spacing-4xl);
+                }
+                .report-preview-fan {
+                    height: 300px;
+                    margin-top: var(--spacing-3xl);
+                }
+                .report-card {
+                    width: 160px;
+                    height: 226px;
+                }
+                .report-card-1 {
+                    transform: translateX(-40px) rotateY(-10deg) rotateZ(-5deg);
+                }
+                .report-card-3 {
+                    transform: translateX(40px) rotateY(10deg) rotateZ(5deg);
+                }
+            }
+        </style>
+        <!-- Benefits Section -->
+        <section class="py-5 bg-white" id="benefits">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 mx-auto">
+                        <div class="section-title text-center mb-5">
+                            <span class="text-byline txt-secondary mb-3 d-block">WHAT YOU'll DISCOVER</span>
+                            <h2 class="txt-primary mb-4">Personalized Insights for Your Business</h2>
+                            <p class="text-lead txt-medium">Based on your current revenue and biggest business challenges</p>
+                        </div>
+                        <div class="row g-4">
+                            <div class="col-lg-4">
+                                <div class="site-project-item h-100 p-4 text-center">
+                                    <div
+                                        class="mybg-secondary rounded-lg p-3 mx-auto mb-4"
+                                        style="width: 80px; height: 80px; display: flex; align-items: center; justify-content: center;">
+                                        <span style="font-size: 2rem;">💰</span>
+                                    </div>
+                                    <h3 class="txt-primary mb-3">Your Savings Potential</h3>
+                                    <p class="txt-medium">Conservative projections of annual savings from marketing optimization, sales improvements, and
+                                        operational efficiency gains</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="site-project-item h-100 p-4 text-center">
+                                    <div
+                                        class="mybg-secondary rounded-lg p-3 mx-auto mb-4"
+                                        style="width: 80px; height: 80px; display: flex; align-items: center; justify-content: center;">
+                                        <span style="font-size: 2rem;">📊</span>
+                                    </div>
+                                    <h3 class="txt-primary mb-3">Realistic Timeline</h3>
+                                    <p class="txt-medium">See your projected payback period and implementation roadmap based on industry benchmarks</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="site-project-item h-100 p-4 text-center">
+                                    <div
+                                        class="mybg-secondary rounded-lg p-3 mx-auto mb-4"
+                                        style="width: 80px; height: 80px; display: flex; align-items: center; justify-content: center;">
+                                        <span style="font-size: 2rem;">🎯</span>
+                                    </div>
+                                    <h3 class="txt-primary mb-3">Priority Recommendations</h3>
+                                    <p class="txt-medium">Actionable next steps for marketing, sales, and operations improvements, ranked by impact and
+                                        feasibility</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Report Preview Section -->
+        <section class="py-5 mybg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 mx-auto">
+                        <div class="section-title text-center mb-5">
+                            <span class="text-byline txt-secondary mb-3 d-block">SAMPLE REPORT PREVIEW</span>
+                            <h2 class="txt-primary mb-4">Your 6-Page Analysis Includes</h2>
+                            <p class="text-lead txt-medium">Detailed insights and recommendations delivered within 24 hours</p>
+                        </div>
+                        <div class="row align-items-center g-5">
+                            <div
+                                class="col-lg-6">
+                                <!-- Report Mockup -->
+                                <div class="position-relative">
+                                    <div class="bg-white p-4 rounded-lg shadow-md mb-3" style="transform: rotate(-2deg);">
+                                        <div class="txt-primary fw-semibold mb-3" style="font-size: 1.1rem;">Executive Summary</div>
+                                        <div style="height: 4px; background: #e5e7eb; border-radius: 2px; margin-bottom: 8px; width: 100%;"></div>
+                                        <div style="height: 4px; background: #e5e7eb; border-radius: 2px; margin-bottom: 8px; width: 75%;"></div>
+                                        <div style="height: 4px; background: #e5e7eb; border-radius: 2px; margin-bottom: 8px; width: 50%;"></div>
+                                        <div class="mybg-secondary text-center p-3 rounded-md my-3">
+                                            <div class="txt-primary" style="font-size: 1.5rem; font-weight: 700;">$847K</div>
+                                            <small class="txt-medium">Annual Savings Potential</small>
+                                        </div>
+                                        <div style="height: 4px; background: #e5e7eb; border-radius: 2px; margin-bottom: 8px; width: 100%;"></div>
+                                        <div style="height: 4px; background: #e5e7eb; border-radius: 2px; width: 60%;"></div>
+                                    </div>
+                                    <div
+                                        class="bg-white p-4 rounded-lg shadow-md position-absolute"
+                                        style="top: 20px; right: 20px; transform: rotate(2deg); opacity: 0.9; z-index: 1;">
+                                        <div class="txt-primary fw-semibold mb-3" style="font-size: 1.1rem;">ROI Analysis & Projections</div>
+                                        <div style="height: 4px; background: #e5e7eb; border-radius: 2px; margin-bottom: 8px; width: 100%;"></div>
+                                        <div style="height: 60px; background: linear-gradient(45deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+                                            border-radius: 4px; margin: 1rem 0; opacity: 0.8;"></div>
+                                        <div style="height: 4px; background: #e5e7eb; border-radius: 2px; margin-bottom: 8px; width: 75%;"></div>
+                                        <div style="height: 4px; background: #e5e7eb; border-radius: 2px; width: 50%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h3 class="txt-primary mb-4">Your Report Includes:</h3>
+                                <div class="d-flex align-items-center mb-3">
+                                    <span class="txt-secondary me-3 fw-bold">✓</span>
+                                    <span class="txt-medium">Executive summary with key metrics</span>
+                                </div>
+                                <div class="d-flex align-items-center mb-3">
+                                    <span class="txt-secondary me-3 fw-bold">✓</span>
+                                    <span class="txt-medium">Detailed ROI calculations and projections</span>
+                                </div>
+                                <div class="d-flex align-items-center mb-3">
+                                    <span class="txt-secondary me-3 fw-bold">✓</span>
+                                    <span class="txt-medium">Marketing and sales optimization analysis</span>
+                                </div>
+                                <div class="d-flex align-items-center mb-3">
+                                    <span class="txt-secondary me-3 fw-bold">✓</span>
+                                    <span class="txt-medium">Operational efficiency improvement opportunities</span>
+                                </div>
+                                <div class="d-flex align-items-center mb-3">
+                                    <span class="txt-secondary me-3 fw-bold">✓</span>
+                                    <span class="txt-medium">Industry benchmarking and comparisons</span>
+                                </div>
+                                <div class="d-flex align-items-center mb-3">
+                                    <span class="txt-secondary me-3 fw-bold">✓</span>
+                                    <span class="txt-medium">Implementation timeline and milestones</span>
+                                </div>
+                                <div class="d-flex align-items-center mb-4">
+                                    <span class="txt-secondary me-3 fw-bold">✓</span>
+                                    <span class="txt-medium">Priority recommendations and next steps</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Social Proof Section -->
+        <section class="py-5 bg-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <div class="section-title mb-5">
+                            <h3 class="txt-primary mb-4">Trusted by Luxury Home Builders Nationwide</h3>
+                        </div>
+                        <div class="row g-4">
+                            <div class="col-md-4">
+                                <div class="text-center">
+                                    <div class="txt-primary" style="font-size: 2.5rem; font-weight: 700;">500+</div>
+                                    <div class="txt-medium" style="font-size: 0.9rem;">Reports Generated</div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="text-center">
+                                    <div class="txt-primary" style="font-size: 2.5rem; font-weight: 700;">$50M+</div>
+                                    <div class="txt-medium" style="font-size: 0.9rem;">Combined Builder Revenue</div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="text-center">
+                                    <div class="txt-primary" style="font-size: 2.5rem; font-weight: 700;">24hrs</div>
+                                    <div class="txt-medium" style="font-size: 0.9rem;">Average Delivery Time</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Final CTA Section -->
+        <section class="py-5 mybg-light">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <div class="section-title mb-5">
+                            <h2 class="txt-primary mb-4">Ready to See Your Potential?</h2>
+                            <p class="text-lead txt-medium mb-4">
+                                Get your personalized ROI analysis and discover how strategic improvements can transform your business operations
+                            </p>
+                            <a href="/roi-calculator" class="btn btn-secondary btn-lg">
+                                Start My Free Analysis →
+                            </a>
+                            <div class="mt-4">
+                                <p class="txt-medium mb-2">✓ No email required to start</p>
+                                <p class="txt-medium mb-2">✓ Results delivered within 24 hours</p>
+                                <p class="txt-medium mb-0">✓ No sales calls or pressure</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    {% endblock %}
