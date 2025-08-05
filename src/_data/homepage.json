@@ -199,43 +199,50 @@
       ]
     },
     "serviceTiers": {
-      "title": "The Complete Growth Ecosystem",
-      "subtitle": "From Free Resources to $500K+ Enterprise Solutions",
-      "description": "Unlike competitors who offer one-size-fits-all packages, we provide a strategic progression path that grows with your business.",
+      "title": "Complete Business Transformation Framework",
+      "subtitle": "From Assessment to Enterprise Scale",
+      "description": "Strategic service tiers designed specifically for luxury home builders scaling from $5M to $50M+ revenue.",
       "tiers": [
         {
           "level": "Level 1",
-          "name": "Foundation",
+          "name": "Discovery",
           "priceRange": "Free",
-          "description": "ROI calculators, industry insights, and educational resources to start your optimization journey",
-          "ideal": "Builders exploring automation options"
+          "description": "ROI calculators, industry insights, and educational resources to identify your optimization opportunities",
+          "ideal": "Builders exploring automation potential"
         },
         {
           "level": "Level 2",
           "name": "Assessment",
-          "priceRange": "$197-$1,497",
-          "description": "Operations audits, template bundles, and profit tracking tools for immediate improvements",
-          "ideal": "Ready to identify specific opportunities"
+          "priceRange": "$597-$1,997",
+          "description": "Operations audits, financial health checks, and template bundles for immediate profit improvements",
+          "ideal": "Ready to identify specific revenue opportunities"
         },
         {
           "level": "Level 3",
-          "name": "Implementation",
-          "priceRange": "$2,497-$7,497",
-          "description": "CRM setup, business reviews, and mastermind access for systematic improvements",
-          "ideal": "Committed to process optimization"
+          "name": "Foundation",
+          "priceRange": "$2,997-$9,997",
+          "description": "CRM setup sprints, client experience transformation, and mastermind access for systematic growth",
+          "ideal": "Committed to structured process optimization"
         },
         {
           "level": "Level 4",
-          "name": "Transformation",
-          "priceRange": "$150K-$500K",
-          "description": "Full automation implementation with guaranteed ROI and ongoing optimization",
-          "ideal": "$5M+ builders ready for complete transformation"
+          "name": "Strategic Implementation",
+          "priceRange": "$12K-$75K",
+          "description": "Comprehensive system integration with performance guarantees and ongoing optimization support",
+          "ideal": "Ready for significant operational transformation"
         },
         {
           "level": "Level 5",
-          "name": "Enterprise",
+          "name": "Full Operational Overhaul",
+          "priceRange": "$200K-$500K",
+          "description": "Complete business transformation with territory exclusivity and guaranteed 20-30% efficiency improvements",
+          "ideal": "$15M+ builders ready for market dominance"
+        },
+        {
+          "level": "Level 6",
+          "name": "Enterprise Partnership",
           "priceRange": "$500K+",
-          "description": "Multi-location systems, joint ventures, and licensing for market dominance",
+          "description": "Multi-location systems, joint ventures, and thought leadership positioning for industry influence",
           "ideal": "Scaling operations across multiple markets"
         }
       ]

@@ -1,0 +1,265 @@
+{% extends "base.njk" %}
+{% block content %}
+    <!-- Hero Section -->
+    <section class="site-hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="site-hero-content text-center">
+                        <h6 class="txt-secondary">{{ services.hero.subTitle }}</h6>
+                        <h1>{{ services.hero.title }}</h1>
+                        <p class="text-lead txt-medium mb-4">{{ services.hero.description }}</p>
+                        <ul class="site-hero-content-buttons">
+                            <li>
+                                <a href="{{ services.hero.cta.primary.link | url }}" class="btn btn-secondary">
+                                    {{ services.hero.cta.primary.text }}
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ services.hero.cta.secondary.link | url }}" class="btn btn-outline-secondary">
+                                    {{ services.hero.cta.secondary.text }}
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#overview" class="site-hero-scroll scroll-to">
+            <img src="{{ '/assets/images/arrow-down.svg' | url }}" alt="arrow-down"></a>
+        </section>
+        <!-- Overview Section -->
+        <section id="overview" class="py-5 bg-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 mx-auto">
+                        <div class="section-title text-center mb-5">
+                            <span class="text-byline txt-secondary mb-3 d-block">{{ services.overview.subtitle }}</span>
+                            <h2 class="txt-primary mb-4">{{ services.overview.title }}</h2>
+                            <p class="text-lead txt-medium">{{ services.overview.description }}</p>
+                        </div>
+                        <!-- Progression Stats -->
+                        <div class="row g-4 mb-5">
+                            {% for stat in services.overview.progressionStats %}
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="text-center">
+                                        <div class="text-financial h2 txt-primary mb-2">{{ stat.metric }}</div>
+                                        <div class="stat-label">{{ stat.label }}</div>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Service Tiers Section -->
+        <section class="py-5 mybg-light">
+            <div class="container">
+                {% for tier in services.serviceTiers %}
+                    <div class="row align-items-center mb-6 {% if loop.index % 2 == 0 %}flex-row-reverse{% endif %}">
+                        <div class="col-lg-6">
+                            <div class="pe-lg-5">
+                                <div class="mb-4">
+                                    <span class="text-byline txt-secondary d-block mb-2">{{ tier.level }}</span>
+                                    <h3 class="txt-primary h2 mb-2">{{ tier.name }}</h3>
+                                    <div class="text-financial h4 txt-secondary mb-3">{{ tier.priceRange }}</div>
+                                    <p class="txt-accent h5 mb-3">{{ tier.tagline }}</p>
+                                </div>
+                                <p class="txt-medium mb-4">{{ tier.description }}</p>
+                                <div class="mb-4">
+                                    <h5 class="txt-primary mb-3">Key Features</h5>
+                                    <ul class="list-unstyled">
+                                        {% for feature in tier.keyFeatures %}
+                                            <li class="d-flex align-items-start mb-2">
+                                                <span class="txt-secondary me-2">•</span>
+                                                <span class="txt-dark">{{ feature }}</span>
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                                <div class="d-flex gap-3 flex-wrap">
+                                    <a href="#" class="btn btn-secondary">{{ tier.cta.primary }}</a>
+                                    <a href="#" class="btn btn-outline-secondary">{{ tier.cta.secondary }}</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div
+                                class="{% if loop.index % 2 == 0 %}pe-lg-5{% else %}ps-lg-5{% endif %}">
+                                <!-- Deliverables Card -->
+                                <div class="site-project-item p-4 mb-4">
+                                    <h5 class="txt-primary mb-3">What You Get</h5>
+                                    <ul class="list-unstyled">
+                                        {% for deliverable in tier.deliverables %}
+                                            <li class="d-flex align-items-start mb-2">
+                                                <i class="fa fa-check-circle txt-secondary me-2 mt-1"></i>
+                                                <span class="txt-dark">{{ deliverable }}</span>
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                                <!-- Service Details -->
+                                <div class="row g-3">
+                                    <div class="col-6">
+                                        <div class="text-center p-3 mybg-primary-light rounded">
+                                            <div class="txt-primary fw-semibold mb-1">Timeline</div>
+                                            <small class="txt-secondary">{{ tier.timeline }}</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="text-center p-3 mybg-secondary-light rounded">
+                                            <div class="txt-primary fw-semibold mb-1">Guarantee</div>
+                                            <small class="txt-secondary">{{ tier.guarantee }}</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Popular Services (for applicable tiers) -->
+                                {% if tier.popularServices %}
+                                    <div class="mt-4">
+                                        <h6 class="txt-primary mb-3">Popular Options</h6>
+                                        {% for service in tier.popularServices %}
+                                            <div class="d-flex justify-content-between align-items-center py-2 border-bottom">
+                                                <div>
+                                                    <div class="fw-medium txt-dark">{{ service.name }}</div>
+                                                    <small class="txt-secondary">{{ service.description }}</small>
+                                                </div>
+                                                <div class="text-financial txt-primary">{{ service.price }}</div>
+                                            </div>
+                                        {% endfor %}
+                                    </div>
+                                {% endif %}
+                                <!-- ROI Metrics (for Level 5) -->
+                                {% if tier.roiMetrics %}
+                                    <div class="mt-4">
+                                        <h6 class="txt-primary mb-3">Guaranteed Results</h6>
+                                        {% for metric in tier.roiMetrics %}
+                                            <div class="d-flex align-items-center mb-2">
+                                                <i class="fa fa-chart-line txt-secondary me-2"></i>
+                                                <small class="txt-dark">{{ metric }}</small>
+                                            </div>
+                                        {% endfor %}
+                                    </div>
+                                {% endif %}
+                                <!-- Exclusive Benefits (for Level 6) -->
+                                {% if tier.exclusiveBenefits %}
+                                    <div class="mt-4">
+                                        <h6 class="txt-primary mb-3">Exclusive Benefits</h6>
+                                        {% for benefit in tier.exclusiveBenefits %}
+                                            <div class="d-flex align-items-center mb-2">
+                                                <i class="fa fa-star txt-secondary me-2"></i>
+                                                <small class="txt-dark">{{ benefit }}</small>
+                                            </div>
+                                        {% endfor %}
+                                    </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                    {% if not loop.last %}
+                        <hr class="my-5 mx-auto" style="width: 200px; opacity: 0.3;">
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </section>
+            <!-- Why Choose Section -->
+            <section class="py-5 bg-white">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-10 mx-auto">
+                            <div class="section-title text-center mb-5">
+                                <h2 class="txt-primary mb-4">{{ services.whyChoose.title }}</h2>
+                                <p class="text-lead txt-medium">{{ services.whyChoose.subtitle }}</p>
+                            </div>
+                            <div class="row g-4">
+                                {% for diff in services.whyChoose.differentiators %}
+                                    <div class="col-lg-6">
+                                        <div class="site-project-item h-100 p-4">
+                                            <div class="row align-items-center">
+                                                <div class="col-md-6">
+                                                    <div class="text-center p-3 mybg-danger-light rounded mb-3">
+                                                        <h5 class="txt-danger mb-1">{{ diff.problem }}</h5>
+                                                        <small class="txt-secondary">Traditional Approach</small>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="text-center p-3 mybg-success-light rounded mb-3">
+                                                        <h5 class="txt-success mb-1">{{ diff.solution }}</h5>
+                                                        <small class="txt-secondary">100XBuilds Method</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="txt-medium mb-3">{{ diff.description }}</p>
+                                            <div class="text-center">
+                                                <span class="badge bg-secondary">{{ diff.impact }}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Success Stories Section -->
+            <section class="py-5 mybg-light">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-10 mx-auto">
+                            <div class="section-title text-center mb-5">
+                                <h2 class="txt-primary mb-4">{{ services.successStories.title }}</h2>
+                                <p class="text-lead txt-medium">{{ services.successStories.subtitle }}</p>
+                            </div>
+                            <div class="row g-4">
+                                {% for story in services.successStories.testimonials %}
+                                    <div class="col-lg-4">
+                                        <div class="site-testimonial-item h-100 p-4">
+                                            <div class="mb-4">
+                                                <span class="text-byline txt-secondary d-block mb-2">{{ story.tier }}</span>
+                                                <h5 class="txt-primary mb-1">{{ story.client }}</h5>
+                                                <small class="txt-secondary">{{ story.revenue }}</small>
+                                            </div>
+                                            <div class="text-center mb-4">
+                                                <div class="text-financial h3 txt-secondary mb-1">{{ story.metric }}</div>
+                                                <div class="stat-label">{{ story.metricLabel }}</div>
+                                            </div>
+                                            <blockquote class="mb-4">
+                                                <p class="txt-medium">"{{ story.quote }}"</p>
+                                            </blockquote>
+                                            <div class="mt-auto">
+                                                <small class="txt-secondary">{{ story.result }}</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Next Steps Section -->
+            <section class="py-5 bg-white">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto text-center">
+                            <div class="section-title mb-5">
+                                <h2 class="txt-primary mb-4">{{ services.nextSteps.title }}</h2>
+                                <p class="txt-secondary mb-3">{{ services.nextSteps.subtitle }}</p>
+                                <p class="txt-medium">{{ services.nextSteps.description }}</p>
+                            </div>
+                            <div class="d-flex gap-3 justify-content-center flex-wrap">
+                                <a href="{{ services.nextSteps.cta.primary.link | url }}" class="btn btn-secondary btn-lg">
+                                    {{ services.nextSteps.cta.primary.text }}
+                                </a>
+                                <a href="{{ services.nextSteps.cta.secondary.link | url }}" class="btn btn-outline-secondary btn-lg">
+                                    {{ services.nextSteps.cta.secondary.text }}
+                                </a>
+                                <a href="{{ services.nextSteps.cta.tertiary.link | url }}" class="btn btn-link">
+                                    {{ services.nextSteps.cta.tertiary.text }}
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        {% endblock %}

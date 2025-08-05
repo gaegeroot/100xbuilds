@@ -1,0 +1,355 @@
+{
+  "hero": {
+    "subTitle": "Complete Business Transformation",
+    "title": "Strategic Service Tiers for Luxury Home Builders",
+    "description": "From initial assessment to enterprise automation, our proven framework systematically transforms $5M+ luxury home builders into market-dominating operations with guaranteed ROI.",
+    "cta": {
+      "primary": {
+        "text": "Start With Free ROI Assessment",
+        "link": "/calculator/"
+      },
+      "secondary": {
+        "text": "Schedule Strategy Call",
+        "link": "/consultation/"
+      }
+    }
+  },
+  "overview": {
+    "title": "Six Strategic Tiers, One Complete Transformation",
+    "subtitle": "Designed for Natural Progression",
+    "description": "Each tier builds systematically toward complete business transformation, with natural progression paths and 40-60% advancement rates between levels. Average client timeline: 8-14 months from assessment to full automation implementation.",
+    "progressionStats": [
+      {
+        "metric": "8-14 months",
+        "label": "Average progression timeline"
+      },
+      {
+        "metric": "40-60%",
+        "label": "Tier advancement rate"
+      },
+      {
+        "metric": "95%+",
+        "label": "Client satisfaction rate"
+      },
+      {
+        "metric": "$2.1M",
+        "label": "Average ROI per client"
+      }
+    ]
+  },
+  "serviceTiers": [
+    {
+      "level": "Level 1",
+      "name": "Discovery",
+      "priceRange": "Free",
+      "tagline": "Identify Your Potential",
+      "description": "ROI calculators, industry insights, and educational resources to identify your optimization opportunities",
+      "ideal": "Builders exploring automation potential",
+      "keyFeatures": [
+        "Comprehensive ROI Calculator",
+        "Industry benchmarking reports",
+        "Process optimization guides",
+        "Weekly industry insights newsletter",
+        "Access to case studies and templates"
+      ],
+      "deliverables": [
+        "Custom ROI projection report",
+        "Process gap analysis",
+        "Industry comparison metrics",
+        "Recommended next steps"
+      ],
+      "timeline": "Immediate access",
+      "guarantee": "100% satisfaction or full resource access",
+      "cta": {
+        "primary": "Get Free ROI Assessment",
+        "secondary": "Download Resources"
+      }
+    },
+    {
+      "level": "Level 2",
+      "name": "Assessment",
+      "priceRange": "$497-$1,997",
+      "tagline": "Immediate Profit Improvements",
+      "description": "Operations audits, financial health checks, and template bundles for immediate profit improvements",
+      "ideal": "Ready to identify specific revenue opportunities",
+      "keyFeatures": [
+        "60-minute diagnostic consultation",
+        "5-page implementation report",
+        "30-day quick wins action plan",
+        "Template library access",
+        "Financial health assessment"
+      ],
+      "deliverables": [
+        "Detailed operations audit",
+        "Priority improvement roadmap",
+        "Profit optimization templates",
+        "Process efficiency toolkit",
+        "15-minute follow-up consultation"
+      ],
+      "timeline": "2-3 business days",
+      "guarantee": "30-day satisfaction guarantee",
+      "popularServices": [
+        {
+          "name": "Operations Audit",
+          "price": "$497",
+          "description": "Comprehensive business process assessment"
+        },
+        {
+          "name": "Financial Health Check",
+          "price": "$997",
+          "description": "Profit margin and cash flow analysis"
+        },
+        {
+          "name": "Template Bundle Pro",
+          "price": "$1,497",
+          "description": "Complete workflow and communication templates"
+        }
+      ],
+      "cta": {
+        "primary": "Book Operations Audit",
+        "secondary": "View All Options"
+      }
+    },
+    {
+      "level": "Level 3",
+      "name": "Foundation",
+      "priceRange": "$2,997-$9,997",
+      "tagline": "Systematic Growth Framework",
+      "description": "CRM setup sprints, client experience transformation, and mastermind access for systematic growth",
+      "ideal": "Committed to structured process optimization",
+      "keyFeatures": [
+        "90-day CRM implementation",
+        "Quarterly business reviews",
+        "Mastermind community access",
+        "Custom operations playbook",
+        "Client experience transformation"
+      ],
+      "deliverables": [
+        "Fully configured CRM system",
+        "Automated workflow sequences",
+        "Client communication protocols",
+        "Performance tracking dashboard",
+        "Team training materials"
+      ],
+      "timeline": "90-120 days",
+      "guarantee": "ROI guarantee or service extension",
+      "popularServices": [
+        {
+          "name": "90-Day CRM Setup Sprint",
+          "price": "$4,997",
+          "description": "Complete CRM implementation and automation"
+        },
+        {
+          "name": "Client Experience Transformation",
+          "price": "$7,497",
+          "description": "End-to-end client journey optimization"
+        },
+        {
+          "name": "Mastermind Membership",
+          "price": "$2,997/year",
+          "description": "Ongoing peer learning and expert guidance"
+        }
+      ],
+      "cta": {
+        "primary": "Start CRM Sprint",
+        "secondary": "Join Mastermind"
+      }
+    },
+    {
+      "level": "Level 4",
+      "name": "Strategic Implementation",
+      "priceRange": "$12K-$75K",
+      "tagline": "Comprehensive Transformation",
+      "description": "Comprehensive system integration with performance guarantees and ongoing optimization support",
+      "ideal": "Ready for significant operational transformation",
+      "keyFeatures": [
+        "Multi-system integration",
+        "Performance-based guarantees",
+        "Dedicated implementation team",
+        "Advanced automation workflows",
+        "Ongoing optimization support"
+      ],
+      "deliverables": [
+        "Integrated business systems",
+        "Automated operational workflows",
+        "Performance monitoring system",
+        "Team training and adoption",
+        "6-month optimization support"
+      ],
+      "timeline": "4-6 months",
+      "guarantee": "15-25% efficiency improvement or refund",
+      "popularServices": [
+        {
+          "name": "Business Systems Integration",
+          "price": "$24,997",
+          "description": "Complete operational system unification"
+        },
+        {
+          "name": "Advanced Automation Package",
+          "price": "$49,997",
+          "description": "AI-powered workflow automation"
+        },
+        {
+          "name": "Performance Optimization Program",
+          "price": "$74,997",
+          "description": "Comprehensive efficiency transformation"
+        }
+      ],
+      "cta": {
+        "primary": "Schedule Strategy Session",
+        "secondary": "View Case Studies"
+      }
+    },
+    {
+      "level": "Level 5",
+      "name": "Full Automation",
+      "priceRange": "$200K-$500K",
+      "tagline": "Market Dominance Platform",
+      "description": "Complete business automation with territory exclusivity and guaranteed 20-30% efficiency improvements",
+      "ideal": "$5M+ builders ready for market dominance",
+      "keyFeatures": [
+        "Enterprise-level automation",
+        "Territory exclusivity guarantee",
+        "24/7 system monitoring",
+        "Predictive analytics platform",
+        "Dedicated success manager"
+      ],
+      "deliverables": [
+        "Fully automated business operations",
+        "Predictive analytics dashboard",
+        "Territory exclusivity contract",
+        "24/7 monitoring and support",
+        "Quarterly optimization reviews"
+      ],
+      "timeline": "6-12 months",
+      "guarantee": "20-30% efficiency improvement guarantee",
+      "roiMetrics": [
+        "20-30% reduction in project completion time",
+        "15-25% decrease in cost overruns",
+        "2-5 point profit margin improvement",
+        "50-70% faster change order processing"
+      ],
+      "cta": {
+        "primary": "Apply for Full Automation",
+        "secondary": "Download Case Study"
+      }
+    },
+    {
+      "level": "Level 6",
+      "name": "Enterprise Partnership",
+      "priceRange": "$500K+",
+      "tagline": "Industry Leadership Position",
+      "description": "Multi-location systems, joint ventures, and thought leadership positioning for industry influence",
+      "ideal": "Scaling operations across multiple markets",
+      "keyFeatures": [
+        "Multi-location system deployment",
+        "Joint venture partnerships",
+        "Licensing opportunities",
+        "Speaking bureau placement",
+        "Industry thought leadership"
+      ],
+      "deliverables": [
+        "Enterprise-wide system architecture",
+        "Joint venture agreements",
+        "Licensing program development",
+        "Thought leadership platform",
+        "Industry recognition strategy"
+      ],
+      "timeline": "12-18 months",
+      "guarantee": "Market leadership positioning guarantee",
+      "exclusiveBenefits": [
+        "Co-marketing opportunities",
+        "Revenue sharing partnerships",
+        "Industry speaking opportunities",
+        "Exclusive market territories",
+        "Advanced system licensing"
+      ],
+      "cta": {
+        "primary": "Explore Partnership",
+        "secondary": "Schedule Executive Call"
+      }
+    }
+  ],
+  "whyChoose": {
+    "title": "Why Traditional Solutions Fail Luxury Builders",
+    "subtitle": "Industry-Specific Challenges Require Specialized Solutions",
+    "differentiators": [
+      {
+        "problem": "Generic Software",
+        "solution": "Industry-Specific Automation",
+        "description": "Built for luxury construction workflows, not adapted business software",
+        "impact": "3x faster implementation"
+      },
+      {
+        "problem": "One-Size-Fits-All",
+        "solution": "Customized Implementation",
+        "description": "Tailored to your specific market, processes, and growth goals",
+        "impact": "40% better adoption rates"
+      },
+      {
+        "problem": "No ROI Guarantees",
+        "solution": "Performance-Based Results",
+        "description": "We guarantee measurable improvements or you don't pay",
+        "impact": "100% risk reversal"
+      },
+      {
+        "problem": "Long Implementation",
+        "solution": "90-Day Results Timeline",
+        "description": "See efficiency gains in 30 days, full ROI by day 90",
+        "impact": "5x faster time to value"
+      }
+    ]
+  },
+  "successStories": {
+    "title": "Proven Results Across All Service Tiers",
+    "subtitle": "Real Builders, Real Results",
+    "testimonials": [
+      {
+        "tier": "Level 2",
+        "client": "Heritage Custom Homes",
+        "revenue": "$8.5M annually",
+        "result": "Identified $400K in profit optimization opportunities in first audit",
+        "quote": "The operations audit revealed inefficiencies we didn't even know existed. We implemented their quick wins and saw immediate profit improvements.",
+        "metric": "$400K",
+        "metricLabel": "profit opportunity identified"
+      },
+      {
+        "tier": "Level 4",
+        "client": "Prestige Mountain Builders",
+        "revenue": "$12M annually",
+        "result": "25% reduction in project completion time with strategic implementation",
+        "quote": "The strategic implementation transformed our entire operation. We're now completing projects 25% faster with better margins.",
+        "metric": "25%",
+        "metricLabel": "faster project completion"
+      },
+      {
+        "tier": "Level 5",
+        "client": "Luxury Estates Development",
+        "revenue": "$28M annually",
+        "result": "$2.1M annual efficiency gains through full automation",
+        "quote": "Full automation gave us complete market dominance. We're now the most efficient luxury builder in our territory.",
+        "metric": "$2.1M",
+        "metricLabel": "annual efficiency gains"
+      }
+    ]
+  },
+  "nextSteps": {
+    "title": "Ready to Transform Your Building Operations?",
+    "subtitle": "Start with a free assessment to see your optimization potential",
+    "description": "Join 200+ luxury home builders who have transformed their operations through our systematic approach. See exactly what's possible for your business.",
+    "cta": {
+      "primary": {
+        "text": "Get Free ROI Assessment",
+        "link": "/calculator/"
+      },
+      "secondary": {
+        "text": "Schedule Strategy Call",
+        "link": "/consultation/"
+      },
+      "tertiary": {
+        "text": "View Client Results",
+        "link": "/portfolio/"
+      }
+    }
+  }
+}

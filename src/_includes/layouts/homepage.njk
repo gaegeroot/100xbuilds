@@ -167,7 +167,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- Service Tiers Overview -->
                             <div class="mb-5">
                                 <div class="text-center mb-4">
                                     <h3 class="txt-primary mb-2">{{ homepage.solutionOverview.serviceTiers.title }}</h3>
@@ -176,7 +175,7 @@
                                 </div>
                                 <div class="row g-4 justify-content-center">
                                     {% for tier in homepage.solutionOverview.serviceTiers.tiers %}
-                                        <div class="col-lg-4 col-md-6">
+                                        <div class="col-xl-4 col-lg-6 col-md-6">
                                             <div class="site-project-item h-100 p-4 text-center">
                                                 <div class="mb-3">
                                                     <span class="text-byline txt-secondary d-block mb-2">{{ tier.level }}</span>
@@ -190,6 +189,21 @@
                                             </div>
                                         </div>
                                     {% endfor %}
+                                </div>
+                                <!-- Strategic Positioning Note -->
+                                <div class="row justify-content-center mt-4">
+                                    <div class="col-lg-10">
+                                        <div class="text-center p-4 mybg-light rounded">
+                                            <p class="txt-medium mb-2">
+                                                <strong class="txt-primary">Strategic Progression Design:</strong>
+                                                Each tier builds systematically toward complete business transformation, with natural progression paths and 40-60%
+                                                advancement rates between levels.
+                                            </p>
+                                            <small class="txt-secondary">
+                                                Average client timeline: 8-14 months from assessment to full automation implementation
+                                            </small>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <!-- Differentiators Section -->
@@ -538,5 +552,4 @@
                         </div>
                     </div>
                 </section>
-               
             {% endblock %}

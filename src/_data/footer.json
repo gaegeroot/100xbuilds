@@ -12,12 +12,12 @@
   "siteMapHeading":"Sitemap",
   "siteMap":[
     {
-      "link":"about",
-      "text":"About 100XBuilds"
+      "link":"luxury-builder-ascension",
+      "text":"Ascension"
     },
     {
-      "link":"portfolio",
-      "text":"Projects"
+      "link":"blog",
+      "text":"Articles"
     },
     {
       "link":"privacy-policy",
