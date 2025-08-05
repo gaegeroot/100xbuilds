@@ -1,0 +1,289 @@
+{% extends "base.njk" %}
+
+{% block content %}
+    <!-- Hero Section -->
+    <section class="site-hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="site-hero-content text-center">
+                        <h6 class="txt-secondary">{{ operationsAudit.hero.subTitle }}</h6>
+                        <h1>
+                            {{ operationsAudit.hero.title.firstPara }}
+                            <br>
+                            {{ operationsAudit.hero.title.secondPara }}
+                        </h1>
+                        <p class="lead txt-medium mb-4">{{ operationsAudit.hero.description }}</p>
+                        <ul class="site-hero-content-buttons">
+                            <li>
+                                <a href="{{ operationsAudit.hero.ctaButton.link | url }}" class="btn btn-secondary">
+                                    {{ operationsAudit.hero.ctaButton.text }}
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#deliverables" class="site-hero-scroll scroll-to">
+            <img src="{{ '/assets/images/arrow-down.svg' | url }}" alt="arrow-down">
+        </a>
+    </section>
+
+    <!-- What You Get Section -->
+    <section class="py-5 bg-white" id="deliverables">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="section-title text-center mb-5">
+                        <span class="text-byline txt-secondary mb-3 d-block">{{ operationsAudit.deliverables.subTitle }}</span>
+                        <h2 class="txt-primary mb-4">{{ operationsAudit.deliverables.title }}</h2>
+                        <p class="text-lead txt-medium">{{ operationsAudit.deliverables.description }}</p>
+                    </div>
+                    <div class="row g-4 mb-5">
+                        {% for deliverable in operationsAudit.deliverables.items %}
+                            <div class="col-lg-6">
+                                <div class="site-project-item h-100 p-4">
+                                    <div class="d-flex align-items-start mb-4">
+                                        <div class="me-4 flex-shrink-0">
+                                            <i class="fa {{ deliverable.icon }} txt-secondary" style="font-size: 2rem;"></i>
+                                        </div>
+                                        <div>
+                                            <h4 class="txt-primary h5 mb-2">{{ deliverable.title }}</h4>
+                                            <p class="txt-medium mb-3">{{ deliverable.description }}</p>
+                                            <div class="d-flex align-items-center">
+                                                <span class="txt-accent fw-medium me-2">{{ deliverable.duration }}</span>
+                                                <small class="txt-secondary">{{ deliverable.delivery }}</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Audit Framework Section -->
+    <section class="py-5 mybg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="section-title text-center mb-5">
+                        <h2 class="txt-primary">{{ operationsAudit.framework.title }}</h2>
+                        <p class="lead text-muted">{{ operationsAudit.framework.subtitle }}</p>
+                    </div>
+                    <div class="row g-4 mb-5">
+                        {% for area in operationsAudit.framework.diagnosticAreas %}
+                            <div class="col-md-6 col-lg-4">
+                                <div class="card border-0 shadow-sm h-100 p-4 text-center">
+                                    <div class="mb-4">
+                                        <i class="fa {{ area.icon }} txt-secondary" style="font-size: 2.5rem;"></i>
+                                    </div>
+                                    <h4 class="txt-primary mb-3">{{ area.title }}</h4>
+                                    <p class="text-muted mb-3">{{ area.description }}</p>
+                                    <ul class="list-unstyled txt-small txt-medium">
+                                        {% for quickWin in area.quickWins %}
+                                            <li class="mb-2">
+                                                <i class="fa fa-check txt-secondary me-2"></i>{{ quickWin }}
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process & Timeline Section -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="section-title text-center mb-5">
+                        <h2 class="txt-primary">{{ operationsAudit.process.title }}</h2>
+                        <p class="txt-secondary">{{ operationsAudit.process.subtitle }}</p>
+                    </div>
+                    <div class="row g-4">
+                        {% for step in operationsAudit.process.steps %}
+                            <div class="col-lg-6 mb-4">
+                                <div class="site-project-item h-100 p-4">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <div class="mybg-secondary text-white rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0" style="width: 40px; height: 40px;">
+                                            <small class="fw-bold">{{ loop.index }}</small>
+                                        </div>
+                                        <div>
+                                            <span class="text-byline txt-secondary">{{ step.phase }}</span>
+                                            <h4 class="txt-primary h5 mb-1">{{ step.name }}</h4>
+                                            <small class="stat-label">{{ step.timeline }}</small>
+                                        </div>
+                                    </div>
+                                    <p class="txt-medium mb-3">{{ step.description }}</p>
+                                    <ul class="list-unstyled txt-small">
+                                        {% for activity in step.activities %}
+                                            <li class="mb-1">
+                                                <i class="fa fa-arrow-right txt-secondary me-2"></i>{{ activity }}
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ROI & Value Section -->
+    <section class="py-5 mybg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="section-title text-center mb-5">
+                        <h2 class="txt-primary">{{ operationsAudit.roi.title }}</h2>
+                        <p class="lead txt-medium">{{ operationsAudit.roi.description }}</p>
+                    </div>
+                    <div class="row g-4 mb-5">
+                        {% for metric in operationsAudit.roi.metrics %}
+                            <div class="col-md-4 text-center">
+                                <div class="number-executive txt-secondary">{{ metric.value }}</div>
+                                <div class="stat-label mb-2">{{ metric.label }}</div>
+                                <p class="txt-small txt-medium">{{ metric.description }}</p>
+                            </div>
+                        {% endfor %}
+                    </div>
+                    <div class="text-center">
+                        <blockquote class="quote-executive">
+                            {{ operationsAudit.roi.guarantee.statement }}
+                        </blockquote>
+                        <p class="txt-secondary h5 mb-0">{{ operationsAudit.roi.guarantee.terms }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investment & CTA Section -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="text-center">
+                        <div class="section-title mb-4">
+                            <h2 class="txt-primary">{{ operationsAudit.investment.title }}</h2>
+                            <p class="lead txt-medium">{{ operationsAudit.investment.description }}</p>
+                        </div>
+                        <div class="pricing-card bg-light p-5 rounded mb-5">
+                            <div class="pricing-value mb-3">
+                                <span class="number-executive txt-secondary">${{ operationsAudit.investment.price }}</span>
+                                <span class="txt-medium">{{ operationsAudit.investment.paymentTerms }}</span>
+                            </div>
+                            <p class="txt-medium mb-4">{{ operationsAudit.investment.valueStatement }}</p>
+                            <div class="mb-4">
+                                {% for benefit in operationsAudit.investment.benefits %}
+                                    <div class="d-flex align-items-center justify-content-center mb-2">
+                                        <i class="fa fa-check txt-secondary me-3"></i>
+                                        <span class="txt-medium">{{ benefit }}</span>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                            <a href="{{ operationsAudit.investment.ctaButton.link | url }}" class="btn btn-secondary btn-lg">
+                                {{ operationsAudit.investment.ctaButton.text }}
+                            </a>
+                            <p class="txt-small txt-secondary mt-3">{{ operationsAudit.investment.guarantee }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-5 mybg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="section-title text-center mb-5">
+                        <h2 class="txt-primary">{{ operationsAudit.faq.title }}</h2>
+                        <p class="txt-secondary">{{ operationsAudit.faq.subtitle }}</p>
+                    </div>
+                    <div class="accordion" id="auditFAQ">
+                        {% for item in operationsAudit.faq.items %}
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="heading{{ loop.index }}">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ loop.index }}" aria-expanded="false" aria-controls="collapse{{ loop.index }}">
+                                        {{ item.question }}
+                                    </button>
+                                </h3>
+                                <div id="collapse{{ loop.index }}" class="accordion-collapse collapse" aria-labelledby="heading{{ loop.index }}" data-bs-parent="#auditFAQ">
+                                    <div class="accordion-body">
+                                        {{ item.answer }}
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="site-testimonial py-5 bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title text-center mb-5">
+                        <h2 class="txt-primary">{{ operationsAudit.testimonials.title }}</h2>
+                        <p class="txt-secondary">{{ operationsAudit.testimonials.subtitle }}</p>
+                    </div>
+                </div>
+                {% for testimonial in operationsAudit.testimonials.items %}
+                    <div class="col-lg-4 col-md-6">
+                        <div class="site-testimonial-item">
+                            <div class="site-testimonial-item-header">
+                                <div class="thumb">
+                                    <img src="{{ testimonial.img | url }}" alt="user-thumb">
+                                </div>
+                                <div class="person">
+                                    <h5>{{ testimonial.name }}</h5>
+                                    <p>{{ testimonial.title }}, {{ testimonial.company }}</p>
+                                </div>
+                            </div>
+                            <p class="site-testimonial-item-body">
+                                {{ testimonial.quote }}
+                            </p>
+                            {% if testimonial.result %}
+                                <div class="testimonial-result">
+                                    <small class="txt-accent fw-medium">{{ testimonial.result }}</small>
+                                </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="py-5 mybg-primary text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="text-white mb-4">{{ operationsAudit.finalCta.title }}</h2>
+                    <p class="text-white lead mb-4">{{ operationsAudit.finalCta.description }}</p>
+                    <a href="{{ operationsAudit.finalCta.ctaButton.link | url }}" class="btn btn-secondary btn-lg">
+                        {{ operationsAudit.finalCta.ctaButton.text }}
+                    </a>
+                    <p class="text-white small mt-3">{{ operationsAudit.finalCta.urgency }}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

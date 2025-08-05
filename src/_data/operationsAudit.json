@@ -1,0 +1,279 @@
+{
+  "hero": {
+    "subTitle": "DIAGNOSTIC ASSESSMENT FOR LUXURY BUILDERS",
+    "title": {
+      "firstPara": "Uncover $850K+ in Hidden Profit Opportunities",
+      "secondPara": "With Our 60-Minute Operations Audit"
+    },
+    "description": "Get a comprehensive diagnostic consultation and detailed implementation roadmap specifically designed for luxury home builders generating $5M+ annually.",
+    "ctaButton": {
+      "text": "Book Your Operations Audit - $597",
+      "link": "https://buy.stripe.com/7sY28k4rO6xf1Nuelu5sA01"
+    }
+  },
+
+  "deliverables": {
+    "subTitle": "COMPLETE DIAGNOSTIC PACKAGE",
+    "title": "What You Get in Your Operations Audit",
+    "description": "A comprehensive analysis of your current operations with specific, actionable recommendations for immediate improvement.",
+    "items": [
+      {
+        "icon": "fa-crosshairs",
+        "title": "60-Minute Diagnostic Consultation",
+        "description": "Deep-dive video consultation analyzing your top 5 operational areas with screen recording for future reference.",
+        "duration": "60 minutes",
+        "delivery": "Video call within 48 hours"
+      },
+      {
+        "icon": "fa-bar-chart",
+        "title": "5-Page Implementation Report",
+        "description": "Detailed written analysis focusing on your top 3 priority areas with specific improvement recommendations.",
+        "duration": "Custom report",
+        "delivery": "24-48 hours post-consultation"
+      },
+      {
+        "icon": "fa-check-square-o",
+        "title": "30-Day Quick Wins Action Plan",
+        "description": "Step-by-step checklist of immediate improvements you can implement without disrupting current operations.",
+        "duration": "30-day roadmap",
+        "delivery": "Included in report"
+      },
+      {
+        "icon": "fa-phone",
+        "title": "15-Minute Follow-Up Consultation",
+        "description": "Review findings, clarify recommendations, and discuss next steps for deeper implementation.",
+        "duration": "15 minutes",
+        "delivery": "Within 48 hours of report"
+      }
+    ]
+  },
+
+  "framework": {
+    "title": "5-Point Diagnostic Framework",
+    "subtitle": "We analyze the core operational areas that drive luxury builder profitability",
+    "diagnosticAreas": [
+      {
+        "icon": "fa-tachometer",
+        "title": "Lead Response & Conversion",
+        "description": "Response time optimization and nurturing sequence effectiveness analysis",
+        "quickWins": [
+          "Response time measurement",
+          "Lead scoring optimization",
+          "Conversion bottleneck identification"
+        ]
+      },
+      {
+        "icon": "fa-chart-line",
+        "title": "Sales Process Efficiency",
+        "description": "Pipeline velocity assessment and proposal development optimization",
+        "quickWins": [
+          "Pipeline velocity review",
+          "Proposal timeline analysis",
+          "Decision-maker engagement gaps"
+        ]
+      },
+      {
+        "icon": "fa-cogs",
+        "title": "Technology Integration",
+        "description": "CRM utilization and system integration gap analysis",
+        "quickWins": [
+          "CRM optimization opportunities",
+          "Integration gap identification",
+          "Mobile accessibility review"
+        ]
+      },
+      {
+        "icon": "fa-comments",
+        "title": "Client Communication",
+        "description": "Communication frequency assessment and experience optimization",
+        "quickWins": [
+          "Communication audit",
+          "Progress reporting review",
+          "Change order optimization"
+        ]
+      },
+      {
+        "icon": "fa-dollar-sign",
+        "title": "Financial Management",
+        "description": "Profit tracking, cost control, and cash flow optimization analysis",
+        "quickWins": [
+          "Profit margin analysis",
+          "Cost tracking review",
+          "Cash flow optimization"
+        ]
+      }
+    ]
+  },
+
+  "process": {
+    "title": "Your Audit Process & Timeline",
+    "subtitle": "From booking to implementation roadmap in 2-3 business days",
+    "steps": [
+      {
+        "phase": "STEP 1",
+        "name": "Pre-Consultation Setup",
+        "timeline": "Within 24 hours",
+        "description": "Receive pre-consultation questionnaire and schedule your 60-minute diagnostic session.",
+        "activities": [
+          "Complete business assessment form",
+          "Schedule consultation via Calendly",
+          "Receive Zoom meeting details"
+        ]
+      },
+      {
+        "phase": "STEP 2",
+        "name": "Diagnostic Consultation",
+        "timeline": "60 minutes",
+        "description": "Comprehensive analysis of your operations with screen recording for future reference.",
+        "activities": [
+          "Current process deep-dive",
+          "Technology stack review",
+          "Pain point identification",
+          "Quick win opportunity mapping"
+        ]
+      },
+      {
+        "phase": "STEP 3",
+        "name": "Report Development",
+        "timeline": "24-48 hours",
+        "description": "Creation of your custom 5-page implementation report with prioritized recommendations.",
+        "activities": [
+          "Top 3 priority area analysis",
+          "30-day action plan creation",
+          "ROI projection calculations",
+          "Next step recommendations"
+        ]
+      },
+      {
+        "phase": "STEP 4",
+        "name": "Follow-Up & Planning",
+        "timeline": "Within 48 hours",
+        "description": "Review findings and discuss implementation strategies or advanced service options.",
+        "activities": [
+          "Report review and clarification",
+          "Implementation timeline discussion",
+          "Advanced service consultation",
+          "Next steps planning"
+        ]
+      }
+    ]
+  },
+
+  "roi": {
+    "title": "Expected Results & ROI",
+    "description": "Based on our analysis of 50+ luxury builders, here's what you can expect from implementing our audit recommendations:",
+    "metrics": [
+      {
+        "value": "15-25%",
+        "label": "Efficiency Improvement",
+        "description": "Average operational efficiency gains within 30 days"
+      },
+      {
+        "value": "$127K",
+        "label": "Average Annual Savings",
+        "description": "Typical cost reductions from process optimization"
+      },
+      {
+        "value": "40%",
+        "label": "Convert to Tier 3",
+        "description": "Of audit clients upgrade to comprehensive implementation"
+      }
+    ],
+    "guarantee": {
+      "statement": "We guarantee you'll identify at least $50,000 in annual profit opportunities, or we'll refund your investment.",
+      "terms": "30-day satisfaction guarantee on all audit deliverables"
+    }
+  },
+
+  "investment": {
+    "title": "Your Investment",
+    "description": "A fraction of what most consultants charge, with guaranteed value delivery and immediate actionable insights.",
+    "price": "597",
+    "paymentTerms": "One-time payment",
+    "valueStatement": "Complete diagnostic package with implementation roadmap",
+    "benefits": [
+      "60-minute recorded consultation",
+      "Custom 5-page implementation report",
+      "30-day quick wins action plan",
+      "15-minute follow-up consultation",
+      "Email support for clarifications"
+    ],
+    "ctaButton": {
+      "text": "Book Your Audit Now - $597",
+      "link": "https://buy.stripe.com/7sY28k4rO6xf1Nuelu5sA01"
+    },
+    "guarantee": "30-day satisfaction guarantee - identify $50K+ in opportunities or full refund"
+  },
+
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Common questions about the Operations Audit process",
+    "items": [
+      {
+        "question": "How quickly can I schedule my audit consultation?",
+        "answer": "Most consultations are scheduled within 24-48 hours of purchase. We offer flexible scheduling to accommodate your business hours and can work with your calendar availability."
+      },
+      {
+        "question": "What information do I need to prepare for the consultation?",
+        "answer": "We'll send you a brief pre-consultation questionnaire covering your current processes, technology stack, and main challenges. The consultation itself is conversational - no extensive preparation required."
+      },
+      {
+        "question": "How detailed is the implementation report?",
+        "answer": "Your 5-page report includes specific recommendations for your top 3 priority areas, a 30-day action plan with checkboxes, ROI projections, and next steps. Everything is customized to your specific operation."
+      },
+      {
+        "question": "Can I implement the recommendations myself?",
+        "answer": "Absolutely. The audit is designed to provide actionable insights you can implement immediately. The 30-day action plan includes step-by-step instructions for the most impactful quick wins."
+      },
+      {
+        "question": "What if I want help implementing the recommendations?",
+        "answer": "During your follow-up consultation, we'll discuss our Tier 3 implementation services (90-Day CRM Sprint, Operations Playbook Creation, etc.) if you'd like hands-on assistance."
+      },
+      {
+        "question": "Is this audit applicable to my specific type of building?",
+        "answer": "This audit is specifically designed for luxury custom home builders with $5M+ annual revenue. Whether you focus on high-end custom homes, luxury spec builds, or premium remodeling, our framework applies."
+      }
+    ]
+  },
+
+  "testimonials": {
+    "title": "What Luxury Builders Say About Our Audits",
+    "subtitle": "Real results from builders who discovered hidden profit opportunities",
+    "items": [
+      {
+        "name": "Michael Chen",
+        "title": "CEO",
+        "company": "Pinnacle Custom Homes",
+        "img": "/assets/images/testimonial/user-thumb-one.jpg",
+        "quote": "The Operations Audit revealed $180K in annual savings opportunities I never would have found on my own. Their recommendations were specific, actionable, and immediately implementable.",
+        "result": "$180K Annual Savings Identified"
+      },
+      {
+        "name": "Sarah Davidson",
+        "title": "President",
+        "company": "Heritage Luxury Builders",
+        "img": "/assets/images/testimonial/user-thumb-two.jpg",
+        "quote": "In just 60 minutes, they identified bottlenecks in our sales process that were costing us 3-4 deals per month. The follow-up report was incredibly detailed and actionable.",
+        "result": "3-4 Additional Deals/Month"
+      },
+      {
+        "name": "James Richardson",
+        "title": "Owner",
+        "company": "Richardson Custom Estates",
+        "img": "/assets/images/testimonial/user-thumb-three.jpg",
+        "quote": "Best $600 I've ever spent. The audit showed us how to reduce our project completion time by 3 weeks on average, which translates to massive cash flow improvements.",
+        "result": "3 Weeks Faster Completion"
+      }
+    ]
+  },
+
+  "finalCta": {
+    "title": "Ready to Uncover Your Hidden Profit Opportunities?",
+    "description": "Join the 50+ luxury builders who've discovered an average of $127K in annual savings through our Operations Audit process.",
+    "ctaButton": {
+      "text": "Book Your Operations Audit - $597",
+      "link": "https://buy.stripe.com/7sY28k4rO6xf1Nuelu5sA01"
+    },
+    "urgency": "Most consultation slots are booked within 24-48 hours • 30-day satisfaction guarantee"
+  }
+}
