@@ -19,6 +19,10 @@
       "link":"blog",
       "text":"Articles"
     },
+     {
+      "link":"services",
+      "text":"Services"
+    },
     {
       "link":"privacy-policy",
       "text":"Privacy Policy"
