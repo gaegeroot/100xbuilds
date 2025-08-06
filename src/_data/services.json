@@ -1,7 +1,7 @@
 {
   "hero": {
     "subTitle": "Complete Business Transformation",
-    "title": "Strategic Service Tiers for Luxury Home Builders", 
+    "title": "Strategic Service Tiers for Luxury Home Builders",
     "description": "From initial assessment to enterprise automation, our proven framework systematically transforms $5M+ luxury home builders into market-dominating operations with guaranteed ROI.",
     "cta": {
       "primary": {
@@ -66,15 +66,15 @@
         "primary": {
           "text": "Get Free ROI Assessment",
           "link": "/roi-calculator/"
-        }, 
+        },
         "secondary": {
-          "text": "Explore Resources", 
+          "text": "Explore Resources",
           "link": "/resources/"
         }
       }
     },
     {
-      "level": "Level 2", 
+      "level": "Level 2",
       "name": "Assessment",
       "priceRange": "$597-$1,997",
       "tagline": "Immediate Profit Improvements",
@@ -132,14 +132,14 @@
     {
       "level": "Level 3",
       "name": "Foundation",
-      "priceRange": "$4,997-$9,997", 
+      "priceRange": "$4,997-$9,997",
       "tagline": "Systematic Growth Framework",
       "description": "Structured implementation programs that build systematic business processes and provide ongoing optimization support",
       "ideal": "Committed to structured process optimization",
       "coreFocuses": [
         "CRM system implementation and optimization",
         "Client experience journey mapping and automation",
-        "Business process documentation and standardization", 
+        "Business process documentation and standardization",
         "Team training and adoption support",
         "Ongoing peer learning and expert guidance"
       ],
@@ -187,7 +187,7 @@
     },
     {
       "level": "Level 4",
-      "name": "Strategic Implementation", 
+      "name": "Strategic Implementation",
       "priceRange": "$12K-$75K",
       "tagline": "Comprehensive Transformation",
       "description": "Multi-system integration programs with dedicated teams, performance guarantees, and comprehensive optimization support",
@@ -267,7 +267,7 @@
       "guarantee": "20-30% efficiency improvement guarantee",
       "roiMetrics": [
         "20-30% reduction in project completion time",
-        "15-25% decrease in cost overruns", 
+        "15-25% decrease in cost overruns",
         "2-5 point profit margin improvement",
         "50-70% faster change order processing"
       ],
@@ -279,7 +279,7 @@
       }
     },
     {
-      "level": "Level 6", 
+      "level": "Level 6",
       "name": "Enterprise Partnership",
       "priceRange": "$500K+",
       "tagline": "Industry Leadership Position",
@@ -321,35 +321,97 @@
       }
     }
   ],
-  "whyChoose": {
-    "title": "Why Traditional Solutions Fail Luxury Builders",
-    "subtitle": "Industry-Specific Challenges Require Specialized Solutions",
-    "differentiators": [
+  "industryTransformation": {
+    "title": "The Luxury Construction Industry is Transforming",
+    "subtitle": "Market Leaders are Pulling Away from Traditional Builders",
+    "description": "While most luxury builders struggle with manual processes and generic software, industry leaders are leveraging enterprise-grade automation to dominate their markets. The gap is widening rapidly.",
+    "marketShift": {
+      "statistic": "73%",
+      "label": "of luxury builders report falling behind on efficiency",
+      "context": "Industry efficiency study, 2024"
+    },
+    "transformationDrivers": [
       {
-        "problem": "Generic Software",
-        "solution": "Industry-Specific Automation",
-        "description": "Built for luxury construction workflows, not adapted business software",
-        "impact": "3x faster implementation"
+        "challenge": "Rising Material Costs",
+        "impact": "15-25% margin pressure",
+        "solution": "Predictive procurement and waste reduction automation",
+        "advantage": "Market leaders maintain 18%+ margins while others struggle at 8-12%"
       },
       {
-        "problem": "One-Size-Fits-All",
-        "solution": "Customized Implementation", 
-        "description": "Tailored to your specific market, processes, and growth goals",
-        "impact": "40% better adoption rates"
+        "challenge": "Client Expectations",
+        "impact": "50% more communication touchpoints required",
+        "solution": "Automated client journey with predictive updates",
+        "advantage": "99% client satisfaction vs industry average of 76%"
       },
       {
-        "problem": "No ROI Guarantees",
-        "solution": "Performance-Based Results",
-        "description": "We guarantee measurable improvements or you don't pay",
-        "impact": "100% risk reversal"
+        "challenge": "Labor Shortage",
+        "impact": "Projects delayed 30% longer than planned",
+        "solution": "Intelligent scheduling and subcontractor coordination",
+        "advantage": "On-time delivery rate of 94% vs industry average of 67%"
       },
       {
-        "problem": "Long Implementation",
-        "solution": "90-Day Results Timeline",
-        "description": "See efficiency gains in 30 days, full ROI by day 90",
-        "impact": "5x faster time to value"
+        "challenge": "Regulatory Complexity",
+        "impact": "Administrative time increased 40%",
+        "solution": "Automated compliance tracking and documentation",
+        "advantage": "Zero permit delays vs industry average of 3.2 weeks"
       }
-    ]
+    ],
+    "marketSegmentation": {
+      "title": "Two Types of Luxury Builders are Emerging",
+      "leaders": {
+        "title": "Market Leaders",
+        "subtitle": "Systematic Automation Adopters",
+        "characteristics": [
+          "20-30% faster project completion",
+          "15-25% higher profit margins",
+          "Territory exclusivity through competitive advantages",
+          "Predictable, scalable operations"
+        ],
+        "trajectory": "Capturing increasing market share"
+      },
+      "traditional": {
+        "title": "Traditional Builders",
+        "subtitle": "Manual Process Dependent",
+        "characteristics": [
+          "Constant firefighting and reactive management",
+          "Declining margins due to inefficiency",
+          "Losing clients to more responsive competitors",
+          "Burnout from operational complexity"
+        ],
+        "trajectory": "Struggling to compete effectively"
+      }
+    },
+    "choiceFramework": {
+      "title": "The Strategic Choice Facing Every Luxury Builder",
+      "subtitle": "Transform Now or Fall Behind Permanently",
+      "urgency": "The window for transformation is narrowing as market leaders establish unassailable competitive advantages.",
+      "pathways": [
+        {
+          "path": "Systematic Transformation",
+          "description": "Implement enterprise-grade automation systematically through proven frameworks",
+          "outcome": "Join the market leaders with sustainable competitive advantages",
+          "timeline": "8-14 months to full transformation"
+        },
+        {
+          "path": "Gradual Improvement",
+          "description": "Implement point solutions and incremental process improvements",
+          "outcome": "Maintain current position but fall further behind market leaders",
+          "timeline": "Indefinite with diminishing returns"
+        },
+        {
+          "path": "Status Quo",
+          "description": "Continue with current manual processes and generic software",
+          "outcome": "Increasingly unsustainable operations and market share loss",
+          "timeline": "Immediate decline in competitive position"
+        }
+      ]
+    },
+    "cta": {
+      "primary": {
+        "text": "Start With Your Free ROI Assessment",
+        "link": "/roi-calculator/"
+      }
+    }
   },
   "successStories": {
     "title": "Proven Results Across All Service Tiers",
@@ -365,7 +427,7 @@
         "metricLabel": "profit opportunity identified"
       },
       {
-        "tier": "Level 4", 
+        "tier": "Level 4",
         "client": "Prestige Mountain Builders",
         "revenue": "$12M annually",
         "result": "25% reduction in project completion time with strategic implementation",
@@ -376,7 +438,7 @@
       {
         "tier": "Level 5",
         "client": "Luxury Estates Development",
-        "revenue": "$28M annually", 
+        "revenue": "$28M annually",
         "result": "$2.1M annual efficiency gains through full automation",
         "quote": "Full automation gave us complete market dominance. We're now the most efficient luxury builder in our territory.",
         "metric": "$2.1M",
@@ -390,8 +452,8 @@
     "description": "Join 200+ luxury home builders who have transformed their operations through our systematic approach. See exactly what's possible for your business.",
     "cta": {
       "primary": {
-        "text": "Get Free ROI Assessment",
-        "link": "/calculator/"
+        "text": "Start With Your Free ROI Assessment",
+        "link": "/roi-calculator/"
       }
     }
   }

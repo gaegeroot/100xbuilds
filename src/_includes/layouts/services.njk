@@ -1,6 +1,5 @@
 {% extends "base.njk" %}
 {% block content %}
-
     <!-- Hero Section -->
     <section class="site-hero">
         <div class="container">
@@ -22,277 +21,365 @@
             </div>
         </div>
         <a href="#overview" class="site-hero-scroll scroll-to">
-            <img src="{{ '/assets/images/arrow-down.svg' | url }}" alt="arrow-down">
-        </a>
-    </section>
-
-    <!-- Overview Section -->
-    <section id="overview" class="py-5 bg-white">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 mx-auto">
-                    <div class="section-title text-center mb-5">
-                        <span class="text-byline txt-secondary mb-3 d-block">{{ services.overview.subtitle }}</span>
-                        <h2 class="txt-primary mb-4">{{ services.overview.title }}</h2>
-                        <p class="text-lead txt-medium">{{ services.overview.description }}</p>
-                    </div>
-                    
-                    <!-- Progression Stats -->
-                    <div class="row g-4 mb-5">
-                        {% for stat in services.overview.progressionStats %}
-                            <div class="col-lg-3 col-md-6">
-                                <div class="text-center">
-                                    <div class="text-financial h2 txt-primary mb-2">{{ stat.metric }}</div>
-                                    <div class="stat-label">{{ stat.label }}</div>
+            <img src="{{ '/assets/images/arrow-down.svg' | url }}" alt="arrow-down"></a>
+        </section>
+        <!-- Overview Section -->
+        <section id="overview" class="py-5 bg-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 mx-auto">
+                        <div class="section-title text-center mb-5">
+                            <span class="text-byline txt-secondary mb-3 d-block">{{ services.overview.subtitle }}</span>
+                            <h2 class="txt-primary mb-4">{{ services.overview.title }}</h2>
+                            <p class="text-lead txt-medium">{{ services.overview.description }}</p>
+                        </div>
+                        <!-- Progression Stats -->
+                        <div class="row g-4 mb-5">
+                            {% for stat in services.overview.progressionStats %}
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="text-center">
+                                        <div class="text-financial h2 txt-primary mb-2">{{ stat.metric }}</div>
+                                        <div class="stat-label">{{ stat.label }}</div>
+                                    </div>
                                 </div>
-                            </div>
-                        {% endfor %}
+                            {% endfor %}
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Service Tiers Section -->
-    <section class="py-5 mybg-light">
-        <div class="container">
-            {% for tier in services.serviceTiers %}
-                <div class="row align-items-center mb-6 {% if loop.index % 2 == 0 %}flex-row-reverse{% endif %}">
-                    <div class="col-lg-6">
-                        <div class="pe-lg-5">
-                            <div class="mb-4">
-                                <span class="text-byline txt-secondary d-block mb-2">{{ tier.level }}</span>
-                                <h3 class="txt-primary h2 mb-2">{{ tier.name }}</h3>
-                                <div class="text-financial h4 txt-secondary mb-3">{{ tier.priceRange }}</div>
-                                <p class="txt-accent h5 mb-3">{{ tier.tagline }}</p>
+        </section>
+        <!-- Service Tiers Section -->
+        <section class="py-5 mybg-light">
+            <div class="container">
+                {% for tier in services.serviceTiers %}
+                    <div class="row align-items-center mb-6 {% if loop.index % 2 == 0 %}flex-row-reverse{% endif %}">
+                        <div class="col-lg-6">
+                            <div class="pe-lg-5">
+                                <div class="mb-4">
+                                    <span class="text-byline txt-secondary d-block mb-2">{{ tier.level }}</span>
+                                    <h3 class="txt-primary h2 mb-2">{{ tier.name }}</h3>
+                                    <div class="text-financial h4 txt-secondary mb-3">{{ tier.priceRange }}</div>
+                                    <p class="txt-accent h5 mb-3">{{ tier.tagline }}</p>
+                                </div>
+                                <p class="txt-medium mb-4">{{ tier.description }}</p>
+                                <!-- Core Focuses (for Tiers 3-6) or Core Capabilities (for Tiers 1-2) -->
+                                {% if tier.coreFocuses %}
+                                    <div class="mb-4">
+                                        <h5 class="txt-primary mb-3">Core Focuses</h5>
+                                        <ul class="list-unstyled">
+                                            {% for focus in tier.coreFocuses %}
+                                                <li class="d-flex align-items-start mb-2">
+                                                    <span class="txt-secondary me-2">•</span>
+                                                    <span class="txt-dark">{{ focus }}</span>
+                                                </li>
+                                            {% endfor %}
+                                        </ul>
+                                    </div>
+                                {% else %}
+                                    <div class="mb-4">
+                                        <h5 class="txt-primary mb-3">Core Capabilities</h5>
+                                        <ul class="list-unstyled">
+                                            {% for capability in tier.coreCapabilities %}
+                                                <li class="d-flex align-items-start mb-2">
+                                                    <span class="txt-secondary me-2">•</span>
+                                                    <span class="txt-dark">{{ capability }}</span>
+                                                </li>
+                                            {% endfor %}
+                                        </ul>
+                                    </div>
+                                {% endif %}
+                                <div class="d-flex gap-3 flex-wrap">
+                                    <a href="{{ tier.cta.primary.link }}" class="btn btn-secondary">{{ tier.cta.primary.text }}</a>
+                                    {% if tier.cta.secondary.link %}
+                                        <a href="{{ tier.cta.secondary.link }}" class="btn btn-outline-secondary">{{ tier.cta.secondary.text }}</a>
+                                    {% endif %}
+                                </div>
                             </div>
-                            
-                            <p class="txt-medium mb-4">{{ tier.description }}</p>
-                            
-                            <!-- Core Focuses (for Tiers 3-6) or Core Capabilities (for Tiers 1-2) -->
-                            {% if tier.coreFocuses %}
-                                <div class="mb-4">
-                                    <h5 class="txt-primary mb-3">Core Focuses</h5>
-                                    <ul class="list-unstyled">
-                                        {% for focus in tier.coreFocuses %}
-                                            <li class="d-flex align-items-start mb-2">
-                                                <span class="txt-secondary me-2">•</span>
-                                                <span class="txt-dark">{{ focus }}</span>
-                                            </li>
-                                        {% endfor %}
-                                    </ul>
+                        </div>
+                        <div class="col-lg-6 mt-5">
+                            <div
+                                class="{% if loop.index % 2 == 0 %}pe-lg-5{% else %}ps-lg-5{% endif %}">
+                                <!-- Who Is This Best For Card -->
+                                <div
+                                    class="site-project-item p-4 mb-4 position-relative">
+                                    <!-- Guarantee Badge -->
+                                    <div class="position-absolute" style="top: -8px; right: -8px; z-index: 10; transform: rotate(2deg)">
+                                        <span class="badge mybg-secondary text-white px-3 py-2 rounded-pill shadow-sm">
+                                            <i class="fa fa-shield me-1"></i>
+                                            <small>{{ tier.guarantee }}</small>
+                                        </span>
+                                    </div>
+                                    <h5 class="txt-primary mb-3">{{ tier.whoIsBestFor.title }}</h5>
+                                    <div class="mb-3">
+                                        <div class="fw-medium txt-dark mb-2">{{ tier.whoIsBestFor.primaryAudience }}</div>
+                                        <small class="txt-secondary">{{ tier.whoIsBestFor.businessStage }}</small>
+                                    </div>
+                                    <div class="mb-3">
+                                        <h6 class="txt-primary mb-2">Best fit if you are:</h6>
+                                        <ul class="list-unstyled">
+                                            {% for need in tier.whoIsBestFor.specificNeeds %}
+                                                <li class="d-flex align-items-start mb-1">
+                                                    <i class="fa fa-check-circle txt-secondary me-2 mt-1"></i>
+                                                    <small class="txt-dark">{{ need }}</small>
+                                                </li>
+                                            {% endfor %}
+                                        </ul>
+                                    </div>
+                                    <div class="text-center">
+                                        <small class="txt-secondary">
+                                            <strong>Time commitment:</strong>
+                                            {{ tier.whoIsBestFor.timeCommitment }}
+                                        </small>
+                                    </div>
                                 </div>
-                            {% else %}
-                                <div class="mb-4">
-                                    <h5 class="txt-primary mb-3">Core Capabilities</h5>
-                                    <ul class="list-unstyled">
-                                        {% for capability in tier.coreCapabilities %}
-                                            <li class="d-flex align-items-start mb-2">
-                                                <span class="txt-secondary me-2">•</span>
-                                                <span class="txt-dark">{{ capability }}</span>
-                                            </li>
+                                <!-- Popular Services (for applicable tiers) -->
+                                {% if tier.popularServices %}
+                                    <div class="mt-4">
+                                        <h6 class="txt-primary mb-3">Popular Options</h6>
+                                        {% for service in tier.popularServices %}
+                                            <div class="d-flex justify-content-between align-items-center py-2 border-bottom">
+                                                <div>
+                                                    <div class="fw-medium txt-dark">{{ service.name }}</div>
+                                                    <small class="txt-secondary">{{ service.description }}</small>
+                                                </div>
+                                                <div class="text-financial txt-primary">{{ service.price }}</div>
+                                            </div>
                                         {% endfor %}
-                                    </ul>
-                                </div>
-                            {% endif %}
-
-                            <div class="d-flex gap-3 flex-wrap">
-                                <a href="{{ tier.cta.primary.link }}" class="btn btn-secondary">{{ tier.cta.primary.text }}</a>
-                                {% if tier.cta.secondary.link %}
-                                <a href="{{ tier.cta.secondary.link }}" class="btn btn-outline-secondary">{{ tier.cta.secondary.text }}</a>
+                                    </div>
+                                {% endif %}
+                                <!-- ROI Metrics (for Level 5) -->
+                                {% if tier.roiMetrics %}
+                                    <div class="mt-4">
+                                        <h6 class="txt-primary mb-3">Guaranteed Results</h6>
+                                        {% for metric in tier.roiMetrics %}
+                                            <div class="d-flex align-items-center mb-2">
+                                                <i class="fa fa-chart-line txt-secondary me-2"></i>
+                                                <small class="txt-dark">{{ metric }}</small>
+                                            </div>
+                                        {% endfor %}
+                                    </div>
+                                {% endif %}
+                                <!-- Exclusive Benefits (for Level 6) -->
+                                {% if tier.exclusiveBenefits %}
+                                    <div class="mt-4">
+                                        <h6 class="txt-primary mb-3">Exclusive Benefits</h6>
+                                        {% for benefit in tier.exclusiveBenefits %}
+                                            <div class="d-flex align-items-center mb-2">
+                                                <i class="fa fa-star txt-secondary me-2"></i>
+                                                <small class="txt-dark">{{ benefit }}</small>
+                                            </div>
+                                        {% endfor %}
+                                    </div>
                                 {% endif %}
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="col-lg-6">
-                        <div class="{% if loop.index % 2 == 0 %}pe-lg-5{% else %}ps-lg-5{% endif %}">
-                            <!-- Who Is This Best For Card -->
-                            <div class="site-project-item p-4 mb-4 position-relative">
-                                <!-- Guarantee Badge -->
-                                <div class="position-absolute" style="top: -8px; right: -8px; z-index: 10; transform: rotate(2deg)">
-                                    <span class="badge mybg-secondary text-white px-3 py-2 rounded-pill shadow-sm">
-                                        <i class="fa fa-shield me-1"></i>
-                                        <small>{{ tier.guarantee }}</small>
-                                    </span>
-                                </div>
-                                
-                                <h5 class="txt-primary mb-3">{{ tier.whoIsBestFor.title }}</h5>
-                                <div class="mb-3">
-                                    <div class="fw-medium txt-dark mb-2">{{ tier.whoIsBestFor.primaryAudience }}</div>
-                                    <small class="txt-secondary">{{ tier.whoIsBestFor.businessStage }}</small>
-                                </div>
-                                <div class="mb-3">
-                                    <h6 class="txt-primary mb-2">Best fit if you are:</h6>
-                                    <ul class="list-unstyled">
-                                        {% for need in tier.whoIsBestFor.specificNeeds %}
-                                            <li class="d-flex align-items-start mb-1">
-                                                <i class="fa fa-check-circle txt-secondary me-2 mt-1"></i>
-                                                <small class="txt-dark">{{ need }}</small>
-                                            </li>
-                                        {% endfor %}
-                                    </ul>
-                                </div>
-                                <div class="text-center">
-                                    <small class="txt-secondary">
-                                        <strong>Time commitment:</strong> {{ tier.whoIsBestFor.timeCommitment }}
-                                    </small>
+                    {% if not loop.last %}
+                        <hr class="my-5 mx-auto" style="width: 200px; opacity: 0.3;">
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </section>
+            <!-- Industry Transformation Section -->
+            <section class="py-5 bg-white">
+                <div class="container">
+                    <div class="row">
+                        <div
+                            class="col-lg-10 mx-auto">
+                            <!-- Section Header -->
+                            <div class="section-title text-center mb-5">
+                                <h2 class="txt-primary mb-4">{{ services.industryTransformation.title }}</h2>
+                                <p class="text-lead txt-medium mb-4">{{ services.industryTransformation.subtitle }}</p>
+                                <p class="txt-secondary">{{ services.industryTransformation.description }}</p>
+                            </div>
+                            <!-- Market Reality Statistic -->
+                            <div class="text-center mb-5">
+                                <div class="d-inline-block p-4 mybg-light rounded">
+                                    <div class="text-financial h1 txt-primary mb-2">
+                                        {{ services.industryTransformation.marketShift.statistic }}
+                                    </div>
+                                    <h4 class="txt-dark h5 mb-2">{{ services.industryTransformation.marketShift.label }}</h4>
+                                    <small class="txt-secondary">{{ services.industryTransformation.marketShift.context }}</small>
                                 </div>
                             </div>
-
-                            <!-- Popular Services (for applicable tiers) -->
-                            {% if tier.popularServices %}
-                                <div class="mt-4">
-                                    <h6 class="txt-primary mb-3">Popular Options</h6>
-                                    {% for service in tier.popularServices %}
-                                        <div class="d-flex justify-content-between align-items-center py-2 border-bottom">
-                                            <div>
-                                                <div class="fw-medium txt-dark">{{ service.name }}</div>
-                                                <small class="txt-secondary">{{ service.description }}</small>
+                            <!-- Transformation Drivers -->
+                            <div class="mb-5">
+                                <div class="text-center mb-4">
+                                    <h3 class="txt-primary h4">Four Critical Challenges Reshaping the Industry</h3>
+                                </div>
+                                <div class="row g-4">
+                                    {% for driver in services.industryTransformation.transformationDrivers %}
+                                        <div class="col-lg-6">
+                                            <div class="h-100 p-4 border-start border-3 myborder-secondary">
+                                                <h4 class="txt-primary h5 mb-3">{{ driver.challenge }}</h4>
+                                                <div class="mb-3">
+                                                    <div class="txt-dark fw-medium mb-2">Industry Impact:</div>
+                                                    <p class="txt-secondary mb-0 small">{{ driver.impact }}</p>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <div class="txt-dark fw-medium mb-2">Automation Solution:</div>
+                                                    <p class="txt-medium mb-0">{{ driver.solution }}</p>
+                                                </div>
+                                                <div class="p-3 mybg-secondary text-white rounded">
+                                                    <div class="fw-medium mb-1">Market Leader Advantage:</div>
+                                                    <small>{{ driver.advantage }}</small>
+                                                </div>
                                             </div>
-                                            <div class="text-financial txt-primary">{{ service.price }}</div>
                                         </div>
                                     {% endfor %}
                                 </div>
-                            {% endif %}
-
-                            <!-- ROI Metrics (for Level 5) -->
-                            {% if tier.roiMetrics %}
-                                <div class="mt-4">
-                                    <h6 class="txt-primary mb-3">Guaranteed Results</h6>
-                                    {% for metric in tier.roiMetrics %}
-                                        <div class="d-flex align-items-center mb-2">
-                                            <i class="fa fa-chart-line txt-secondary me-2"></i>
-                                            <small class="txt-dark">{{ metric }}</small>
+                            </div>
+                            <!-- Market Segmentation -->
+                            <div class="mb-5">
+                                <div class="text-center mb-4">
+                                    <h3 class="txt-primary h4">{{ services.industryTransformation.marketSegmentation.title }}</h3>
+                                </div>
+                                <div
+                                    class="row g-4 align-items-center">
+                                    <!-- Market Leaders -->
+                                    <div class="col-lg-5">
+                                        <div class="text-center p-4 border border-2 border-success border-opacity-25 rounded">
+                                            <div class="mb-3">
+                                                <i class="fa fa-trophy txt-secondary h2"></i>
+                                            </div>
+                                            <h4 class="txt-primary h5 mb-2">{{ services.industryTransformation.marketSegmentation.leaders.title }}</h4>
+                                            <p class="txt-secondary mb-3 small">{{ services.industryTransformation.marketSegmentation.leaders.subtitle }}</p>
+                                            <ul class="list-unstyled text-start mb-3">
+                                                {% for characteristic in services.industryTransformation.marketSegmentation.leaders.characteristics %}
+                                                    <li class="d-flex align-items-start mb-2">
+                                                        <i class="fa fa-check-circle txt-secondary me-2 mt-1 flex-shrink-0"></i>
+                                                        <span class="txt-dark small">{{ characteristic }}</span>
+                                                    </li>
+                                                {% endfor %}
+                                            </ul>
+                                            <div class="p-2 mybg-secondary text-white rounded">
+                                                <small class="fw-medium">{{ services.industryTransformation.marketSegmentation.leaders.trajectory }}</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- VS -->
+                                    <div class="col-lg-2 text-center">
+                                        <h3 class="txt-secondary h4">vs</h3>
+                                    </div>
+                                    <!-- Traditional Builders -->
+                                    <div class="col-lg-5">
+                                        <div class="text-center p-4 border rounded">
+                                            <div class="mb-3">
+                                                <i class="fa fa-exclamation-triangle text-muted h2"></i>
+                                            </div>
+                                            <h4 class="txt-dark h5 mb-2">{{ services.industryTransformation.marketSegmentation.traditional.title }}</h4>
+                                            <p class="txt-secondary mb-3 small">{{ services.industryTransformation.marketSegmentation.traditional.subtitle }}</p>
+                                            <ul class="list-unstyled text-start mb-3">
+                                                {% for characteristic in services.industryTransformation.marketSegmentation.traditional.characteristics %}
+                                                    <li class="d-flex align-items-start mb-2">
+                                                        <i class="fa fa-minus-circle text-muted me-2 mt-1 flex-shrink-0"></i>
+                                                        <span class="txt-dark small">{{ characteristic }}</span>
+                                                    </li>
+                                                {% endfor %}
+                                            </ul>
+                                            <div class="p-2 bg-light rounded">
+                                                <small class="text-muted fw-medium">{{ services.industryTransformation.marketSegmentation.traditional.trajectory }}</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Strategic Choice Framework -->
+                            <div class="text-center">
+                                <div class="mb-4">
+                                    <h3 class="txt-primary h4 mb-3">{{ services.industryTransformation.choiceFramework.title }}</h3>
+                                    <p class="text-lead txt-dark mb-3">{{ services.industryTransformation.choiceFramework.subtitle }}</p>
+                                    <p class="txt-secondary">{{ services.industryTransformation.choiceFramework.urgency }}</p>
+                                </div>
+                                <!-- Three Pathways -->
+                                <div class="row g-4 mb-4">
+                                    {% for pathway in services.industryTransformation.choiceFramework.pathways %}
+                                        <div class="col-lg-4">
+                                            <div class="h-100 p-4 {% if loop.first %}mybg-secondary text-white{% else %}mybg-light{% endif %} rounded">
+                                                {% if loop.first %}
+                                                    <div class="mb-3">
+                                                        <span class="badge bg-white text-dark px-3 py-1">Recommended</span>
+                                                    </div>
+                                                {% endif %}
+                                                <h4 class="{% if loop.first %}text-white{% else %}txt-dark{% endif %} h5 mb-3">{{ pathway.path }}</h4>
+                                                <p class="{% if loop.first %}text-white{% else %}txt-medium{% endif %} mb-3">{{ pathway.description }}</p>
+                                                <div class="mb-3">
+                                                    <strong class="{% if loop.first %}text-white{% else %}txt-dark{% endif %}">Outcome:</strong>
+                                                    <p class="{% if loop.first %}text-white{% else %}txt-secondary{% endif %} mb-0 small">{{ pathway.outcome }}</p>
+                                                </div>
+                                                <small class="{% if loop.first %}text-white{% else %}txt-secondary{% endif %}">
+                                                    <strong>Timeline:</strong>
+                                                    {{ pathway.timeline }}
+                                                </small>
+                                            </div>
                                         </div>
                                     {% endfor %}
                                 </div>
-                            {% endif %}
-
-                            <!-- Exclusive Benefits (for Level 6) -->
-                            {% if tier.exclusiveBenefits %}
-                                <div class="mt-4">
-                                    <h6 class="txt-primary mb-3">Exclusive Benefits</h6>
-                                    {% for benefit in tier.exclusiveBenefits %}
-                                        <div class="d-flex align-items-center mb-2">
-                                            <i class="fa fa-star txt-secondary me-2"></i>
-                                            <small class="txt-dark">{{ benefit }}</small>
-                                        </div>
-                                    {% endfor %}
+                                <!-- Call to Action -->
+                                <div>
+                                    <p class="txt-medium mb-3">Ready to join the market leaders?</p>
+                                    <a href="{{ services.industryTransformation.cta.primary.link }}" class="btn btn-secondary btn-lg">
+                                       {{ services.industryTransformation.cta.primary.text }}
+                                    </a>
                                 </div>
-                            {% endif %}
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                {% if not loop.last %}
-                    <hr class="my-5 mx-auto" style="width: 200px; opacity: 0.3;">
-                {% endif %}
-            {% endfor %}
-        </div>
-    </section>
-
-    <!-- Why Choose Section -->
-    <section class="py-5 bg-white">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 mx-auto">
-                    <div class="section-title text-center mb-5">
-                        <h2 class="txt-primary mb-4">{{ services.whyChoose.title }}</h2>
-                        <p class="text-lead txt-medium">{{ services.whyChoose.subtitle }}</p>
-                    </div>
-                    
-                    <div class="row g-4">
-                        {% for diff in services.whyChoose.differentiators %}
-                            <div class="col-lg-6">
-                                <div class="site-project-item h-100 p-4">
-                                    <div class="row align-items-center">
-                                        <div class="col-md-6">
-                                            <div class="text-center p-3 mybg-danger-light rounded mb-3">
-                                                <h5 class="txt-danger mb-1">{{ diff.problem }}</h5>
-                                                <small class="txt-secondary">Traditional Approach</small>
+            </section>
+            <!-- Success Stories Section -->
+            <section class="py-5 mybg-light">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-10 mx-auto">
+                            <div class="section-title text-center mb-5">
+                                <h2 class="txt-primary mb-4">{{ services.successStories.title }}</h2>
+                                <p class="text-lead txt-medium">{{ services.successStories.subtitle }}</p>
+                            </div>
+                            <div class="row g-4">
+                                {% for story in services.successStories.testimonials %}
+                                    <div class="col-lg-4">
+                                        <div class="site-testimonial-item h-100 p-4">
+                                            <div class="mb-4">
+                                                <span class="text-byline txt-secondary d-block mb-2">{{ story.tier }}</span>
+                                                <h5 class="txt-primary mb-1">{{ story.client }}</h5>
+                                                <small class="txt-secondary">{{ story.revenue }}</small>
                                             </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="text-center p-3 mybg-success-light rounded mb-3">
-                                                <h5 class="txt-success mb-1">{{ diff.solution }}</h5>
-                                                <small class="txt-secondary">100XBuilds Method</small>
+                                            <div class="text-center mb-4">
+                                                <div class="text-financial h3 txt-secondary mb-1">{{ story.metric }}</div>
+                                                <div class="stat-label">{{ story.metricLabel }}</div>
+                                            </div>
+                                            <blockquote class="mb-4">
+                                                <p class="txt-medium">"{{ story.quote }}"</p>
+                                            </blockquote>
+                                            <div class="mt-auto">
+                                                <small class="txt-secondary">{{ story.result }}</small>
                                             </div>
                                         </div>
                                     </div>
-                                    <p class="txt-medium mb-3">{{ diff.description }}</p>
-                                    <div class="text-center">
-                                        <span class="badge bg-secondary">{{ diff.impact }}</span>
-                                    </div>
-                                </div>
+                                {% endfor %}
                             </div>
-                        {% endfor %}
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Success Stories Section -->
-    <section class="py-5 mybg-light">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 mx-auto">
-                    <div class="section-title text-center mb-5">
-                        <h2 class="txt-primary mb-4">{{ services.successStories.title }}</h2>
-                        <p class="text-lead txt-medium">{{ services.successStories.subtitle }}</p>
-                    </div>
-                    
-                    <div class="row g-4">
-                        {% for story in services.successStories.testimonials %}
-                            <div class="col-lg-4">
-                                <div class="site-testimonial-item h-100 p-4">
-                                    <div class="mb-4">
-                                        <span class="text-byline txt-secondary d-block mb-2">{{ story.tier }}</span>
-                                        <h5 class="txt-primary mb-1">{{ story.client }}</h5>
-                                        <small class="txt-secondary">{{ story.revenue }}</small>
-                                    </div>
-                                    
-                                    <div class="text-center mb-4">
-                                        <div class="text-financial h3 txt-secondary mb-1">{{ story.metric }}</div>
-                                        <div class="stat-label">{{ story.metricLabel }}</div>
-                                    </div>
-                                    
-                                    <blockquote class="mb-4">
-                                        <p class="txt-medium">"{{ story.quote }}"</p>
-                                    </blockquote>
-                                    
-                                    <div class="mt-auto">
-                                        <small class="txt-secondary">{{ story.result }}</small>
-                                    </div>
-                                </div>
+            </section>
+            <!-- Next Steps Section -->
+            <section class="py-5 bg-white">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto text-center">
+                            <div class="section-title mb-5">
+                                <h2 class="txt-primary mb-4">{{ services.nextSteps.title }}</h2>
+                                <p class="txt-secondary mb-3">{{ services.nextSteps.subtitle }}</p>
+                                <p class="txt-medium">{{ services.nextSteps.description }}</p>
                             </div>
-                        {% endfor %}
+                            <div class="d-flex gap-3 justify-content-center flex-wrap">
+                                <a href="{{ services.nextSteps.cta.primary.link | url }}" class="btn btn-secondary btn-lg">
+                                    {{ services.nextSteps.cta.primary.text }}
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Next Steps Section -->
-    <section class="py-5 bg-white">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto text-center">
-                    <div class="section-title mb-5">
-                        <h2 class="txt-primary mb-4">{{ services.nextSteps.title }}</h2>
-                        <p class="txt-secondary mb-3">{{ services.nextSteps.subtitle }}</p>
-                        <p class="txt-medium">{{ services.nextSteps.description }}</p>
-                    </div>
-                    
-                    <div class="d-flex gap-3 justify-content-center flex-wrap">
-                        <a href="{{ services.nextSteps.cta.primary.link | url }}" class="btn btn-secondary btn-lg">
-                            {{ services.nextSteps.cta.primary.text }}
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-{% endblock %}
+            </section>
+        {% endblock %}
