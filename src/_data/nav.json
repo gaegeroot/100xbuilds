@@ -2,8 +2,9 @@
   "navLogo": "/assets/images/100xBuildsLogoDark.png",
   "navLinks": {
     "home": "/",
-    "ascension": "/luxury-builder-ascension",
-    "articles": "/blog"
+    "articles": "/blog",
+    "services": "/services",
+    "ascension": "/luxury-builder-ascension"
   },
   "navBtnLink": "roi-calculator-landing",
   "navBtnText": "Start Here"
