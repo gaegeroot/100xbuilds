@@ -89,9 +89,27 @@
                                     </div>
                                 {% endif %}
                                 <div class="d-flex gap-3 flex-wrap">
-                                    <a href="{{ tier.cta.primary.link }}" class="btn btn-secondary">{{ tier.cta.primary.text }}</a>
+                                    <a href="{{ tier.cta.primary.link }}" class="btn btn-secondary {% if tier.cta.primary.link == '#' %}pe-none position-relative{% endif %}">
+                                        {{ tier.cta.primary.text }}
+                                        {% if tier.cta.primary.link == '#' %}
+                                            <span
+                                                class="position-absolute top-50 start-50 badge mybg-primary-light px-2 py-1 rounded-pill"
+                                                style="font-size: 0.75rem; transform: translate(-50%, -50%) rotate(-10deg); z-index: 10;">
+                                                Coming Soon
+                                            </span>
+                                        {% endif %}
+                                    </a>
                                     {% if tier.cta.secondary.link %}
-                                        <a href="{{ tier.cta.secondary.link }}" class="btn btn-outline-secondary">{{ tier.cta.secondary.text }}</a>
+                                        <a href="{{ tier.cta.secondary.link }}" class="btn btn-outline-secondary {% if tier.cta.secondary.link == '#' %}pe-none position-relative{% endif %}">
+                                            {{ tier.cta.secondary.text }}
+                                            {% if tier.cta.secondary.link == '#' %}
+                                                <span
+                                                    class="position-absolute top-50 start-50 badge mybg-primary-light px-2 py-1 rounded-pill"
+                                                    style="font-size: 0.75rem; transform: translate(-50%, -50%) rotate(-10deg); z-index: 10;">
+                                                    Coming Soon
+                                                </span>
+                                            {% endif %}
+                                        </a>
                                     {% endif %}
                                 </div>
                             </div>
@@ -319,7 +337,7 @@
                                 <div>
                                     <p class="txt-medium mb-3">Ready to join the market leaders?</p>
                                     <a href="{{ services.industryTransformation.cta.primary.link }}" class="btn btn-secondary btn-lg">
-                                       {{ services.industryTransformation.cta.primary.text }}
+                                        {{ services.industryTransformation.cta.primary.text }}
                                     </a>
                                 </div>
                             </div>

@@ -69,7 +69,7 @@
         },
         "secondary": {
           "text": "Explore Resources",
-          "link": "/resources/"
+          "link": "#"
         }
       }
     },
@@ -125,7 +125,7 @@
         },
         "secondary": {
           "text": "Explore All Options",
-          "link": "/#"
+          "link": "#"
         }
       }
     },
@@ -177,11 +177,11 @@
       "cta": {
         "primary": {
           "text": "Explore CRM Sprint",
-          "link": "/services/30-day-crm-sprint/"
+          "link": "#"
         },
         "secondary": {
           "text": "Join Mastermind",
-          "link": "https://buy.stripe.com/7sY28k4rO6xf1Nuelu5sA01"
+          "link": "#"
         }
       }
     },
@@ -233,7 +233,7 @@
       "cta": {
         "primary": {
           "text": "Explore Options",
-          "link": "/services/business-systems-integration/"
+          "link": "#"
         }
       }
     },
@@ -274,7 +274,7 @@
       "cta": {
         "primary": {
           "text": "See If You Qualify",
-          "link": "/services/apply-for-full-automation/"
+          "link": "#"
         }
       }
     },
@@ -316,7 +316,7 @@
       "cta": {
         "primary": {
           "text": "See If You Qualify",
-          "link": "/services/apply-for-enterprise-partnership/"
+          "link": "#"
         }
       }
     }
