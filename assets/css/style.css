@@ -161,6 +161,10 @@ a {
   .site-navigation .nav-item {
     text-align: center;
   }
+
+  .site-navigation .navbar-brand img {
+    max-width: 80px;
+  }
 }
 
 /* =========================================
