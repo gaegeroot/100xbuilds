@@ -417,12 +417,15 @@ function showTier1Results() {
                             <input type="email" class="form-control form-control-lg" id="tier1Email" 
                                    value="${answers.tier1Email || ''}" placeholder="your@company.com" 
                                    oninput="updateEmailValue('tier1Email', this.value)">
+                                   <p class="text-center mt-2 mb-0" style="color: #64748b; font-size: 12px;">
+                            By submitting, you agree that we can send your report and future marketing emails to this address.
+                        </p>
                         </div>
 
                         <!-- Basic Report Button -->
                         <button id="getBasicReportBtn" class="btn btn-lg w-100 mb-4" 
                                 style="background-color: #f59e0b; border-color: #f59e0b; color: white; font-weight: 600;"
-                                onclick="submitTier1Report()" disabled>Send Basic Report</button>
+                                onclick="submitTier1Report()" disabled>Send My Report</button>
 
                         <!-- Divider -->
                         <div class="text-center mb-4">
