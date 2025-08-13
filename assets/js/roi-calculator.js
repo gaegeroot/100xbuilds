@@ -122,6 +122,7 @@ let currentQuestionIndex = 0;
 let currentTier = 'tier1';
 let answers = {};
 let isShowingResults = false;
+let tier1ReportSubmitted = false;
 
 // Add this to the top of your existing roi-calculator.js file, after the questions object
 const WEBHOOK_URL = 'https://n8n.supergoodsystems.com/webhook/roi-calculator-ai'; // Update this URL
@@ -134,7 +135,8 @@ async function submitCalculatorData(completedTier) {
             submissionId: `${completedTier}_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`,
             timestamp: new Date().toISOString(),
             completedTier: completedTier, // 'tier1' or 'tier2'
-            
+            tier1ReportSubmitted: tier1ReportSubmitted, // NEW: Flag indicating if tier1 report was sent
+
             // All Tier 1 questions and answers
             tier1: {
                 revenueRange: answers.revenueRange || null,
@@ -143,7 +145,7 @@ async function submitCalculatorData(completedTier) {
                 bottleneck: answers.bottleneck || null,
                 communicationChallenge: answers.communicationChallenge || null
             },
-            
+
             // All Tier 2 questions and answers (null if tier1 submission)
             tier2: completedTier === 'tier2' ? {
                 monthlyLeads: answers.monthlyLeads || null,
@@ -173,16 +175,16 @@ async function submitCalculatorData(completedTier) {
                 painPoint: answers.painPoint || null,
                 tier2Email: answers.tier2Email || null
             } : null,
-            
+
             // Email addresses
             emails: {
                 tier1Email: answers.tier1Email || null,
                 tier2Email: answers.tier2Email || null
             },
-            
+
             // Calculated results (if tier1 completed)
             calculatedResults: completedTier === 'tier1' || completedTier === 'tier2' ? calculateTier1Results() : null,
-            
+
             // Browser metadata
             metadata: {
                 userAgent: navigator.userAgent,
@@ -199,17 +201,17 @@ async function submitCalculatorData(completedTier) {
             },
             body: JSON.stringify(payload)
         });
-        
+
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
-        
-        console.log('Data submitted successfully:', payload);
+
+        console.log(`${completedTier} data submitted successfully`);
         return true;
-        
+
     } catch (error) {
-        console.error('Error submitting data:', error);
-        return false;
+        console.error('Error submitting calculator data:', error);
+        throw error;
     }
 }
 
@@ -514,12 +516,12 @@ function calculateTier1Results() {
 
     // Process efficiency savings (increased based on company size and bottleneck impact)
     let processEfficiencySavings = currentData.avgHomes * 3500; // $3,500 per project base
-    
+
     // Boost process savings for high-impact bottlenecks
     if (['project-management', 'sales-conversion', 'change-orders'].includes(answers.bottleneck)) {
         processEfficiencySavings *= 1.3; // 30% boost for high-impact areas
     }
-    
+
     // Additional operational savings based on revenue size
     const operationalSavings = Math.min(150000, currentData.baseRevenue * 1000000 * 0.015); // 1.5% of revenue, capped at $150K
 
@@ -530,9 +532,9 @@ function calculateTier1Results() {
 
     // Calculate efficiency percentage (more realistic - based on operational improvements, not revenue percentage)
     let efficiencyGain;
-    
+
     // Base efficiency gain on the type of bottleneck and its impact potential
-    switch(answers.bottleneck) {
+    switch (answers.bottleneck) {
         case 'lead-generation':
             efficiencyGain = 18 + Math.floor(Math.random() * 5); // 18-22%
             break;
@@ -560,14 +562,14 @@ function calculateTier1Results() {
         default:
             efficiencyGain = 18 + Math.floor(Math.random() * 5); // 18-22%
     }
-    
+
     // Adjust based on company size (larger companies can achieve higher efficiency gains)
     if (currentData.baseRevenue >= 75) { // $50M+
         efficiencyGain = Math.min(25, efficiencyGain + 2);
     } else if (currentData.baseRevenue >= 37.5) { // $25M+
         efficiencyGain = Math.min(25, efficiencyGain + 1);
     }
-    
+
     // Adjust based on current profit margin (lower margins have more improvement potential)
     if (profitMargin < 20) {
         efficiencyGain = Math.min(25, efficiencyGain + 2);
@@ -590,15 +592,7 @@ function calculateTier1Results() {
     };
 }
 
-async function showCompletionMessage() {
-
-    try {
-        await submitCalculatorData('tier2');
-        console.log('Tier 2 data submitted successfully');
-    } catch (error) {
-        console.error('Error submitting Tier 2 data:', error);
-    }
-
+function showCompletionMessage() {
     document.getElementById('questionContainer').innerHTML = `
         <div class="completion-message">
             <h1 class="results-title">Thank You!</h1>
@@ -609,8 +603,8 @@ async function showCompletionMessage() {
                 <div class="next-steps">
                     <h4>What Happens Next:</h4>
                     <ul>
-                        <li><strong>Within 2 hours:</strong> You'll receive an email confirmation</li>
-                        <li><strong>Within 24 hours:</strong> Your detailed PDF report will be delivered</li>
+                        <li><strong>Within 10 minutes:</strong> Your detailed PDF report will be delivered</li>
+                        <li><strong>Next 48 hours:</strong> Review the findings with your leadership team</li>
                         <li><strong>Optional:</strong> Schedule a 15-minute consultation to review your results</li>
                     </ul>
                 </div>
@@ -626,7 +620,7 @@ async function showCompletionMessage() {
 }
 
 // Navigation & Validation - FIXED FOR TEXTAREA
-function goNext() {
+async function goNext() {
     if (isShowingResults) {
         currentTier = 'tier2';
         currentQuestionIndex = 0;
@@ -640,7 +634,47 @@ function goNext() {
         currentQuestionIndex++;
         showQuestion(currentQuestionIndex);
     } else {
-        currentTier === 'tier1' ? showTier1Results() : showCompletionMessage();
+        // Handle final submission for each tier
+        if (currentTier === 'tier1') {
+            showTier1Results();
+        } else if (currentTier === 'tier2') {
+            // Show loading state on the Complete Analysis button
+            const nextBtn = document.getElementById('nextBtn');
+            const originalText = nextBtn.innerHTML;
+            
+            // Show loading state
+            nextBtn.innerHTML = '⏳ Generating Report...';
+            nextBtn.disabled = true;
+            
+            try {
+                // Submit tier2 data
+                await submitCalculatorData('tier2');
+                console.log('Tier 2 data submitted successfully');
+                
+                // Show completion message on success
+                showCompletionMessage();
+                
+            } catch (error) {
+                console.error('Error submitting Tier 2 data:', error);
+                
+                // Show error state
+                nextBtn.innerHTML = '❌ Try Again';
+                nextBtn.style.backgroundColor = '#ef4444';
+                nextBtn.style.borderColor = '#ef4444';
+                nextBtn.style.color = 'white';
+                
+                // Reset button after 3 seconds
+                setTimeout(() => {
+                    nextBtn.innerHTML = originalText;
+                    nextBtn.disabled = false;
+                    nextBtn.style.backgroundColor = '';
+                    nextBtn.style.borderColor = '';
+                    nextBtn.style.color = '';
+                }, 3000);
+                
+                return; // Don't proceed to completion message on error
+            }
+        }
     }
     updateProgress();
 }
@@ -759,52 +793,43 @@ function initROICalculator() {
     updateProgress();
 }
 async function submitTier1Report() {
-    if (!answers.tier1Email) return;
-
     const button = document.getElementById('getBasicReportBtn');
-    const originalText = button.innerHTML;
 
     // Show loading state
-    button.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Sending...';
+    button.innerHTML = '⏳ Sending...';
     button.disabled = true;
 
     try {
-        const success = await submitCalculatorData('tier1');
+        // Submit the tier1 data
+        await submitCalculatorData('tier1');
 
-        if (success) {
-            // Success state
-            button.innerHTML = '✅ Report Sent!';
-            button.style.backgroundColor = '#10b981';
-            button.style.borderColor = '#10b981';
-            button.style.color = 'white';
+        // Set the flag that tier1 was actually submitted
+        tier1ReportSubmitted = true;
 
-            // Show success alert
-            const alertDiv = document.createElement('div');
-            alertDiv.className = 'alert fade show mt-3';
-            alertDiv.style.backgroundColor = '#d1fae5';
-            alertDiv.style.borderColor = '#a7f3d0';
-            alertDiv.style.color = '#065f46';
-            alertDiv.innerHTML = `
-                <strong>Success!</strong> Your basic report will arrive within 24 hours.
-                <button type="button" class="btn-close" onclick="this.parentElement.remove()"></button>
-            `;
-            button.parentNode.appendChild(alertDiv);
+        // Success state
+        button.innerHTML = '✅ Report Sent!';
+        button.style.backgroundColor = '#10b981';
+        button.style.borderColor = '#10b981';
+        button.style.color = 'white';
 
-            // Auto-dismiss after 5 seconds
-            setTimeout(() => {
-                if (alertDiv.parentNode) {
-                    alertDiv.remove();
-                }
-            }, 5000);
+        // Show success alert
+        const alertDiv = document.createElement('div');
+        alertDiv.className = 'alert fade show mt-3';
+        alertDiv.style.backgroundColor = '#d1fae5';
+        alertDiv.style.borderColor = '#a7f3d0';
+        alertDiv.style.color = '#065f46';
+        alertDiv.innerHTML = `
+            <strong>Success!</strong> Your basic report will arrive within 24 hours.
+            <button type="button" class="btn-close" onclick="this.parentElement.remove()"></button>
+        `;
+        button.parentNode.appendChild(alertDiv);
 
-        } else {
-            // Error state
-            button.innerHTML = '❌ Try Again';
-            button.disabled = false;
-            button.style.backgroundColor = '#ef4444';
-            button.style.borderColor = '#ef4444';
-            button.style.color = 'white';
-        }
+        // Auto-dismiss after 5 seconds
+        setTimeout(() => {
+            if (alertDiv.parentNode) {
+                alertDiv.remove();
+            }
+        }, 5000);
 
     } catch (error) {
         console.error('Submission error:', error);
