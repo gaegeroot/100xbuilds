@@ -1,0 +1,222 @@
+{
+  "hero": {
+    "title": {
+      "main": "So Good, Our Last Client",
+      "accent": "Fired Us"
+    },
+    "description": "We helped a luxury builder go from 2-3 leads per week to 3 qualified appointments in a single day. It worked so well, they cut ties with us—not because of poor results, but because they didn't want us working with their competitors.",
+    "urgency": {
+      "title": "Territory Alert",
+      "message": "We only work with ONE luxury builder per metro area. Once your market is locked, it's gone forever."
+    },
+    "cta": {
+      "primary": {
+        "text": "Apply for Your Territory"
+      },
+      "secondary": {
+        "text": "See the Story"
+      }
+    },
+    "image": "/assets/images/luxury-home-hero.jpg"
+  },
+  "socialProof": {
+    "subtitle": "Trusted by luxury builders generating $5M+ annually",
+    "stats": [
+      {
+        "icon": "star",
+        "text": "47 Qualified Leads/Month Average",
+        "color": "primary"
+      },
+      {
+        "icon": "usd",
+        "text": "$2.3M+ Revenue Generated",
+        "color": "success"
+      },
+      {
+        "icon": "line-chart",
+        "text": "34% Average Project Value Increase",
+        "color": "secondary"
+      }
+    ]
+  },
+  "benefits": {
+    "title": "Here's Why Luxury Builders Love Our System",
+    "items": [
+      {
+        "icon": "times",
+        "title": "No Retainers",
+        "description": "Most agencies charge $5K-15K/month upfront with zero guarantees"
+      },
+      {
+        "icon": "times",
+        "title": "No Wasted Ad Spend",
+        "description": "You see every dollar in your own account with full transparency"
+      },
+      {
+        "icon": "times",
+        "title": "No Shared Leads",
+        "description": "We only work with one builder per metro—no competing against our other clients"
+      }
+    ],
+    "guarantee": {
+      "title": "You Only Pay for Qualified Appointments",
+      "subtitle": "With affluent families ready to build $2M+ homes"
+    }
+  },
+  "story": {
+    "title": "The Story That Changed Everything",
+    "content": [
+      "Our client was a successful luxury builder, but like most, he was stuck in the referral trap. Getting 2-3 leads per week on a good week, constantly wondering where the next project would come from.",
+      "Within 30 days of launching our Luxury Client Pipeline™, something unprecedented happened: 3 qualified appointments in a single day—more than he usually got in an entire week.",
+      "After seeing how effective our approach was, the client wanted to keep this unfair advantage exclusive to their company. But we couldn't keep something so valuable hidden away from other builders who desperately needed it.",
+      "Despite the incredible results we delivered, the client chose to end our engagement rather than allow us to help other luxury builders. On principle, apparently. Their loss is now your opportunity."
+    ],
+    "conclusion": "That's why we now guarantee territory exclusivity—one builder per metro area, period.",
+    "results": {
+      "title": "Client Results",
+      "metrics": [
+        {
+          "value": "2-3",
+          "label": "Leads per week (BEFORE)"
+        },
+        {
+          "value": "3",
+          "label": "Qualified appointments in ONE DAY"
+        }
+      ],
+      "summary": {
+        "value": "300%+",
+        "label": "Weekly lead increase"
+      }
+    }
+  },
+  "howItWorks": {
+    "title": "How the Luxury Client Pipeline™ Works",
+    "subtitle": "Simple, risk-free, and exclusively yours",
+    "steps": [
+      {
+        "title": "Setup",
+        "description": "One-time investment of $3,997 to build your custom Luxury Client Pipeline™ targeting high-net-worth families in YOUR metro area only. Less than 1% of a single project's revenue."
+      },
+      {
+        "title": "Market Investment",
+        "description": "About $50/day in ads (stays in your account, full transparency). Considering one project is worth $500K-$2M+, it's a rounding error"
+      },
+      {
+        "title": "Pay-Per-Result",
+        "description": "$500 per qualified appointment we deliver. If they don't meet your criteria, you don't pay. Zero risk, pure results."
+      }
+    ]
+  },
+  "guarantees": {
+    "title": "Our Iron-Clad Guarantees",
+    "subtitle": "We take on ALL the risk so you don't have to",
+    "items": [
+      {
+        "icon": "certificate",
+        "title": "Quality Guarantee",
+        "description": "If an appointment doesn't meet your criteria (budget, location, timeline), you don't pay. Period."
+      },
+      {
+        "icon": "clock-o",
+        "title": "90-Day ROI Promise",
+        "description": "If you don't close a project in 90 days, we credit your next 5 appointments AND refund your setup fee."
+      },
+      {
+        "icon": "map-marker",
+        "title": "Territory Exclusivity",
+        "description": "We only work with ONE builder per metro area. You'll never compete against another client of ours."
+      },
+      {
+        "icon": "eye",
+        "title": "Full Transparency",
+        "description": "Your ad account, your budget, your data. You see exactly where every marketing dollar goes."
+      }
+    ]
+  },
+  "form": {
+    "title": "Apply for Exclusive Territory Partnership",
+    "subtitle": "Join the select group of luxury builders with unfair market advantages",
+    "urgency": {
+      "title": "Limited Availability",
+      "message": "Only accepting 5 new builder partners this quarter"
+    },
+    "action": "https://fabform.io/f/your-builder-form-id",
+    "fields": [
+      {
+        "name": "full-name",
+        "label": "Full Name",
+        "type": "text",
+        "width": "md-6",
+        "required": true
+      },
+      {
+        "name": "company",
+        "label": "Company Name",
+        "type": "text",
+        "width": "md-6",
+        "required": true
+      },
+      {
+        "name": "email",
+        "label": "Email Address",
+        "type": "email",
+        "width": "md-6",
+        "required": true
+      },
+      {
+        "name": "phone",
+        "label": "Phone Number",
+        "type": "tel",
+        "width": "md-6",
+        "required": true
+      },
+      {
+        "name": "metro-area",
+        "label": "Primary Metro Area",
+        "type": "text",
+        "width": "md-6",
+        "placeholder": "e.g., Dallas, Austin, Denver",
+        "required": true
+      },
+      {
+        "name": "revenue",
+        "label": "Annual Revenue Range",
+        "type": "select",
+        "width": "md-6",
+        "placeholder": "Select Range",
+        "options": [
+          { "value": "$1M-3M", "label": "$1M - $3M" },
+          { "value": "$3M-5M", "label": "$3M - $5M" },
+          { "value": "$5M-10M", "label": "$5M - $10M" },
+          { "value": "$10M+", "label": "$10M+" }
+        ]
+      },
+      {
+        "name": "challenges",
+        "label": "Current Lead Generation Challenges",
+        "type": "textarea",
+        "width": "12",
+        "rows": 3,
+        "placeholder": "What's your biggest frustration with getting qualified leads?"
+      }
+    ],
+    "submitText": "Apply for Partnership",
+    "privacy": "Your information is confidential and will never be shared"
+  },
+  "finalCTA": {
+    "title": "The Question Is Simple",
+    "subtitle": "Do you want to be the exclusive builder in your market with this system, or should we move to the next builder on our list?",
+    "availability": {
+      "title": "Territory Availability Check",
+      "message": "We're currently evaluating builders in Dallas, Austin, Denver, and Scottsdale. If your market is available, we'll hold it for 48 hours while we discuss the partnership."
+    },
+    "cta": {
+      "text": "Check My Territory Availability"
+    },
+    "contact": {
+      "prefix": "Questions? Call directly:",
+      "phone": "(409) 896-1444"
+    }
+  }
+}

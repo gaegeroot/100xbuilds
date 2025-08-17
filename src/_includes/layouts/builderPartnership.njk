@@ -1,0 +1,276 @@
+{% extends "base.njk" %}
+{% block content %}
+    <!-- Hero Section -->
+    <!-- Hero Section -->
+    <section class="site-hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="site-hero-content">
+                        <h1 class="site-hero-title mb-4">
+                            {{ builderPartnership.hero.title.main }}
+                            <span class="txt-secondary">{{ builderPartnership.hero.title.accent }}</span>
+                        </h1>
+                        
+                        <p class="site-hero-description mb-4">
+                            {{ builderPartnership.hero.description }}
+                        </p>
+                        
+                        <!-- Urgency Alert -->
+                        <div class="alert mybg-authority border-0 shadow-sm mb-4 text-white">
+                            <div class="d-flex align-items-center">
+                                <i class="fa fa-exclamation-triangle text-white me-3"></i>
+                                <div>
+                                    <strong>{{ builderPartnership.hero.urgency.title }}:</strong> 
+                                    {{ builderPartnership.hero.urgency.message }}
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CTA Buttons -->
+                        <ul class="site-hero-content-buttons">
+                            <li>
+                                <a href="#apply-form" class="btn btn-secondary">
+                                    {{ builderPartnership.hero.cta.primary.text }}
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#story" class="btn btn-primary">
+                                    {{ builderPartnership.hero.cta.secondary.text }}
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="site-hero-image text-center">
+                        <img src="{{ builderPartnership.hero.image | url }}" alt="Luxury Custom Home" class="img-fluid rounded shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+                    <!-- Benefits Section -->
+                    <section class="py-5">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-8 mx-auto text-center">
+                                    <div class="section-title mb-5">
+                                        <h2 class="txt-primary mb-4">{{ builderPartnership.benefits.title }}</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row g-4 mb-5">
+                                {% for benefit in builderPartnership.benefits.items %}
+                                    <div class="col-md-4">
+                                        <div class="text-center p-4 h-100">
+                                            <div
+                                                class="bg-danger bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                                                style="width: 60px; height: 60px;">
+                                                <i class="fa fa-{{ benefit.icon }} text-danger"></i>
+                                            </div>
+                                            <h5>{{ benefit.title }}</h5>
+                                            <p class="text-muted">{{ benefit.description }}</p>
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                            <div class="text-center">
+                                <div class="bg-success bg-opacity-10 rounded p-4 d-inline-block">
+                                    <h4 class="text-success mb-3">
+                                        <i class="fa fa-check-circle me-2"></i>
+                                        {{ builderPartnership.benefits.guarantee.title }}
+                                    </h4>
+                                    <p class="text-muted mb-0">{{ builderPartnership.benefits.guarantee.subtitle }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Story Section -->
+                    <section class="py-5 mybg-primary text-white" id="story">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <h2 class="h1 mb-4 text-light">{{ builderPartnership.story.title }}</h2>
+                                    {% for paragraph in builderPartnership.story.content %}
+                                        <p class="{% if loop.first %}lead {% endif %}mb-4 text-light">{{ paragraph }}</p>
+                                    {% endfor %}
+                                    <div class="alert mybg-secondary-light border-0 shadow-sm txt-primary">
+                                        <strong>{{ builderPartnership.story.conclusion }}</strong>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="bg-white bg-opacity-10 rounded p-4">
+                                        <h5 class="mb-3 text-light">
+                                            <i class="fa fa-quote-left me-2"></i>
+                                            {{ builderPartnership.story.results.title }}
+                                        </h5>
+                                        <div class="row g-3">
+                                            {% for metric in builderPartnership.story.results.metrics %}
+                                                <div class="col-6">
+                                                    <div class="text-center">
+                                                        <div class="h2 txt-secondary mb-0">{{ metric.value }}</div>
+                                                        <small>{{ metric.label }}</small>
+                                                    </div>
+                                                </div>
+                                            {% endfor %}
+                                        </div>
+                                        <hr class="border-white border-opacity-25">
+                                            <div class="text-center">
+                                                <div class="h3 txt-secondary mb-0">{{ builderPartnership.story.results.summary.value }}</div>
+                                                <small>{{ builderPartnership.story.results.summary.label }}</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- How It Works -->
+                        <section class="py-5">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-8 mx-auto text-center mb-5">
+                                        <div class="section-title">
+                                            <h2 class="txt-primary mb-4">{{ builderPartnership.howItWorks.title }}</h2>
+                                            <p class="lead text-muted">{{ builderPartnership.howItWorks.subtitle }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row g-4">
+                                    {% for step in builderPartnership.howItWorks.steps %}
+                                        <div class="col-md-4">
+                                            <div class="card border-0 shadow-sm h-100">
+                                                <div class="card-body text-center p-4">
+                                                    <div
+                                                        class="bg-primary bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                                                        style="width: 80px; height: 80px;">
+                                                        <span class="h2 txt-primary mb-0">{{ loop.index }}</span>
+                                                    </div>
+                                                    <h5>{{ step.title }}</h5>
+                                                    <p class="text-muted">{{ step.description }}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </section>
+                        <!-- Guarantees Section -->
+                        <section class="py-5 bg-light">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-8 mx-auto text-center">
+                                        <div class="section-title mb-5">
+                                            <h2 class="txt-primary mb-4">{{ builderPartnership.guarantees.title }}</h2>
+                                            <p class="lead text-muted">{{ builderPartnership.guarantees.subtitle }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row g-4">
+                                    {% for guarantee in builderPartnership.guarantees.items %}
+                                        <div class="col-md-6">
+                                            <div class="d-flex">
+                                                <div
+                                                    class="bg-success bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0"
+                                                    style="width: 60px; height: 60px;">
+                                                    <i class="fa fa-lg fa-{{ guarantee.icon }} text-success"></i>
+                                                </div>
+                                                <div>
+                                                    <h5>{{ guarantee.title }}</h5>
+                                                    <p class="text-muted mb-0">{{ guarantee.description }}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </section>
+                        <!-- Application Form Section -->
+                        <section class="py-5" id="apply-form">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-8 mx-auto">
+                                        <div class="card shadow-lg border-0">
+                                            <div class="card-body p-5">
+                                                <div class="text-center mb-4">
+                                                    <h2 class="h1 txt-primary mb-3">{{ builderPartnership.form.title }}</h2>
+                                                    <p class="lead text-muted">{{ builderPartnership.form.subtitle }}</p>
+                                                    <!-- Urgency Element -->
+                                                    <div class="alert mybg-secondary-light border-0 shadow-sm txt-primary">
+                                                        <div class="d-flex align-items-center justify-content-center">
+                                                            <i class="fa fa-exclamation-triangle me-3"></i>
+                                                            <div>
+                                                                <strong>{{ builderPartnership.form.urgency.title }}:</strong>
+                                                                {{ builderPartnership.form.urgency.message }}
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <form method="POST" action="{{ builderPartnership.form.action }}">
+                                                    <div class="row g-3">
+                                                        {% for field in builderPartnership.form.fields %}
+                                                            <div class="col-{{ field.width }}">
+                                                                <label class="form-label fw-medium">{{ field.label }}
+                                                                    {% if field.required %}
+                                                                        *{% endif %}
+                                                                </label>
+                                                                {% if field.type == 'select' %}
+                                                                    <select class="form-control" name="{{ field.name }}" {% if field.required %} required {% endif %}>
+                                                                        <option value="">{{ field.placeholder }}</option>
+                                                                        {% for option in field.options %}
+                                                                            <option value="{{ option.value }}">{{ option.label }}</option>
+                                                                        {% endfor %}
+                                                                    </select>
+                                                                {% elif field.type == 'textarea' %}
+                                                                    <textarea class="form-control" name="{{ field.name }}" rows="{{ field.rows }}" placeholder="{{ field.placeholder }}" {% if field.required %} required {% endif %}></textarea>
+                                                                {% else %}
+                                                                    <input type="{{ field.type }}" class="form-control" name="{{ field.name }}" placeholder="{{ field.placeholder }}" {% if field.required %} required {% endif %}>
+                                                                    {% endif %}
+                                                                </div>
+                                                            {% endfor %}
+                                                        </div>
+                                                        <div class="text-center mt-4">
+                                                            <button type="submit" class="btn btn-primary btn-lg px-5">
+                                                                {{ builderPartnership.form.submitText }}
+                                                            </button>
+                                                            <p class="text-muted mt-3 small">
+                                                                <i class="fa fa-lock me-1"></i>
+                                                                {{ builderPartnership.form.privacy }}
+                                                            </p>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- Final CTA Section -->
+                            <section class="py-5">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-8 mx-auto text-center">
+                                            <h2 class="h1 mb-4">{{ builderPartnership.finalCTA.title }}</h2>
+                                            <p class="lead mb-4">{{ builderPartnership.finalCTA.subtitle }}</p>
+                                            <div class="mybg-authority rounded p-4 mb-4">
+                                                <h5 class="text-light mb-3">
+                                                    <i class="fa fa-hourglass-half me-2"></i>
+                                                    {{ builderPartnership.finalCTA.availability.title }}
+                                                </h5>
+                                                <p class="mb-0 text-light">{{ builderPartnership.finalCTA.availability.message }}</p>
+                                            </div>
+                                            <a href="#apply-form" class="btn btn-secondary btn-lg">
+                                                {{ builderPartnership.finalCTA.cta.text }}
+                                            </a>
+                                            <p class="text-light mt-4">
+                                                <small>{{ builderPartnership.finalCTA.contact.prefix }}
+                                                    <a href="tel:{{ builderPartnership.finalCTA.contact.phone }}" class="text-white">{{ builderPartnership.finalCTA.contact.phone }}</a>
+                                                </small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        {% endblock %}
+                        {% block workTogether %}{% endblock %}
