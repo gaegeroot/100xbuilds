@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Find phone input field
     const phoneInput = document.querySelector('input[name="phone"]');
     const form = document.querySelector('#apply-form form');
+
     if (phoneInput) {
         // Add placeholder
         phoneInput.placeholder = '(555) 123-4567';
