@@ -18,31 +18,29 @@
                 content="100XBuilds provides marketing automation, sales systems, and business operations solutions for luxury custom
                     home builders with $5M+ annual revenue. Guaranteed ROI improvements.">
         {% endif %}
-        {% if robots %}
-            <meta name="robots" content="{{ robots }}">
+        {% if hide %}
+            <meta name="robots" content="noindex, nofollow">
         {% else %}
             <meta name="robots" content="index, follow">
         {% endif %}
         <meta name="generator" content="Eleventy">
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-        <link
-        rel="stylesheet" href="{{ '/assets/vendor/font-awesome/css/font-awesome.min.css' | url }}"/> <!-- Bootstrap -->
-        <link
-        rel="stylesheet" href="{{ '/assets/vendor/bootstrap/bootstrap.min.css' | url }}"/> <!-- Stylesheets -->
+        <link rel="stylesheet" href="{{ '/assets/vendor/font-awesome/css/font-awesome.min.css' | url }}"/>
+        <link rel="stylesheet" href="{{ '/assets/vendor/bootstrap/bootstrap.min.css' | url }}"/>
         <link href="{{ '/assets/css/style.css' | url }}" rel="stylesheet"/>
         <link rel="shortcut icon" href="{{ '/assets/images/favicon.png' | url }}" type="image/x-icon"/>
         <link rel="icon" href="{{ '/assets/images/favicon.png' | url }}" type="image/x-icon"/>
         {% if excludeTracking != true %}
             <!-- Facebook Pixel -->
-            <!-- Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"> </script>
+            <!-- Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2LY6Q5FT"> </script>
             <script>
                 window.dataLayer = window.dataLayer || [];
                 function gtag() {
                     dataLayer.push(arguments);
                 }
                 gtag('js', new Date());
-                gtag('config', 'GA_MEASUREMENT_ID');
+                gtag('config', 'G-3Y2LY6Q5FT');
             </script>
         {% endif %}
     </head>
