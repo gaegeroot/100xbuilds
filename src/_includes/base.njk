@@ -15,7 +15,8 @@
         {% else %}
             <meta
                 name="description"
-                content="100XBuilds provides marketing automation, sales systems, and business operations solutions for luxury custom home builders with $5M+ annual revenue. Guaranteed ROI improvements.">
+                content="100XBuilds provides marketing automation, sales systems, and business operations solutions for luxury custom
+                    home builders with $5M+ annual revenue. Guaranteed ROI improvements.">
         {% endif %}
         {% if robots %}
             <meta name="robots" content="{{ robots }}">
@@ -52,45 +53,47 @@
                     <a class="navbar-brand" href="{{ '/' | url }}">
                         <img src="{{ nav.navLogo | url }}" alt="nav-logo"/>
                     </a>
-                    <div class="d-flex align-items-center">
-                        <a class="nav-link btn btn-sm btn-primary btn-sm-rounded text-light d-lg-none me-2" href="{{ ('/' + nav.navBtnLink) | url }}">
-                            <span class="btn-area">
-                                <span data-text="{{ nav.navBtnText }}">
-                                    {{ nav.navBtnText }}
-                                </span>
-                            </span>
-                        </a>
-                        <button
-                            class="navbar-toggler collapsed"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#sitenavbar"
-                            aria-controls="sitenavbar"
-                            aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                    </div>
-                    <div class="collapse navbar-collapse" id="sitenavbar">
-                        <ul class="navbar-nav ms-auto main-nav">
-                            {% for linkKey, linkUrl in nav.navLinks %}
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ linkUrl | url }}">{{ linkKey | capitalize }}</a>
-                                </li>
-                            {% endfor %}
-                            <li class="d-none d-lg-block nav-item">
-                                <a class="nav-link btn btn-sm btn-primary btn-sm-rounded text-light" href="{{ ('/' + nav.navBtnLink) | url }}">
-                                    <span class="btn-area">
-                                        <span data-text="{{ nav.navBtnText }}">
-                                            {{ nav.navBtnText }}
-                                        </span>
+                    {% if landingPage !== true %}
+                        <div class="d-flex align-items-center">
+                            <a class="nav-link btn btn-sm btn-primary btn-sm-rounded text-light d-lg-none me-2" href="{{ ('/' + nav.navBtnLink) | url }}">
+                                <span class="btn-area">
+                                    <span data-text="{{ nav.navBtnText }}">
+                                        {{ nav.navBtnText }}
                                     </span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                                </span>
+                            </a>
+                            <button
+                                class="navbar-toggler collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#sitenavbar"
+                                aria-controls="sitenavbar"
+                                aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="collapse navbar-collapse" id="sitenavbar">
+                            <ul class="navbar-nav ms-auto main-nav">
+                                {% for linkKey, linkUrl in nav.navLinks %}
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{ linkUrl | url }}">{{ linkKey | capitalize }}</a>
+                                    </li>
+                                {% endfor %}
+                                <li class="d-none d-lg-block nav-item">
+                                    <a class="nav-link btn btn-sm btn-primary btn-sm-rounded text-light" href="{{ ('/' + nav.navBtnLink) | url }}">
+                                        <span class="btn-area">
+                                            <span data-text="{{ nav.navBtnText }}">
+                                                {{ nav.navBtnText }}
+                                            </span>
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    {% endif %}
                 </div>
             </nav>
         {% endblock %}
@@ -206,78 +209,87 @@
             </section>
         {% endblock %}
         {% block footer %}
-            <footer class="site-footer">
-                <div class="container">
-                    <div
-                        class="row">
-                        {# <div class="col-12"></div> #}
-                        <div class="col-lg-3 col-md-4">
-                            <div class="site-footer-widget">
-                                <div class="site-footer-logo">
-                                    <a href="{{ '/' | url }}">
-                                        <img src="{{ footer.footerLogo | url }}" alt="logo-footer" width="100">
-                                    </a>
+            {% if landingPage !== true %}
+                <footer class="site-footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-4">
+                                <div class="site-footer-widget">
+                                    <div class="site-footer-logo">
+                                        <a href="{{ '/' | url }}">
+                                            <img src="{{ footer.footerLogo | url }}" alt="logo-footer" width="100">
+                                        </a>
+                                    </div>
                                 </div>
-                                <p
-                                    class="site-footer-widget-description">{# {% for contactInfo in footer.contactsInfo %}
-                                                                                                                                                                                                                                                <a href="{{ contactInfo.link }}">{{ contactInfo.text }}</a>
-                                                                                                                                                                                                                                                <br>
-                                                                                                                                                                                                                                            {% endfor %} #}
-                                </p>
                             </div>
-                        </div>
-                        <div class="col-lg-7 col-md-6">
-                            <div class="site-footer-widget">
-                                <h5 class="site-footer-widget-title">{{ footer.siteMapHeading }}</h5>
-                                <ul class="site-footer-widget-links">
-                                    {% for siteMap in footer.siteMap %}
-                                        <li>
-                                            <a href="{{ ('/' + siteMap.link) | url }}">{{ siteMap.text }}</a>
-                                        </li>
-                                    {% endfor %}
-                                </ul>
+                            <div class="col-lg-7 col-md-6">
+                                <div class="site-footer-widget">
+                                    <h5 class="site-footer-widget-title">{{ footer.siteMapHeading }}</h5>
+                                    <ul class="site-footer-widget-links">
+                                        {% for siteMap in footer.siteMap %}
+                                            <li>
+                                                <a href="{{ ('/' + siteMap.link) | url }}">{{ siteMap.text }}</a>
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-lg-2 col-md-6 d-none">
-                            <div class="site-footer-widget">
-                                <h5 class="site-footer-widget-title">{{ footer.socialHeading }}</h5>
-                                <ul class="site-footer-widget-links">
-                                    {% for socialMedia in footer.socialMedia %}
-                                        <li>
-                                            <a href="{{ ('/' + socialMedia.link) | url }}">{{ socialMedia.text }}</a>
-                                        </li>
-                                    {% endfor %}
-                                </ul>
+                            <div class="col-lg-2 col-md-6 d-none">
+                                <div class="site-footer-widget">
+                                    <h5 class="site-footer-widget-title">{{ footer.socialHeading }}</h5>
+                                    <ul class="site-footer-widget-links">
+                                        {% for socialMedia in footer.socialMedia %}
+                                            <li>
+                                                <a href="{{ ('/' + socialMedia.link) | url }}">{{ socialMedia.text }}</a>
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 d-none">
-                            <div class="site-footer-widget">
-                                <h5 class="site-footer-widget-title">{{ footer.brandHeading }}</h5>
-                                <p class="site-footer-widget-description">
-                                    {% for brandMotto in footer.brandMotto %}
-                                        - {{ brandMotto }} <br>
-                                    {% endfor %}
-                                </p>
+                            <div class="col-lg-3 col-md-6 d-none">
+                                <div class="site-footer-widget">
+                                    <h5 class="site-footer-widget-title">{{ footer.brandHeading }}</h5>
+                                    <p class="site-footer-widget-description">
+                                        {% for brandMotto in footer.brandMotto %}
+                                            - {{ brandMotto }} <br>
+                                        {% endfor %}
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-lg-2 col-md-2 col-12">
-                            <a href="#top" class="site-footer-widget-top">
-                                <img src="{{ footer.back2topIcon | url }}" alt="back-to-top">
-                                <p>
-                                    {{ footer.customerComment | safe }}
-                                </p>
-                            </a>
-                        </div>
-                        <div class="col-12">
-                            <div class="site-footer-copyright text-center my-3">
-                                <p>© Copyright 2025 - All Rights Reserved by
-                                    <a href="https://100xBuilds.com/" target="_blank">100XBuilds</a>
-                                </p>
+                            <div class="col-lg-2 col-md-2 col-12">
+                                <a href="#top" class="site-footer-widget-top">
+                                    <img src="{{ footer.back2topIcon | url }}" alt="back-to-top">
+                                    <p>
+                                        {{ footer.customerComment | safe }}
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="col-12">
+                                <div class="site-footer-copyright text-center my-3">
+                                    <p>© Copyright 2025 - All Rights Reserved by
+                                        <a href="https://100xBuilds.com/" target="_blank">100XBuilds</a>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </footer>
+                </footer>
+            {% else %}
+                <footer class="mybg-primary py-3">
+                    <div class="col-12">
+                        <div class="site-footer-copyright text-center my-3">
+                            <p>© Copyright 2025 - All Rights Reserved by
+                                <a href="https://100xBuilds.com/" target="_blank">100XBuilds</a>
+                            </p>
+                            <p>
+                                <a href="https://100xBuilds.com/privacy-policy" target="_blank">Privacy Policy</a>
+                                -
+                                <a href="https://100xBuilds.com/terms-conditions" target="_blank">Terms & Conditions</a>
+                            </p>
+                        </div>
+                    </div>
+                </footer>
+            {% endif %}
         {% endblock %}
         <!-- <script src="js/vendor.js"></script> -->
         <script src="{{ '/assets/vendor/bootstrap/bootstrap.min.js' | url }}"></script>

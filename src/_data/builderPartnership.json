@@ -1,13 +1,13 @@
 {
   "hero": {
     "title": {
-      "main": "So Good, Our Last Client",
-      "accent": "Fired Us"
+      "main": "So Good,",
+      "accent": "Our Client Fired Us"
     },
     "description": "We helped a luxury builder go from 2-3 leads per week to 3 qualified appointments in a single day. It worked so well, they cut ties with us—not because of poor results, but because they didn't want us working with their competitors.",
     "urgency": {
       "title": "Territory Alert",
-      "message": "We only work with ONE luxury builder per metro area. Once your market is locked, it's gone forever."
+      "message": "We only work with ONE luxury builder per metro area at a time. Once your market is claimed, we won't partner with another builder there unless you stop working with us."
     },
     "cta": {
       "primary": {
@@ -20,7 +20,7 @@
     "image": "/assets/images/luxury-home-hero.jpg"
   },
   "socialProof": {
-    "subtitle": "Trusted by luxury builders generating $5M+ annually",
+    "subtitle": "Already powering growth for builders who close $5M-$10M annually",
     "stats": [
       {
         "icon": "star",
@@ -55,7 +55,7 @@
       {
         "icon": "times",
         "title": "No Shared Leads",
-        "description": "We only work with one builder per metro—no competing against our other clients"
+        "description": "We only work with one builder per metro at a time—no competing against our other clients while you're active"
       }
     ],
     "guarantee": {
@@ -66,12 +66,16 @@
   "story": {
     "title": "The Story That Changed Everything",
     "content": [
-      "Our client was a successful luxury builder, but like most, he was stuck in the referral trap. Getting 2-3 leads per week on a good week, constantly wondering where the next project would come from.",
+      "Our client was a successful luxury builder doing about $12M per year, but like most, he was stuck in the referral trap. Getting 2-3 leads per week on a good week, constantly wondering where the next project would come from.",
       "Within 30 days of launching our Luxury Client Pipeline™, something unprecedented happened: 3 qualified appointments in a single day—more than he usually got in an entire week.",
       "After seeing how effective our approach was, the client wanted to keep this unfair advantage exclusive to their company. But we couldn't keep something so valuable hidden away from other builders who desperately needed it.",
-      "Despite the incredible results we delivered, the client chose to end our engagement rather than allow us to help other luxury builders. On principle, apparently. Their loss is now your opportunity."
+      "Despite the incredible results we delivered, the client chose to end our engagement rather than allow us to help other luxury builders. Their loss is now your opportunity."
     ],
-    "conclusion": "That's why we now guarantee territory exclusivity—one builder per metro area, period.",
+    "conclusion": "That's why we now guarantee territory exclusivity—as long as you're an active partner, we won't work with any other builder in your metro.",
+    "clientQuote": {
+      "text": "We were getting more qualified leads in a day than we used to get in a week. We knew we couldn't let them work with our competitors.",
+      "attribution": "Former Client (in an internal meeting, probably)"
+    },
     "results": {
       "title": "Client Results",
       "metrics": [
@@ -96,11 +100,11 @@
     "steps": [
       {
         "title": "Setup",
-        "description": "One-time investment of $3,997 to build your custom Luxury Client Pipeline™ targeting high-net-worth families in YOUR metro area only. Less than 1% of a single project's revenue."
+        "description": "One-time investment of $4,997 to build your custom Luxury Client Pipeline™ targeting high-net-worth families in YOUR metro area only. Less than 1% of a single project's revenue — covered many times over by just one client."
       },
       {
         "title": "Market Investment",
-        "description": "About $50/day in ads (stays in your account, full transparency). Considering one project is worth $500K-$2M+, it's a rounding error"
+        "description": "About $60/day in ads (stays in your account, full transparency). Considering one project is worth $500K-$2M+, it's a rounding error."
       },
       {
         "title": "Pay-Per-Result",
@@ -108,9 +112,51 @@
       }
     ]
   },
+  "bonuses": {
+    "title": "And That's Not All — You'll Also Get These Free Builder-Only Bonuses",
+    "subtitle": "Worth $9,500+ — yours free when you join as your metro's exclusive partner",
+    "items": [
+      {
+        "icon": "envelope",
+        "title": "Done-for-You Luxury Lead Nurture Sequence",
+        "value": "$3,000",
+        "description": "We'll install a concierge-style follow-up sequence that makes sure no million-dollar lead slips through the cracks. Most builders lose 60% of leads to poor follow-up."
+      },
+      {
+        "icon": "file-text-o",
+        "title": "The Luxury Builder Selection Guide PDF",
+        "value": "$2,000",
+        "description": "We'll arm you with a proven authority asset that makes buyers trust you before they ever meet you. High-net-worth clients do extensive due diligence."
+      },
+      {
+        "icon": "phone",
+        "title": "Proven High-Ticket Sales Script for $2M+ Projects",
+        "value": "$2,500",
+        "description": "We'll give you the same call framework that closes $2M+ projects in 45 days or less. No more winging it on million-dollar conversations."
+      },
+      {
+        "icon": "bar-chart",
+        "title": "Quarterly Luxury Market Snapshot Report",
+        "value": "$1,500",
+        "description": "You'll get a quarterly market report branded to you, so prospects see you as the go-to expert in your city. Authority builds trust."
+      },
+      {
+        "icon": "users",
+        "title": "Private Builder Mastermind Access",
+        "value": "Priceless",
+        "description": "You'll get access to a private group of non-competing builders who share what's working right now. Elite network, elite results.",
+        "visible": false
+      }
+    ],
+    "total": {
+      "text": "Total Bonus Value:",
+      "amount": "$9,000+"
+    },
+    "cta": "These are yours free — no additional cost, no upsells, no games."
+  },
   "guarantees": {
-    "title": "Our Iron-Clad Guarantees",
-    "subtitle": "We take on ALL the risk so you don't have to",
+    "title": "Zero-Risk Partnership",
+    "subtitle": "If you don't close a project from our efforts in 90 days, you get 5 free appointments and a full refund of your setup fee. No other marketing company will dare say that.",
     "items": [
       {
         "icon": "certificate",
@@ -125,7 +171,7 @@
       {
         "icon": "map-marker",
         "title": "Territory Exclusivity",
-        "description": "We only work with ONE builder per metro area. You'll never compete against another client of ours."
+        "description": "We only work with one builder per metro at a time. As long as you're active, you'll never compete against another client of ours in your market."
       },
       {
         "icon": "eye",
@@ -139,9 +185,9 @@
     "subtitle": "Join the select group of luxury builders with unfair market advantages",
     "urgency": {
       "title": "Limited Availability",
-      "message": "Only accepting 5 new builder partners this quarter"
+      "message": "Only accepting 5 new builder partners this quarter. Exclusivity is granted on a first-come basis."
     },
-    "action": "https://fabform.io/f/your-builder-form-id",
+    "action": "https://n8n.supergoodsystems.com/webhook-test/788cf9b5-8c8c-4d5f-a2f1-0d26671b47df",
     "fields": [
       {
         "name": "full-name",
@@ -172,6 +218,20 @@
         "required": true
       },
       {
+        "name": "role",
+        "label": "Your Role",
+        "type": "select",
+        "width": "md-6",
+        "placeholder": "Select Role",
+        "options": [
+          { "value": "owner-partner", "label": "Owner / Partner" },
+          { "value": "executive", "label": "Executive" },
+          { "value": "marketing", "label": "Marketing Manager" },
+          { "value": "other", "label": "Other" }
+        ],
+        "required": true
+      },
+      {
         "name": "metro-area",
         "label": "Primary Metro Area",
         "type": "text",
@@ -185,20 +245,29 @@
         "type": "select",
         "width": "md-6",
         "placeholder": "Select Range",
+        "helper": "We only partner with established builders generating $5M+ annually.",
         "options": [
-          { "value": "$1M-3M", "label": "$1M - $3M" },
-          { "value": "$3M-5M", "label": "$3M - $5M" },
           { "value": "$5M-10M", "label": "$5M - $10M" },
-          { "value": "$10M+", "label": "$10M+" }
-        ]
+          { "value": "$10M-20M", "label": "$10M - $20M" },
+          { "value": "$20M+", "label": "$20M+" }
+        ],
+        "required": true
+      },
+      {
+        "name": "website",
+        "label": "Company Website",
+        "type": "text",
+        "width": "md-6",
+        "placeholder": "https://yourcompany.com",
+        "required": false
       },
       {
         "name": "challenges",
-        "label": "Current Lead Generation Challenges",
+        "label": "Why isn’t your current approach getting enough $2M+ projects?",
         "type": "textarea",
         "width": "12",
         "rows": 3,
-        "placeholder": "What's your biggest frustration with getting qualified leads?"
+        "placeholder": "Tell us about the gaps in your current lead generation approach"
       }
     ],
     "submitText": "Apply for Partnership",
@@ -209,7 +278,7 @@
     "subtitle": "Do you want to be the exclusive builder in your market with this system, or should we move to the next builder on our list?",
     "availability": {
       "title": "Territory Availability Check",
-      "message": "We're currently evaluating builders in Dallas, Austin, Denver, and Scottsdale. If your market is available, we'll hold it for 48 hours while we discuss the partnership."
+      "message": "We're currently evaluating builders in Dallas, Austin, Denver, and Scottsdale. If your market is still available, we'll hold it for 48 hours. After that, we move on."
     },
     "cta": {
       "text": "Check My Territory Availability"
@@ -218,5 +287,39 @@
       "prefix": "Questions? Call directly:",
       "phone": "(409) 896-1444"
     }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Straight answers to the questions builders ask us most",
+    "items": [
+      {
+        "question": "What happens if I stop working with you?",
+        "answer": "Your territory exclusivity is tied to an active partnership. If you decide to pause or stop, your market becomes available to other builders. That way, exclusivity always rewards active partners."
+      },
+      {
+        "question": "Do I have to pay a retainer?",
+        "answer": "No. Unlike traditional agencies charging $5K-$15K per month with no guarantees, we only charge a one-time setup fee to build your custom Luxury Client Pipeline™, plus a per-appointment fee for results you actually receive."
+      },
+      {
+        "question": "Who controls the ad spend?",
+        "answer": "You do. All ad spend stays in your own account with full transparency. You see every dollar, and you can adjust budgets at any time."
+      },
+      {
+        "question": "How do you define a 'qualified appointment'?",
+        "answer": "Appointments must meet your agreed criteria: budget ($2M+), timeline (6-18 months), location (your service area), and decision-maker status. If they don't meet those, you don't pay."
+      },
+      {
+        "question": "What if I don't close any projects?",
+        "answer": "We back everything with our 90-Day ROI Promise. If you don't close a project within 90 days, you get 5 free appointments AND a full refund of your setup fee."
+      },
+      {
+        "question": "Can you work with more than one builder in my city?",
+        "answer": "No. We only work with one builder per metro at a time. As long as you're active, you'll never compete with another client of ours in your market."
+      },
+      {
+        "question": "How fast can I expect results?",
+        "answer": "Most builders start seeing qualified appointments booked within the first 2-3 weeks after launch. Some see them in the first few days, depending on market size and ad spend."
+      }
+    ]
   }
 }
