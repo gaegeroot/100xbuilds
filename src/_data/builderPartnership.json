@@ -187,7 +187,7 @@
       "title": "Limited Availability",
       "message": "Only accepting 5 new builder partners this quarter. Exclusivity is granted on a first-come basis."
     },
-    "action": "https://n8n.supergoodsystems.com/webhook-test/788cf9b5-8c8c-4d5f-a2f1-0d26671b47df",
+    "action": "https://n8n.supergoodsystems.com/webhook/788cf9b5-8c8c-4d5f-a2f1-0d26671b47df",
     "fields": [
       {
         "name": "full-name",

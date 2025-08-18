@@ -167,54 +167,54 @@ function showSuccessMessage() {
             </div>
             <h2 class="txt-primary mb-4">Application Submitted Successfully!</h2>
             <p class="lead text-muted mb-4">
-                Thank you for applying for exclusive territory partnership. We're reviewing your application and will contact you within 24 hours to discuss territory availability.
+                Thank you for applying for exclusive territory partnership. We're reviewing your application now. <strong>To secure your 48-hour hold, schedule your qualification call below.</strong> If we don't connect within that window, your territory may be released to the next builder on our list.
             </p>
-            <div class="bg-light rounded p-4 mb-4">
-                <h5 class="txt-primary mb-3">What Happens Next:</h5>
-                <div class="row g-3 text-start">
-                    <div class="col-md-6">
-                        <div class="d-flex align-items-start">
-                            <span class="txt-secondary me-3 fw-bold">1.</span>
-                            <div>
-                                <strong>Territory Review</strong><br>
-                                <small class="text-muted">We'll verify your metro area availability</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="d-flex align-items-start">
-                            <span class="txt-secondary me-3 fw-bold">2.</span>
-                            <div>
-                                <strong>Qualification Call</strong><br>
-                                <small class="text-muted">15-minute discussion about your needs</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="d-flex align-items-start">
-                            <span class="txt-secondary me-3 fw-bold">3.</span>
-                            <div>
-                                <strong>Partnership Setup</strong><br>
-                                <small class="text-muted">If it's a fit, we'll reserve your territory</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="d-flex align-items-start">
-                            <span class="txt-secondary me-3 fw-bold">4.</span>
-                            <div>
-                                <strong>Launch Process</strong><br>
-                                <small class="text-muted">Begin building your Luxury Client Pipeline™</small>
-                            </div>
-                        </div>
+            
+            <!-- Updated Territory Hold Box -->
+            <div class="alert mybg-authority border-0 shadow-sm mb-4 text-light">
+                <div class="d-flex align-items-center justify-content-center">
+                    <div>
+                        <strong>⏳ 48-Hour Territory Hold:</strong> Schedule your call now to keep your metro reserved. After 48 hours, we move on to the next builder.
                     </div>
                 </div>
             </div>
-            <div class="alert mybg-secondary-light txt-primary border-0">
-                <div class="d-flex align-items-center justify-content-center">
-                    <i class="fa fa-clock-o me-3"></i>
-                    <div>
-                        <strong>Territory Hold:</strong> We'll hold your metro area for 48 hours while we review your application.
+            
+            <!-- Book a Call Button -->
+            <div class="mb-4">
+                <a href="https://cal.com/100xbuilds/partnership-disco" target="_blank" class="btn btn-secondary btn-lg px-5">
+                    Book Your Qualification Call
+                </a>
+            </div>
+            
+            <div class="bg-light rounded p-4 mb-4">
+                <h5 class="txt-primary mb-3">What Happens Next</h5>
+                <div class="row text-start">
+                    <div class="col-12 mb-3">
+                        <div class="d-flex">
+                            <div class="mybg-authority text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 30px; height: 30px; font-size: 14px; font-weight: bold;">1</div>
+                            <div>
+                                <h6 class="mb-1">Territory Qualification Call</h6>
+                                <p class="text-muted mb-0 small">15-minute call to confirm territory availability and discuss next steps.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-3">
+                        <div class="d-flex">
+                            <div class="mybg-authority text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 30px; height: 30px; font-size: 14px; font-weight: bold;">2</div>
+                            <div>
+                                <h6 class="mb-1">Partnership Decision</h6>
+                                <p class="text-muted mb-0 small">We'll evaluate mutual fit and confirm your exclusive territory if approved.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="d-flex">
+                            <div class="mybg-authority text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 30px; height: 30px; font-size: 14px; font-weight: bold;">3</div>
+                            <div>
+                                <h6 class="mb-1">Pipeline Activation</h6>
+                                <p class="text-muted mb-0 small">Begin your Luxury Client Pipeline™ setup within 48 hours of approval.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
