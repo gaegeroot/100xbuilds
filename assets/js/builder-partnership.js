@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', function () {
             // Collect all form data
             const formData = new FormData(form);
             const jsonData = {
-                fullName: formData.get('full-name'),
+                firstName: formData.get('first-name'),
                 company: formData.get('company'),
                 email: formData.get('email'),
                 phone: cleanPhone, // Use cleaned phone number
@@ -159,7 +159,7 @@ document.addEventListener('DOMContentLoaded', function () {
 function showSuccessMessage() {
     const formContainer = document.querySelector('#apply-form .card-body');
     formContainer.innerHTML = `
-        <div class="text-center py-5">
+        <div class="text-center">
             <div class="mb-4">
                 <div class="bg-success bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
                     <i class="fa fa-check-circle txt-secondary" style="font-size: 2.5rem;"></i>

@@ -190,8 +190,8 @@
     "action": "https://n8n.supergoodsystems.com/webhook/788cf9b5-8c8c-4d5f-a2f1-0d26671b47df",
     "fields": [
       {
-        "name": "full-name",
-        "label": "Full Name",
+        "name": "first-name",
+        "label": "First Name",
         "type": "text",
         "width": "md-6",
         "required": true
@@ -247,9 +247,10 @@
         "placeholder": "Select Range",
         "helper": "We only partner with established builders generating $5M+ annually.",
         "options": [
-          { "value": "$5M-10M", "label": "$5M - $10M" },
-          { "value": "$10M-20M", "label": "$10M - $20M" },
-          { "value": "$20M+", "label": "$20M+" }
+          { "value": "3888698", "label": "$5M - $10M" },
+          { "value": "3888699", "label": "$10M - $25M" },
+          { "value": "3888700", "label": "$25M - $50M" },
+          { "value": "3888701", "label": "$50M+" }
         ],
         "required": true
       },
