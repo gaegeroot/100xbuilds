@@ -144,6 +144,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 .then(data => {
                     // Success - replace form with success message
                     showSuccessMessage();
+
+                    // Track form submission
+                    fbq('track', 'SubmitApplication');
                 })
                 .catch(error => {
                     console.error('Error:', error);
