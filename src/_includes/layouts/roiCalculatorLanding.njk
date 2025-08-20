@@ -6,14 +6,14 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="site-hero-content">
-                        <h6 class="txt-secondary">⏱️ Takes 3-5 minutes to complete</h6>
-                        <h1>Get Your Custom ROI Analysis</h1>
-                        <p>See exactly how much marketing, sales, and operational improvements could transform your luxury home building company</p>
-                        <p class="txt-light">Free 6-page report with personalized savings projections, efficiency gains, and payback timeline</p>
+                        <h6 class="txt-secondary">{{ roiCalculatorLanding.hero.timeIndicator }}</h6>
+                        <h1>{{ roiCalculatorLanding.hero.title }}</h1>
+                        <p>{{ roiCalculatorLanding.hero.subtitle }}</p>
+                        <p class="txt-light">{{ roiCalculatorLanding.hero.description }}</p>
                         <ul class="site-hero-content-buttons">
                             <li>
-                                <a href="/roi-calculator" class="btn btn-secondary">
-                                    Start My Free Analysis →
+                                <a href="{{ roiCalculatorLanding.hero.cta.link }}" class="btn btn-secondary">
+                                    {{ roiCalculatorLanding.hero.cta.text }}
                                 </a>
                             </li>
                         </ul>
@@ -117,46 +117,24 @@
                 <div class="row">
                     <div class="col-lg-10 mx-auto">
                         <div class="section-title text-center mb-5">
-                            <span class="text-byline txt-secondary mb-3 d-block">WHAT YOU'LL DISCOVER</span>
-                            <h2 class="txt-primary mb-4">Personalized Insights for Your Business</h2>
-                            <p class="text-lead txt-medium">Based on your current revenue and biggest business challenges</p>
+                            <span class="text-byline txt-secondary mb-3 d-block">{{ roiCalculatorLanding.benefits.subTitle }}</span>
+                            <h2 class="txt-primary mb-4">{{ roiCalculatorLanding.benefits.title }}</h2>
+                            <p class="text-lead txt-medium">{{ roiCalculatorLanding.benefits.description }}</p>
                         </div>
                         <div class="row g-4">
+                            {% for item in roiCalculatorLanding.benefits.items %}
                             <div class="col-lg-4">
                                 <div class="site-project-item h-100 p-4 text-center">
                                     <div
                                         class="mybg-secondary rounded-lg p-3 mx-auto mb-4"
-                                        style="width: 80px; height: 80px; display: flex; align-items: center; justify-content: center;">
-                                        <i class="fa fa-line-chart txt-primary" style="font-size: 2.2rem;"></i>
+                                        style="width: 80px; height: 80px; display: flex; align-items: center; justify-content: center; font-size: 2.2rem;">
+                                        {{ item.icon }}
                                     </div>
-                                    <h3 class="txt-primary mb-3">Your Savings Potential</h3>
-                                    <p class="txt-medium">Conservative projections of annual savings from marketing optimization, sales improvements, and
-                                        operational efficiency gains</p>
+                                    <h3 class="txt-primary mb-3">{{ item.title }}</h3>
+                                    <p class="txt-medium">{{ item.description }}</p>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
-                                <div class="site-project-item h-100 p-4 text-center">
-                                    <div
-                                        class="mybg-secondary rounded-lg p-3 mx-auto mb-4"
-                                        style="width: 80px; height: 80px; display: flex; align-items: center; justify-content: center;">
-                                        <i class="fa fa-clock-o txt-primary" style="font-size: 2.2rem;"></i>
-                                    </div>
-                                    <h3 class="txt-primary mb-3">Realistic Timeline</h3>
-                                    <p class="txt-medium">See your projected payback period and implementation roadmap based on industry benchmarks</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="site-project-item h-100 p-4 text-center">
-                                    <div
-                                        class="mybg-secondary rounded-lg p-3 mx-auto mb-4"
-                                        style="width: 80px; height: 80px; display: flex; align-items: center; justify-content: center;">
-                                        <i class="fa fa-bullseye txt-primary" style="font-size: 2.2rem;"></i>
-                                    </div>
-                                    <h3 class="txt-primary mb-3">Priority Recommendations</h3>
-                                    <p class="txt-medium">Actionable next steps for marketing, sales, and operations improvements, ranked by impact and
-                                        feasibility</p>
-                                </div>
-                            </div>
+                            {% endfor %}
                         </div>
                     </div>
                 </div>
@@ -168,13 +146,12 @@
                 <div class="row">
                     <div class="col-lg-10 mx-auto">
                         <div class="section-title text-center mb-5">
-                            <span class="text-byline txt-secondary mb-3 d-block">SAMPLE REPORT PREVIEW</span>
-                            <h2 class="txt-primary mb-4">Your 6-Page Analysis Includes</h2>
-                            <p class="text-lead txt-medium">Detailed insights and recommendations delivered within 24 hours</p>
+                            <span class="text-byline txt-secondary mb-3 d-block">{{ roiCalculatorLanding.reportPreview.subTitle }}</span>
+                            <h2 class="txt-primary mb-4">{{ roiCalculatorLanding.reportPreview.title }}</h2>
+                            <p class="text-lead txt-medium">{{ roiCalculatorLanding.reportPreview.description }}</p>
                         </div>
                         <div class="row align-items-center g-5">
-                            <div
-                                class="col-lg-6">
+                            <div class="col-lg-6">
                                 <!-- Report Mockup -->
                                 <div class="position-relative">
                                     <div class="bg-white p-4 rounded-lg shadow-md mb-3" style="transform: rotate(-2deg);">
@@ -203,34 +180,12 @@
                             </div>
                             <div class="col-lg-6">
                                 <h3 class="txt-primary mb-4">Your Report Includes:</h3>
+                                {% for feature in roiCalculatorLanding.reportPreview.features %}
                                 <div class="d-flex align-items-center mb-3">
                                     <span class="txt-secondary me-3 fw-bold">✓</span>
-                                    <span class="txt-medium">Executive summary with key metrics</span>
+                                    <span class="txt-medium">{{ feature }}</span>
                                 </div>
-                                <div class="d-flex align-items-center mb-3">
-                                    <span class="txt-secondary me-3 fw-bold">✓</span>
-                                    <span class="txt-medium">Detailed ROI calculations and projections</span>
-                                </div>
-                                <div class="d-flex align-items-center mb-3">
-                                    <span class="txt-secondary me-3 fw-bold">✓</span>
-                                    <span class="txt-medium">Marketing and sales optimization analysis</span>
-                                </div>
-                                <div class="d-flex align-items-center mb-3">
-                                    <span class="txt-secondary me-3 fw-bold">✓</span>
-                                    <span class="txt-medium">Operational efficiency improvement opportunities</span>
-                                </div>
-                                <div class="d-flex align-items-center mb-3">
-                                    <span class="txt-secondary me-3 fw-bold">✓</span>
-                                    <span class="txt-medium">Industry benchmarking and comparisons</span>
-                                </div>
-                                <div class="d-flex align-items-center mb-3">
-                                    <span class="txt-secondary me-3 fw-bold">✓</span>
-                                    <span class="txt-medium">Implementation timeline and milestones</span>
-                                </div>
-                                <div class="d-flex align-items-center mb-4">
-                                    <span class="txt-secondary me-3 fw-bold">✓</span>
-                                    <span class="txt-medium">Priority recommendations and next steps</span>
-                                </div>
+                                {% endfor %}
                             </div>
                         </div>
                     </div>
@@ -243,27 +198,17 @@
                 <div class="row">
                     <div class="col-lg-8 mx-auto text-center">
                         <div class="section-title mb-5">
-                            <h3 class="txt-primary mb-4">Trusted by Luxury Home Builders Nationwide</h3>
+                            <h3 class="txt-primary mb-4">{{ roiCalculatorLanding.socialProof.title }}</h3>
                         </div>
                         <div class="row g-4">
+                            {% for stat in roiCalculatorLanding.socialProof.stats %}
                             <div class="col-md-4">
                                 <div class="text-center">
-                                    <div class="txt-primary" style="font-size: 2.5rem; font-weight: 700;">500+</div>
-                                    <div class="txt-medium" style="font-size: 0.9rem;">Reports Generated</div>
+                                    <div class="txt-primary" style="font-size: 2.5rem; font-weight: 700;">{{ stat.number }}</div>
+                                    <div class="txt-medium" style="font-size: 0.9rem;">{{ stat.label }}</div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
-                                <div class="text-center">
-                                    <div class="txt-primary" style="font-size: 2.5rem; font-weight: 700;">$50M+</div>
-                                    <div class="txt-medium" style="font-size: 0.9rem;">Combined Builder Revenue</div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="text-center">
-                                    <div class="txt-primary" style="font-size: 2.5rem; font-weight: 700;">24hrs</div>
-                                    <div class="txt-medium" style="font-size: 0.9rem;">Average Delivery Time</div>
-                                </div>
-                            </div>
+                            {% endfor %}
                         </div>
                     </div>
                 </div>
@@ -275,17 +220,17 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-8 text-center">
                         <div class="section-title mb-5">
-                            <h2 class="txt-primary mb-4">Ready to See Your Potential?</h2>
+                            <h2 class="txt-primary mb-4">{{ roiCalculatorLanding.finalCta.title }}</h2>
                             <p class="text-lead txt-medium mb-4">
-                                Get your personalized ROI analysis and discover how strategic improvements can transform your business operations
+                                {{ roiCalculatorLanding.finalCta.description }}
                             </p>
-                            <a href="/roi-calculator" class="btn btn-secondary btn-lg">
-                                Start My Free Analysis →
+                            <a href="{{ roiCalculatorLanding.finalCta.cta.link }}" class="btn btn-secondary btn-lg">
+                                {{ roiCalculatorLanding.finalCta.cta.text }}
                             </a>
                             <div class="mt-4">
-                                <p class="txt-medium mb-2">✓ No email required to start</p>
-                                <p class="txt-medium mb-2">✓ Results delivered within 24 hours</p>
-                                <p class="txt-medium mb-0">✓ No sales calls or pressure</p>
+                                {% for indicator in roiCalculatorLanding.finalCta.trustIndicators %}
+                                <p class="txt-medium mb-2">{{ indicator }}</p>
+                                {% endfor %}
                             </div>
                         </div>
                     </div>

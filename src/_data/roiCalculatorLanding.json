@@ -3,11 +3,11 @@
   "description": "Get your personalized 6-page ROI analysis showing how marketing, sales, and operational improvements can transform your luxury home building operations.",
   "hero": {
     "timeIndicator": "⏱️ Takes 3-5 minutes to complete",
-    "title": "Find the #1 Bottleneck Holding Back Your Growth",
+    "title": "Find the #1 Bottleneck In Your Luxury Home Building Business",
     "subtitle": "See exactly how much marketing, sales, and operational improvements could transform your luxury home building company",
     "description": "Free 6-page report with personalized savings projections, efficiency gains, and payback timeline",
     "cta": {
-      "text": "Get My Free Custom Report →",
+      "text": "Get My Free Personalized Report →",
       "link": "/roi-calculator"
     }
   },
@@ -51,15 +51,15 @@
     "title": "Trusted by Luxury Home Builders Nationwide",
     "stats": [
       {
-        "number": "500+",
+        "number": "100+",
         "label": "Reports Generated"
       },
       {
-        "number": "$50M+", 
+        "number": "$500M+", 
         "label": "Combined Builder Revenue"
       },
       {
-        "number": "24hrs",
+        "number": "10 minutes",
         "label": "Average Delivery Time"
       }
     ]
@@ -68,12 +68,12 @@
     "title": "Ready to See Your Potential?",
     "description": "Get your personalized ROI analysis and discover how strategic improvements can transform your business operations",
     "cta": {
-      "text": "Get My Free Custom Report →",
+      "text": "Get My Free Personalized Report →",
       "link": "/roi-calculator"
     },
     "trustIndicators": [
       "✓ No email required to start",
-      "✓ Results delivered within 24 hours", 
+      "✓ Results delivered within 10 minutes", 
       "✓ No sales calls or pressure"
     ]
   }
