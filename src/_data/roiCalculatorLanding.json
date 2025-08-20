@@ -17,17 +17,17 @@
     "description": "Based on your current revenue and biggest business challenges",
     "items": [
       {
-        "icon": "💰",
+        "icon": "fa fa-line-chart",
         "title": "Your Savings Potential",
         "description": "Conservative projections of annual savings from marketing optimization, sales improvements, and operational efficiency gains"
       },
       {
-        "icon": "📊",
-        "title": "Realistic Timeline", 
+        "icon": "fa fa-clock-o",
+        "title": "Realistic Timeline",
         "description": "See your projected payback period and implementation roadmap based on industry benchmarks"
       },
       {
-        "icon": "🎯",
+        "icon": "fa fa-bullseye",
         "title": "Priority Recommendations",
         "description": "Actionable next steps for marketing, sales, and operations improvements, ranked by impact and feasibility"
       }
@@ -39,7 +39,7 @@
     "description": "Detailed insights and recommendations delivered within 24 hours",
     "features": [
       "Executive summary with key metrics",
-      "Detailed ROI calculations and projections", 
+      "Detailed ROI calculations and projections",
       "Marketing and sales optimization analysis",
       "Operational efficiency improvement opportunities",
       "Industry benchmarking and comparisons",
@@ -55,7 +55,7 @@
         "label": "Reports Generated"
       },
       {
-        "number": "$500M+", 
+        "number": "$500M+",
         "label": "Combined Builder Revenue"
       },
       {
@@ -73,7 +73,7 @@
     },
     "trustIndicators": [
       "✓ No email required to start",
-      "✓ Results delivered within 10 minutes", 
+      "✓ Results delivered within 10 minutes",
       "✓ No sales calls or pressure"
     ]
   }
