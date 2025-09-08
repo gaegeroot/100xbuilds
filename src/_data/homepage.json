@@ -1,13 +1,13 @@
 {
   "hero": {
-    "subTitle": "TRUSTED BY TOP LUXURY BUILDERS",
+    "subTitle": "TRUSTED BY TOP HOME BUILDERS",
     "title": {
       "firstPara": "The Growth Partner",
-      "secondPara": "For Luxury Home Builders"
+      "secondPara": "For Home Builders"
     },
     "ctaButton": {
-      "text": "Calculate My Profit Potential",
-      "link": "/roi-calculator-landing"
+      "text": "Join Modern Builder (free)",
+      "link": "https://www.skool.com/100xbuilds-7349/about?ref=513e91df861f43a08f0247f77e48beec"
     }
   },
   "finalCTA": {

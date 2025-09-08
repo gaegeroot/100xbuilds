@@ -2,10 +2,8 @@
   "navLogo": "/assets/images/100xBuildsLogoDark.png",
   "navLinks": {
     "home": "/",
-    "articles": "/blog",
-    "services": "/services",
-    "ascension": "/luxury-builder-ascension"
+    "articles": "/blog"
   },
-  "navBtnLink": "roi-calculator-landing",
-  "navBtnText": "Start Here"
+  "navBtnLink": "https://www.skool.com/100xbuilds-7349/about?ref=513e91df861f43a08f0247f77e48beec",
+  "navBtnText": "Join (free)"
 }
